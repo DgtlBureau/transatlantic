@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/DgtlBureau/transatlantic/static/css/main.ff57d7cf.css",
-    "main.js": "/DgtlBureau/transatlantic/static/js/main.6b14d84b.js",
-    "static/media/truck.png": "/DgtlBureau/transatlantic/static/media/truck.1fdd62a7aef25df7ab1a.png",
-    "static/media/container-hero.png": "/DgtlBureau/transatlantic/static/media/container-hero.d77bdbbf6db2a1b3a840.png",
-    "static/media/RFDewiExtended-Bold.ttf": "/DgtlBureau/transatlantic/static/media/RFDewiExtended-Bold.b5f873b45da3ca49fb9a.ttf",
-    "static/media/auto.png": "/DgtlBureau/transatlantic/static/media/auto.1a5fec344eec0f1fd272.png",
-    "static/media/shipping.png": "/DgtlBureau/transatlantic/static/media/shipping.709f5d19307e75cf62f2.png",
-    "static/media/rail.png": "/DgtlBureau/transatlantic/static/media/rail.d4201cdb29bddb8e7e5c.png",
-    "static/media/letter-bottom.png": "/DgtlBureau/transatlantic/static/media/letter-bottom.bf09c7c302f4ee6983b7.png",
-    "static/media/ship-2.png": "/DgtlBureau/transatlantic/static/media/ship-2.8db9d6d7862f689f7c5e.png",
-    "static/media/crane.png": "/DgtlBureau/transatlantic/static/media/crane.46cd48ca7c8c8cf96711.png",
-    "static/media/ship-1.png": "/DgtlBureau/transatlantic/static/media/ship-1.53bb87cd84adb12ef8bd.png",
-    "static/media/lighthouse.png": "/DgtlBureau/transatlantic/static/media/lighthouse.d09d9846b4b10e4a70b0.png",
-    "static/media/logo-mobile-header.svg": "/DgtlBureau/transatlantic/static/media/logo-mobile-header.08c5ebfc2a7c4d56970e6e54867676c8.svg",
-    "index.html": "/DgtlBureau/transatlantic/index.html",
-    "static/media/close-btn.svg": "/DgtlBureau/transatlantic/static/media/close-btn.2c17a333fb5dee4eca8c2c0ebe1ed248.svg",
-    "static/media/arrow-right.svg": "/DgtlBureau/transatlantic/static/media/arrow-right.fbccdd23b94c0d3fcf202f285c4821a5.svg",
-    "static/media/open-stick.svg": "/DgtlBureau/transatlantic/static/media/open-stick.f68461a990f358d19c94d0c34f712d2f.svg",
-    "main.ff57d7cf.css.map": "/DgtlBureau/transatlantic/static/css/main.ff57d7cf.css.map",
-    "main.6b14d84b.js.map": "/DgtlBureau/transatlantic/static/js/main.6b14d84b.js.map"
+    "main.css": "/transatlantic/static/css/main.6246d645.css",
+    "main.js": "/transatlantic/static/js/main.db183643.js",
+    "static/media/truck.png": "/transatlantic/static/media/truck.1fdd62a7aef25df7ab1a.png",
+    "static/media/container-hero.png": "/transatlantic/static/media/container-hero.d77bdbbf6db2a1b3a840.png",
+    "static/media/RFDewiExtended-Bold.ttf": "/transatlantic/static/media/RFDewiExtended-Bold.b5f873b45da3ca49fb9a.ttf",
+    "static/media/auto.png": "/transatlantic/static/media/auto.1a5fec344eec0f1fd272.png",
+    "static/media/shipping.png": "/transatlantic/static/media/shipping.709f5d19307e75cf62f2.png",
+    "static/media/rail.png": "/transatlantic/static/media/rail.d4201cdb29bddb8e7e5c.png",
+    "static/media/letter-bottom.png": "/transatlantic/static/media/letter-bottom.bf09c7c302f4ee6983b7.png",
+    "static/media/ship-2.png": "/transatlantic/static/media/ship-2.8db9d6d7862f689f7c5e.png",
+    "static/media/crane.png": "/transatlantic/static/media/crane.46cd48ca7c8c8cf96711.png",
+    "static/media/ship-1.png": "/transatlantic/static/media/ship-1.53bb87cd84adb12ef8bd.png",
+    "static/media/lighthouse.png": "/transatlantic/static/media/lighthouse.d09d9846b4b10e4a70b0.png",
+    "static/media/logo-mobile-header.svg": "/transatlantic/static/media/logo-mobile-header.08c5ebfc2a7c4d56970e6e54867676c8.svg",
+    "index.html": "/transatlantic/index.html",
+    "static/media/close-btn.svg": "/transatlantic/static/media/close-btn.2c17a333fb5dee4eca8c2c0ebe1ed248.svg",
+    "static/media/arrow-right.svg": "/transatlantic/static/media/arrow-right.fbccdd23b94c0d3fcf202f285c4821a5.svg",
+    "static/media/open-stick.svg": "/transatlantic/static/media/open-stick.f68461a990f358d19c94d0c34f712d2f.svg",
+    "main.6246d645.css.map": "/transatlantic/static/css/main.6246d645.css.map",
+    "main.db183643.js.map": "/transatlantic/static/js/main.db183643.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff57d7cf.css",
-    "static/js/main.6b14d84b.js"
+    "static/css/main.6246d645.css",
+    "static/js/main.db183643.js"
   ]
 }
