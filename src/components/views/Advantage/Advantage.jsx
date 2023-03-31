@@ -4,71 +4,82 @@ import styles from "./advantage.module.css";
 const Advantage = () => {
   return (
     <section className={styles.advantage}>
-      <h2 className={styles.advantage__title}>250 000 тонн за год</h2>
-      <p className={styles.advantage__subtitle}>Импорт и экспорт</p>
-      <div className={styles.figures}>
-        <div
-          className={cn(styles.figures__item, styles["figures__item--polygon"])}
-        >
-          <span
+      <div className={styles.advantage__container}>
+        <h2 className={styles.advantage__title}>250 000 тонн за год</h2>
+        <p className={styles.advantage__subtitle}>Импорт и экспорт</p>
+        <div className={styles.figures}>
+          <div
             className={cn(
-              styles.figures__text,
-              styles["figures__text--polygon"]
+              styles.figures__item,
+              styles["figures__item--polygon"]
             )}
           >
-            Полимеры
-          </span>
-        </div>
-        <div
-          className={cn(styles.figures__item, styles["figures__item--ellipse"])}
-        >
-          <span
+            <span
+              className={cn(
+                styles.figures__text,
+                styles["figures__text--polygon"]
+              )}
+            >
+              Полимеры
+            </span>
+          </div>
+          <div
             className={cn(
-              styles.figures__text,
-              styles["figures__text--ellipse"]
+              styles.figures__item,
+              styles["figures__item--ellipse"]
             )}
           >
-            Технические углероды
-          </span>
-        </div>
-        <div
-          className={cn(
-            styles.figures__item,
-            styles["figures__item--rectangle"]
-          )}
-        >
-          <span
+            <span
+              className={cn(
+                styles.figures__text,
+                styles["figures__text--ellipse"]
+              )}
+            >
+              Технические углероды
+            </span>
+          </div>
+          <div
             className={cn(
-              styles.figures__text,
-              styles["figures__text--rectangle"]
+              styles.figures__item,
+              styles["figures__item--rectangle"]
             )}
           >
-            Пиломатериалы
-          </span>
-        </div>
-        <div
-          className={cn(styles.figures__item, styles["figures__item--union"])}
-        >
-          <span
-            className={cn(styles.figures__text, styles["figures__text--union"])}
+            <span
+              className={cn(
+                styles.figures__text,
+                styles["figures__text--rectangle"]
+              )}
+            >
+              Пиломатериалы
+            </span>
+          </div>
+          <div
+            className={cn(styles.figures__item, styles["figures__item--union"])}
           >
-            Продукты питания
-          </span>
-        </div>
-        <div
-          className={cn(
-            styles.figures__item,
-            styles["figures__item--subtract"]
-          )}
-        >
-          <span
+            <span
+              className={cn(
+                styles.figures__text,
+                styles["figures__text--union"]
+              )}
+            >
+              Продукты питания
+            </span>
+          </div>
+          <div
             className={cn(
-              styles.figures__text,
-              styles["figures__text--subtract"]
+              styles.figures__item,
+              styles["figures__item--subtract"]
             )}
           >
-            Металлопрокат
-          </span>
+            <span
+              className={cn(
+                styles.figures__text,
+                styles["figures__text--subtract"]
+              )}
+            >
+              Металлопрокат
+            </span>
+          </div>
         </div>
       </div>
     </section>

@@ -21,3 +21,10 @@
   background-color: #d5edff;
   color: #18bbfe;
 }
+
+@media screen and (min-width: 768px) {
+  .button__blue {
+    width: 167px;
+    padding: 10px 30px;
+  }
+}

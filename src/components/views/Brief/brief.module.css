@@ -1,9 +1,14 @@
 .brief {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
   padding: 40px 20px;
   background-color: #222222;
+}
+
+.brief__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .brief__title {
@@ -29,13 +34,20 @@
   margin-bottom: 24px;
 }
 
-.brief__policy {
-  font-family: "Inter Tight";
-  font-weight: 500;
-  font-size: 8px;
-  line-height: 1.2;
-  color: #828282;
-  display: inline-block;
-  width: 266px;
-  margin-top: 20px;
+@media screen and (min-width: 768px) {
+  .brief__container {
+    width: 100%;
+  }
+
+  .brief__title {
+    font-size: 56px;
+    width: 575px;
+    margin-bottom: 40px;
+  }
+
+  .brief__descr {
+    font-size: 18px;
+    margin-bottom: 32px;
+    width: 297px;
+  }
 }

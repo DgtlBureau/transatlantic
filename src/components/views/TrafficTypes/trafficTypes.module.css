@@ -1,6 +1,12 @@
 .traffic {
-  padding: 64px 20px;
   background-color: #edf6ff;
+}
+
+.traffic__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 20px;
 }
 
 .traffic__title {
@@ -62,4 +68,68 @@
 }
 
 .traffic__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 280px;
+}
+
+.traffic__img--auto {
+  background-image: url("../../../assets/images/mobile/transportation/auto.png");
+  height: 135px;
+}
+
+.traffic__img--rail {
+  background-image: url("../../../assets/images/mobile/transportation/rail.png");
+  height: 115px;
+}
+
+.traffic__img--shipping {
+  background-image: url("../../../assets/images/mobile/transportation/shipping.png");
+  height: 125px;
+}
+
+@media screen and (min-width: 768px) {
+  .traffic__container {
+    align-items: flex-start;
+  }
+
+  .traffic__heading,
+  .traffic__title {
+    font-size: 56px;
+    width: 607px;
+  }
+
+  .traffic__title {
+    margin-bottom: 40px;
+  }
+
+  .traffic__descr {
+    font-size: 18px;
+    width: 405px;
+    margin-bottom: 40px;
+  }
+
+  .traffic__subheading {
+    font-size: 18px;
+    width: auto;
+    margin-bottom: 35px;
+  }
+
+  .traffic__img--auto {
+    background-image: url("../../../assets/images/tablet/transportation/auto.png");
+    height: 190px;
+    width: 397px;
+  }
+
+  .traffic__img--rail {
+    background-image: url("../../../assets/images/tablet/transportation/rail.png");
+    height: 153px;
+    width: 463px;
+  }
+
+  .traffic__img--shipping {
+    background-image: url("../../../assets/images/tablet/transportation/shipping.png");
+    height: 205px;
+    width: 460px;
+  }
 }
