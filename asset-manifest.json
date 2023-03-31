@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/transatlantic/static/css/main.ad4289f8.css",
-    "main.js": "/transatlantic/static/js/main.a707b174.js",
+    "main.js": "/transatlantic/static/js/main.21bb2ab6.js",
     "static/media/container-hero.png": "/transatlantic/static/media/container-hero.d6bd3937d425f7771c2c.png",
     "static/media/truck.png": "/transatlantic/static/media/truck.1fdd62a7aef25df7ab1a.png",
     "static/media/RFDewiExtended-Bold.ttf": "/transatlantic/static/media/RFDewiExtended-Bold.b5f873b45da3ca49fb9a.ttf",
@@ -25,10 +25,10 @@
     "static/media/arrow-right.svg": "/transatlantic/static/media/arrow-right.fbccdd23b94c0d3fcf202f285c4821a5.svg",
     "static/media/open-stick.svg": "/transatlantic/static/media/open-stick.f68461a990f358d19c94d0c34f712d2f.svg",
     "main.ad4289f8.css.map": "/transatlantic/static/css/main.ad4289f8.css.map",
-    "main.a707b174.js.map": "/transatlantic/static/js/main.a707b174.js.map"
+    "main.21bb2ab6.js.map": "/transatlantic/static/js/main.21bb2ab6.js.map"
   },
   "entrypoints": [
     "static/css/main.ad4289f8.css",
-    "static/js/main.a707b174.js"
+    "static/js/main.21bb2ab6.js"
   ]
 }
