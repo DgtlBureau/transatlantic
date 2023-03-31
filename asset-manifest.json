@@ -1,28 +1,34 @@
 {
   "files": {
-    "main.css": "/transatlantic/static/css/main.6246d645.css",
-    "main.js": "/transatlantic/static/js/main.db183643.js",
+    "main.css": "/transatlantic/static/css/main.ad4289f8.css",
+    "main.js": "/transatlantic/static/js/main.a707b174.js",
+    "static/media/container-hero.png": "/transatlantic/static/media/container-hero.d6bd3937d425f7771c2c.png",
     "static/media/truck.png": "/transatlantic/static/media/truck.1fdd62a7aef25df7ab1a.png",
-    "static/media/container-hero.png": "/transatlantic/static/media/container-hero.d77bdbbf6db2a1b3a840.png",
     "static/media/RFDewiExtended-Bold.ttf": "/transatlantic/static/media/RFDewiExtended-Bold.b5f873b45da3ca49fb9a.ttf",
     "static/media/auto.png": "/transatlantic/static/media/auto.1a5fec344eec0f1fd272.png",
     "static/media/shipping.png": "/transatlantic/static/media/shipping.709f5d19307e75cf62f2.png",
     "static/media/rail.png": "/transatlantic/static/media/rail.d4201cdb29bddb8e7e5c.png",
-    "static/media/letter-bottom.png": "/transatlantic/static/media/letter-bottom.bf09c7c302f4ee6983b7.png",
+    "static/media/letter-bottom.png": "/transatlantic/static/media/letter-bottom.b61488f71994cf6a696f.png",
     "static/media/ship-2.png": "/transatlantic/static/media/ship-2.8db9d6d7862f689f7c5e.png",
     "static/media/crane.png": "/transatlantic/static/media/crane.46cd48ca7c8c8cf96711.png",
+    "static/media/image-6.png": "/transatlantic/static/media/image-6.d44c930b2f8e51c4f319.png",
+    "static/media/image-2.png": "/transatlantic/static/media/image-2.39af85158f31fe5d8e47.png",
+    "static/media/image-3.png": "/transatlantic/static/media/image-3.a7bdcc80250b5b779611.png",
+    "static/media/image-5.png": "/transatlantic/static/media/image-5.add4c3bb685cf73bac0e.png",
     "static/media/ship-1.png": "/transatlantic/static/media/ship-1.53bb87cd84adb12ef8bd.png",
+    "static/media/image-1.png": "/transatlantic/static/media/image-1.5c42c9d8bc8fa4498819.png",
+    "static/media/image-4.png": "/transatlantic/static/media/image-4.7f2e161c0c53aa4e78f5.png",
     "static/media/lighthouse.png": "/transatlantic/static/media/lighthouse.d09d9846b4b10e4a70b0.png",
     "static/media/logo-mobile-header.svg": "/transatlantic/static/media/logo-mobile-header.08c5ebfc2a7c4d56970e6e54867676c8.svg",
     "index.html": "/transatlantic/index.html",
     "static/media/close-btn.svg": "/transatlantic/static/media/close-btn.2c17a333fb5dee4eca8c2c0ebe1ed248.svg",
     "static/media/arrow-right.svg": "/transatlantic/static/media/arrow-right.fbccdd23b94c0d3fcf202f285c4821a5.svg",
     "static/media/open-stick.svg": "/transatlantic/static/media/open-stick.f68461a990f358d19c94d0c34f712d2f.svg",
-    "main.6246d645.css.map": "/transatlantic/static/css/main.6246d645.css.map",
-    "main.db183643.js.map": "/transatlantic/static/js/main.db183643.js.map"
+    "main.ad4289f8.css.map": "/transatlantic/static/css/main.ad4289f8.css.map",
+    "main.a707b174.js.map": "/transatlantic/static/js/main.a707b174.js.map"
   },
   "entrypoints": [
-    "static/css/main.6246d645.css",
-    "static/js/main.db183643.js"
+    "static/css/main.ad4289f8.css",
+    "static/js/main.a707b174.js"
   ]
 }
