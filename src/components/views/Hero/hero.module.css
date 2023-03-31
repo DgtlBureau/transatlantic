@@ -1,4 +1,8 @@
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: inherit;
   padding: 5px 0px 34px 0px;
   background-color: #edf6ff;
 }
@@ -28,30 +32,40 @@
   color: #121c46;
 }
 
+.hero__wrapper {
+  max-width: 320px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
 .hero__letter {
   position: absolute;
 }
 
 .hero__letter--left {
   top: 0px;
-  left: 0px;
+  left: -38px;
   z-index: 3;
 }
 
 .hero__letter--right {
   top: 0px;
-  right: 0px;
+  right: -47px;
   z-index: 4;
 }
 
 .hero__letter--bottom {
   z-index: 6;
-  left: 0px;
+  left: -61px;
   bottom: -150px;
 }
 
 .hero__container {
   position: absolute;
   z-index: 5;
-  bottom: 0px;
+  bottom: 9px;
+  right: -53px;
+  width: 464px;
+  height: 300px;
 }
