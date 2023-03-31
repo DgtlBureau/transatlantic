@@ -5,6 +5,7 @@ import Convenient from "components/views/Convenient";
 import Delivery from "components/views/Delivery/Delivery";
 import Hero from "components/views/Hero/Hero";
 import TrafficTypes from "components/views/TrafficTypes";
+import Team from "components/views/Team/Team";
 import styles from "./homepage.module.css";
 
 const Homepage = () => {
@@ -17,6 +18,7 @@ const Homepage = () => {
       <Delivery />
       <Control />
       <Cases />
+      <Team />
     </>
   );
 };

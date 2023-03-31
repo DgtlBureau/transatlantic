@@ -1,0 +1,64 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 64px 20px 40px 23px;
+  background-color: #222222;
+}
+
+.team__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.team__descr {
+  margin-bottom: 32px;
+  display: inline-block;
+  width: 260px;
+}
+
+.team__name,
+.team__business,
+.team__descr {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.team__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.team__item:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.team__item {
+  display: flex;
+  align-items: center;
+}
+
+.team__avatar {
+  width: 132px;
+  height: 132px;
+  margin-right: 16px;
+}
+
+.team__name {
+  margin-bottom: 8px;
+}
+
+.team__business {
+  width: 136px;
+  display: inline-block;
+  color: #828282;
+}
