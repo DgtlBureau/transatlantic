@@ -6,7 +6,7 @@ import styles from "./navbar.module.css";
 const NavBar = ({ type }) => {
   return (
     <nav className={cn(styles.nav, styles[`nav--${type}`])}>
-      <ul className={styles.nav__list}>
+      <ul className={cn(styles.nav__list, styles[`nav__list--${type}`])}>
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
             to="#"

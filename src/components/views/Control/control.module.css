@@ -3,6 +3,14 @@
   background-color: #edf6ff;
 }
 
+.control__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 280px;
+}
+
 .control__title {
   display: inline-block;
   width: 245px;
@@ -18,7 +26,13 @@
 .control__list {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  align-items: flex-start;
+}
+
+.control__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .control__item:not(:last-child) {
@@ -42,4 +56,10 @@
 .control__blueDescr {
   width: 260px;
   color: #18bbfe;
+}
+
+@media screen and (min-width: 768px) {
+  .control {
+    display: none;
+  }
 }

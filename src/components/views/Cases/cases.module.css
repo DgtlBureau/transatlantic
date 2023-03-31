@@ -1,9 +1,14 @@
 .cases {
+  padding: 64px 20px 27px 20px;
+  background-color: #18bbfe;
+}
+
+.cases__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 20px 27px 20px;
-  background-color: #18bbfe;
+  margin: 0 auto;
+  width: 280px;
 }
 
 .cases__title {
@@ -43,19 +48,24 @@
   font-size: 18px;
   letter-spacing: -0.04em;
   color: #ffffff;
-  width: 170px;
+  width: 176px;
+  display: inline-block;
 }
 
-.cases__wrapper {
+.cases__info {
   display: flex;
   position: relative;
   z-index: 10;
 }
 
-.cases__icon {
+.cases__arrow {
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .cases__image {
+  background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   border-radius: 16px;
   top: 0;
@@ -63,14 +73,26 @@
 }
 
 .cases__image--shipSecond {
+  background-image: url("../../../assets/images/mobile/cases/ship-2.png");
+  width: 210px;
+  height: 172px;
 }
 .cases__image--crane {
+  background-image: url("../../../assets/images/mobile/cases/crane.png");
+  width: 232px;
+  height: 172px;
 }
 .cases__image--lighthouse {
+  background-image: url("../../../assets/images/mobile/cases/lighthouse.png");
+  width: 157px;
+  height: 162px;
   top: 11px;
   right: -1px;
 }
 .cases__image--shipFirst {
+  background-image: url("../../../assets/images/mobile/cases/ship-1.png");
+  width: 182px;
+  height: 172px;
 }
 
 .cases__button {
@@ -80,4 +102,62 @@
   line-height: 1.2;
   text-decoration-line: underline;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .cases__title {
+    font-size: 56px;
+  }
+
+  .cases__container {
+    width: 768px;
+  }
+
+  .cases__wrapper {
+    margin-bottom: 20px;
+  }
+
+  .cases__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(20px * -1);
+    margin-left: calc(20px * -1);
+    margin-bottom: calc(20px * -1);
+    width: 768px;
+  }
+
+  .cases__item {
+    width: 354px;
+    height: 248px;
+    padding: 0 0 17px 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cases__heading {
+    font-size: 24px;
+  }
+
+  .cases__image--shipSecond {
+    background-image: url("../../../assets/images/tablet/cases/ship-2.png");
+    width: 168px;
+    height: 248px;
+  }
+  .cases__image--crane {
+    background-image: url("../../../assets/images/tablet/cases/crane.png");
+    width: 260px;
+    height: 248px;
+  }
+  .cases__image--lighthouse {
+    background-image: url("../../../assets/images/tablet/cases/lighthouse.png");
+    width: 155px;
+    height: 248px;
+    top: 0;
+    right: 0;
+  }
+  .cases__image--shipFirst {
+    background-image: url("../../../assets/images/tablet/cases/ship-1.png");
+    width: 259px;
+    height: 248px;
+  }
 }

@@ -1,10 +1,16 @@
 .hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: inherit;
-  padding: 5px 0px 34px 0px;
+  align-items: center;
   background-color: #edf6ff;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 5px 20px 34px 20px;
+  max-width: 540px;
 }
 
 .hero__title {
@@ -13,7 +19,9 @@
   font-size: 35px;
   letter-spacing: -0.04em;
   color: #121c46;
-  margin: 0 20px 32px 20px;
+  display: inline-block;
+  width: 279px;
+  margin-bottom: 33px;
 }
 
 .hero__background {
@@ -24,7 +32,6 @@
 
 .hero__descr {
   display: inline-block;
-  margin: 0 20px;
   width: 280px;
   font-family: "Inter Tight";
   font-weight: 500;
@@ -39,33 +46,109 @@
   margin: 0 auto;
 }
 
-.hero__letter {
+.hero__letter,
+.hero__truck {
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__letter--left {
+  width: 212px;
+  height: 383px;
   top: 0px;
-  left: -38px;
+  left: -69px;
   z-index: 3;
+  background-image: url("../../../assets/images/mobile/letter/letter-left.png");
 }
 
 .hero__letter--right {
+  width: 208px;
+  height: 384px;
   top: 0px;
-  right: -47px;
+  right: -55px;
   z-index: 4;
+  background-image: url("../../../assets/images/mobile/letter/letter-right.png");
 }
 
 .hero__letter--bottom {
+  width: 200px;
+  height: 441px;
   z-index: 6;
-  left: -61px;
-  bottom: -150px;
+  left: -92px;
+  bottom: -154px;
+  background-image: url("../../../assets/images/mobile/letter/letter-bottom.png");
 }
 
-.hero__container {
-  position: absolute;
+.hero__truck {
   z-index: 5;
-  bottom: 9px;
-  right: -53px;
+  bottom: 8px;
+  right: -70px;
   width: 464px;
   height: 300px;
+  background-image: url("../../../assets/images/mobile/container-hero.png");
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    max-width: 768px;
+  }
+
+  .hero__title {
+    order: 1;
+    width: 660px;
+    font-size: 80px;
+    line-height: 0.8;
+    margin-bottom: 40px;
+  }
+
+  .hero__descr {
+    order: 2;
+    width: 601px;
+    margin-bottom: 74px;
+  }
+
+  .hero__background {
+    order: 3;
+    width: 768px;
+    margin-bottom: 0;
+    height: 700px;
+  }
+
+  .hero__wrapper {
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .hero__letter--left {
+    width: 387px;
+    height: 701px;
+    top: 0px;
+    left: 41px;
+    background-image: url("../../../assets/images/tablet/letter/letter-left.png");
+  }
+
+  .hero__letter--right {
+    width: 380px;
+    height: 702px;
+    top: 0px;
+    right: -13px;
+    background-image: url("../../../assets/images/tablet/letter/letter-right.png");
+  }
+
+  .hero__letter--bottom {
+    width: 271px;
+    height: 445px;
+    top: 288px;
+    left: 85px;
+    background-image: url("../../../assets/images/tablet/letter/letter-bottom.png");
+  }
+
+  .hero__truck {
+    bottom: -150px;
+    right: -23px;
+    width: 851px;
+    height: 602px;
+    background-image: url("../../../assets/images/tablet/container-hero.png");
+  }
 }

@@ -1,12 +1,20 @@
 .convenient {
-  padding: 64px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-color: #222222;
+  padding: 64px 20px;
+}
+
+.convenient__container {
+  margin: 0 auto;
+  width: 280px;
 }
 
 .convenient__title {
   display: inline-block;
   width: 262px;
-  margin: 0 0 24px 20px;
+  margin-bottom: 24px;
   font-family: "Dewi";
   font-weight: 700;
   font-size: 36px;
@@ -16,9 +24,14 @@
   color: #ffffff;
 }
 
+.wrapper__descr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .convenient__descr {
   display: inline-block;
-  margin-left: 20px;
   font-family: "Inter Tight";
   font-style: normal;
   font-weight: 500;
@@ -50,11 +63,52 @@
 }
 
 .convenient__image {
+  background-image: url("../../../assets/images/mobile/truck.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1177px;
+  height: 336px;
+  display: inline-block;
   position: absolute;
   bottom: 0;
-  right: -160px;
+  right: -350px;
 }
 
-.convenient__button {
-  margin-left: 20px;
+@media screen and (min-width: 768px) {
+  .convenient {
+    padding: 56px 20px 64px 20px;
+  }
+
+  .convenient__container {
+    width: 100%;
+  }
+
+  .convenient__title {
+    font-size: 56px;
+    width: 635px;
+    margin-bottom: 40px;
+  }
+
+  .convenient__descr--first {
+    width: 267px;
+  }
+
+  .convenient__descr--second {
+    margin-bottom: 40px;
+    width: 345px;
+  }
+
+  .convenient__descr--third {
+    width: 350px;
+  }
+
+  .convenient__wrapper {
+    width: 100%;
+  }
+
+  .convenient__image {
+    background-image: url("../../../assets/images/tablet/truck.png");
+    width: 1494px;
+    right: -196px;
+  }
 }
