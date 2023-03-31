@@ -1,6 +1,6 @@
 .advantage {
   padding: 40px 20px;
-  background-image: url("../../../assets/images/mobile/figures/background/background.png");
+  background-image: url("../../../assets/images/mobile/figures/background.png");
 }
 
 .advantage__title,
@@ -25,6 +25,7 @@
 .figures {
   position: relative;
   height: 479px;
+  max-width: 280px;
 }
 
 .figures__item {

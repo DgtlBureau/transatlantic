@@ -10,26 +10,28 @@ const Hero = () => {
     <section className={styles.hero}>
       <h1 className={styles.hero__title}>Контейнерные перевозки</h1>
       <div className={styles.hero__background}>
-        <img
-          src={containerImage}
-          alt="container"
-          className={styles.hero__container}
-        />
-        <img
-          src={letterLeft}
-          alt="letter"
-          className={cn(styles.hero__letter, styles["hero__letter--left"])}
-        />
-        <img
-          src={letterRight}
-          alt="letter"
-          className={cn(styles.hero__letter, styles["hero__letter--right"])}
-        />
-        <img
-          src={letterBottom}
-          alt="letter"
-          className={cn(styles.hero__letter, styles["hero__letter--bottom"])}
-        />
+        <div className={styles.hero__wrapper}>
+          <img
+            src={containerImage}
+            alt="container"
+            className={styles.hero__container}
+          />
+          <img
+            src={letterLeft}
+            alt="letter"
+            className={cn(styles.hero__letter, styles["hero__letter--left"])}
+          />
+          <img
+            src={letterRight}
+            alt="letter"
+            className={cn(styles.hero__letter, styles["hero__letter--right"])}
+          />
+          <img
+            src={letterBottom}
+            alt="letter"
+            className={cn(styles.hero__letter, styles["hero__letter--bottom"])}
+          />
+        </div>
       </div>
       <p className={styles.hero__descr}>
         Быстрый и экономичный способ доставить груз в любую точку мира.
