@@ -1,0 +1,41 @@
+.brief {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 40px 20px;
+  background-color: #222222;
+}
+
+.brief__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  display: inline-block;
+  width: 257px;
+  margin-bottom: 24px;
+}
+
+.brief__descr {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  display: inline-block;
+  width: 266px;
+  margin-bottom: 24px;
+}
+
+.brief__policy {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 1.2;
+  color: #828282;
+  display: inline-block;
+  width: 266px;
+  margin-top: 20px;
+}

@@ -1,4 +1,5 @@
 import Advantage from "components/views/Advantage";
+import Brief from "components/views/Brief/Brief";
 import Cases from "components/views/Cases";
 import Control from "components/views/Control";
 import Convenient from "components/views/Convenient";
@@ -19,6 +20,7 @@ const Homepage = () => {
       <Control />
       <Cases />
       <Team />
+      <Brief />
     </>
   );
 };
