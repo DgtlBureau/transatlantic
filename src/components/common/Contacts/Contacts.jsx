@@ -4,7 +4,7 @@ import styles from "./contacts.module.css";
 
 const Contacts = ({ address, tel, mail, className, type }) => {
   return (
-    <div className={className}>
+    <div className={cn(styles.address, styles[`${className}`])}>
       <address
         className={cn(
           styles.contacts__address,

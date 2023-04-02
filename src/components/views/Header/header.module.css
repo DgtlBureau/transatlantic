@@ -52,3 +52,18 @@
   top: 29px;
   left: 10px;
 }
+
+@media screen and (min-width: 1180px) {
+  .header {
+    padding: 37px 58px;
+    justify-content: flex-start;
+  }
+
+  .header__logo {
+    margin-right: 56px;
+  }
+
+  .openBtn__wrapper {
+    display: none;
+  }
+}
