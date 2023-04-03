@@ -9,6 +9,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__container}>
+        <h2 className={styles.footer__title}>Контакты</h2>
         <HandySvg
           src={logo}
           className={styles.footer__logo}

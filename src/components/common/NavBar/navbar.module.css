@@ -59,7 +59,9 @@
 
   .nav__item--footer:not(:first-child) {
     margin-left: 40px;
+    margin-right: 0;
   }
+
   .nav__item--footer:first-child {
     margin-left: 7px;
   }
@@ -84,7 +86,8 @@
 
   .nav__item:not(:last-child) {
     margin-bottom: 0px;
-    margin-right: 40px;
+    margin-right: 0px;
+    margin-left: 40px;
   }
 
   .nav__link--footer {
