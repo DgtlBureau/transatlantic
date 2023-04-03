@@ -43,3 +43,34 @@
 .address div:not(:last-child) {
   margin-bottom: 44px;
 }
+
+@media screen and (min-width: 1180px) {
+  .menu {
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    z-index: 0;
+    height: auto;
+    padding: 0;
+  }
+
+  .closeBtn__wrapper {
+    display: none;
+  }
+
+  .menu__blueButton {
+    margin-bottom: 0;
+    order: 2;
+  }
+
+  .address {
+    display: none;
+  }
+}

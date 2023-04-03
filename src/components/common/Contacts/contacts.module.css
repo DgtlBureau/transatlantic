@@ -1,3 +1,8 @@
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts__address {
   font-family: "Dewi";
   font-weight: 700;
@@ -37,4 +42,21 @@
 .contacts__mail--footer,
 .contacts__tel--footer {
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__address {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .address {
+    flex-direction: row;
+  }
+
+  .contacts__address {
+    margin-right: 34px;
+    font-size: 24px;
+  }
 }

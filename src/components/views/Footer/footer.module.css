@@ -12,6 +12,10 @@
   width: 280px;
 }
 
+.footer__title {
+  display: none;
+}
+
 .footer__logo {
   transition-duration: 500ms;
   cursor: pointer;
@@ -72,13 +76,25 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding: 56px 20px 25px;
+  }
+
   .footer__container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 61px 127px 29px 92px;
     width: 768px;
   }
 
   .address {
+    grid-column: 1/4;
     flex-direction: row;
     margin-bottom: 40px;
+  }
+
+  .address div:not(:last-child) {
+    margin-bottom: 0;
   }
 
   .address div:first-child {
@@ -88,19 +104,94 @@
   .footer__nav {
     flex-direction: row;
     align-items: baseline;
+    grid-column: 2/5;
+    margin-top: 2px;
   }
 
   .footer__button {
     margin-bottom: 0px;
+    grid-column: 1;
   }
 
   .privasy {
+    flex-direction: row;
+    align-items: center;
     margin-top: 40px;
+    grid-row: 4;
+    grid-column: 1/4;
+    margin-bottom: 0;
+  }
+
+  .privasy__wrapper--left {
+    width: 243px;
+  }
+
+  .privasy__wrapper--right {
+    margin-left: 111px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .footer {
+    padding: 56px 58px;
+  }
+
+  .footer__container {
+    width: 100%;
+    grid-template-columns: 12.5% 12.5% 12.5% 12.5% 16% 18.75% 16.25%;
+    grid-template-rows: 104px 117px 30px;
+  }
+
+  .footer__title {
+    display: inline-block;
+    font-family: "Dewi";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    margin-bottom: 48px;
+    grid-row: 1;
+  }
+
+  .address {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 66px;
+    grid-column: 1/6;
+    grid-row: 2;
+  }
+
+  .address div:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .address div:first-child {
+    margin-right: 78px;
+  }
+
+  .footer__nav {
+    grid-column: 2/6;
+    grid-row: 3;
+  }
+
+  .footer__button {
+    grid-column: 6;
+    grid-row: 3;
+  }
+
+  .privasy {
+    margin-top: 0;
+    grid-column: 6/8;
+    grid-row: 2;
+    align-items: flex-end;
   }
 
   .privasy__year {
-    align-self: center;
-    margin-top: -15px;
-    margin-right: 20px;
+  }
+
+  .footer__logo {
+    grid-row: 3;
   }
 }

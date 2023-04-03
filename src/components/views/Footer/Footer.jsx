@@ -9,6 +9,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__container}>
+        <h2 className={styles.footer__title}>Контакты</h2>
         <HandySvg
           src={logo}
           className={styles.footer__logo}
@@ -31,23 +32,26 @@ const Footer = () => {
           />
         </div>
 
+        <div className={styles.footer__button}>
+          <ButtonLink to={"#"} text="Войти в личный кабинет" color="gray" />
+        </div>
         <div className={styles.footer__nav}>
-          <div className={styles.footer__button}>
-            <ButtonLink to={"#"} text="Войти в личный кабинет" color="gray" />
-          </div>
-
           <NavBar type={"footer"} />
         </div>
 
         <div className={styles.privasy}>
-          <span className={styles.privasy__policy}>
-            Политика конфиденциальности
-          </span>
-          <span className={styles.privasy__company}>
-            Транспортная компания ООО «Трансатлантик»
-          </span>
+          <div className={styles["privasy__wrapper--left"]}>
+            <span className={styles.privasy__policy}>
+              Политика конфиденциальности
+            </span>
+            <span className={styles.privasy__company}>
+              Транспортная компания ООО «Трансатлантик»
+            </span>
+          </div>
+          <div className={styles["privasy__wrapper--right"]}>
+            <span className={styles.privasy__year}>2023</span>
+          </div>
         </div>
-        <span className={styles.privasy__year}>2023</span>
       </div>
     </footer>
   );
