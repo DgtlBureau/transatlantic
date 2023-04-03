@@ -60,3 +60,36 @@
     width: 165px;
   }
 }
+
+@media screen and (min-width: 1180px) {
+  .form {
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+
+  .form__input {
+    margin-bottom: 0;
+  }
+
+  .form__input {
+    margin-right: 20px;
+  }
+
+  .form__input:first-child {
+    width: 204px;
+  }
+
+  .form__input:not(:first-child) {
+    width: 316px;
+  }
+
+  .form__policy {
+    align-self: flex-end;
+    margin-right: 212px;
+    margin-top: 24px;
+    font-size: 12px;
+    width: 213px;
+  }
+}

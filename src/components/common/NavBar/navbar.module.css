@@ -87,7 +87,7 @@
   .nav__item:not(:last-child) {
     margin-bottom: 0px;
     margin-right: 0px;
-    margin-left: 40px;
+    margin-right: 40px;
   }
 
   .nav__link--footer {

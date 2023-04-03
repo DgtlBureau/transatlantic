@@ -1,0 +1,73 @@
+.mapClose {
+  display: none;
+}
+
+@media screen and (min-width: 1180px) {
+  .mapClose {
+    display: flex;
+    background-color: #edf6ff;
+    position: relative;
+    height: 100vh;
+    padding: 112px 44px 0 58px;
+  }
+
+  .mapClose__container {
+    width: 100%;
+  }
+
+  .mapClose__info {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .mapClose__title {
+    font-family: "Dewi";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1;
+    color: #121c46;
+    z-index: 2;
+    margin-right: 212px;
+  }
+
+  .mapClose__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mapClose__descr {
+    font-family: "Inter Tight";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #121c46;
+    z-index: 2;
+    display: inline-block;
+    width: 269px;
+    margin-top: 15px;
+  }
+
+  .mapClose__descr--first,
+  .mapClose__descr--third {
+    margin-bottom: 24px;
+  }
+
+  .mapClose__descr--second,
+  .mapClose__descr--forth {
+    margin-bottom: 8px;
+  }
+
+  .mapClose__descr--third,
+  .mapClose__descr--fifth {
+    color: #18bbfe;
+  }
+
+  .mapClose__img {
+    width: 98%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

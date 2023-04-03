@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
+import ship from "../../../assets/images/desktop/cases/ship-big.png";
 import cn from "classnames";
 import styles from "./cases.module.css";
 
 const Cases = () => {
   return (
     <section className={styles.cases}>
+      <h2 className={styles.cases__title}>Наши кейсы</h2>
       <div className={styles.cases__container}>
-        <h2 className={styles.cases__title}>Наши кейсы</h2>
         <div className={styles.cases__wrapper}>
           <ul className={styles.cases__list}>
             <li className={styles.cases__item}>
@@ -73,10 +74,11 @@ const Cases = () => {
               </Link>
             </li>
           </ul>
+          <Link className={styles.cases__button} to="#">
+            Посмотреть все
+          </Link>
         </div>
-        <Link className={styles.cases__button} to="#">
-          Посмотреть все
-        </Link>
+        <img src={ship} alt="ship" />
       </div>
     </section>
   );

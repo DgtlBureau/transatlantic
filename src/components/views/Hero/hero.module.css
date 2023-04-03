@@ -3,13 +3,13 @@
   flex-direction: column;
   align-items: center;
   background-color: #edf6ff;
+  padding: 5px 20px 34px 20px;
 }
 
 .hero__container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 5px 20px 34px 20px;
   max-width: 540px;
 }
 
@@ -90,6 +90,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero {
+    padding-bottom: 0;
+  }
+
   .hero__container {
     max-width: 768px;
   }
@@ -150,5 +154,70 @@
     width: 851px;
     height: 602px;
     background-image: url("../../../assets/images/tablet/container-hero.png");
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .hero {
+    padding: 121px 52px 0px 52px;
+  }
+
+  .hero__container {
+    position: relative;
+    max-width: 1280px;
+  }
+
+  .hero__title,
+  .hero__descr {
+    position: absolute;
+    z-index: 6;
+    top: 42px;
+  }
+
+  .hero__title {
+    margin-bottom: 0;
+    left: -80px;
+  }
+
+  .hero__descr {
+    right: -70px;
+    width: 433px;
+    font-size: 18px;
+  }
+
+  .hero__background {
+    width: 1180px;
+  }
+
+  .hero__letter--left {
+    width: 514px;
+    height: 931px;
+    top: 0px;
+    left: -80px;
+    background-image: url("../../../assets/images/desktop/letter/letter-left.png");
+  }
+
+  .hero__letter--right {
+    width: 504px;
+    height: 931px;
+    top: 0px;
+    right: -133px;
+    background-image: url("../../../assets/images/desktop/letter/letter-right.png");
+  }
+
+  .hero__letter--bottom {
+    width: 359px;
+    height: 591px;
+    top: 365px;
+    left: -16px;
+    background-image: url("../../../assets/images/desktop/letter/letter-bottom.png");
+  }
+
+  .hero__truck {
+    bottom: -411px;
+    right: -156px;
+    width: 1130px;
+    height: 799px;
+    background-image: url("../../../assets/images/desktop/container-hero.png");
   }
 }

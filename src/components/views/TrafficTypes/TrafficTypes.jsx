@@ -5,13 +5,15 @@ const TrafficTypes = () => {
   return (
     <section className={styles.traffic}>
       <div className={styles.traffic__container}>
-        <h2 className={styles.traffic__title}>
-          Полный цикл без участия владельца груза
-        </h2>
-        <p className={styles.traffic__descr}>
-          Сокращаем время в пути, благодаря оптимальной стыковке
-          железнодорожного и морского расписания
-        </p>
+        <div className={styles.traffic__info}>
+          <h2 className={styles.traffic__title}>
+            Полный цикл без участия владельца груза
+          </h2>
+          <p className={styles.traffic__descr}>
+            Сокращаем время в пути, благодаря оптимальной стыковке
+            железнодорожного и морского расписания
+          </p>
+        </div>
         <ul className={styles.traffic__list}>
           <li className={styles.traffic__item}>
             <p className={styles.traffic__subheading}>
