@@ -1,10 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.60de204b.css",
-    "main.js": "/static/js/main.00201e25.js",
+    "main.css": "/static/css/main.6e694020.css",
+    "main.js": "/static/js/main.04863418.js",
     "static/media/container-hero.png": "/static/media/container-hero.d6bd3937d425f7771c2c.png",
+    "static/media/container-front.png": "/static/media/container-front.5773e20c5324bd29e6f9.png",
+    "static/media/ship-big.png": "/static/media/ship-big.0b9f5c6c5efd79f2df57.png",
     "static/media/truck.png": "/static/media/truck.b0daf653c98b4c925661.png",
+    "static/media/map-far.png": "/static/media/map-far.fde9482bffdace788e48.png",
+    "static/media/map-middle.png": "/static/media/map-middle.cd10c479305c90ad0316.png",
     "static/media/shipping.png": "/static/media/shipping.709f5d19307e75cf62f2.png",
+    "static/media/map-close.png": "/static/media/map-close.d86952edea14d180c3e0.png",
     "static/media/RFDewiExtended-Bold.ttf": "/static/media/RFDewiExtended-Bold.b5f873b45da3ca49fb9a.ttf",
     "static/media/auto.png": "/static/media/auto.1a5fec344eec0f1fd272.png",
     "static/media/rail.png": "/static/media/rail.d4201cdb29bddb8e7e5c.png",
@@ -20,15 +25,16 @@
     "static/media/image-1.png": "/static/media/image-1.5c42c9d8bc8fa4498819.png",
     "static/media/image-4.png": "/static/media/image-4.7f2e161c0c53aa4e78f5.png",
     "static/media/letter-left.png": "/static/media/letter-left.7ed895959d3bba60cb64.png",
+    "static/media/letter-right.png": "/static/media/letter-right.de2f29be005b84245228.png",
     "static/media/logo-mobile-header.svg": "/static/media/logo-mobile-header.08c5ebfc2a7c4d56970e6e54867676c8.svg",
     "index.html": "/index.html",
     "static/media/close-btn.svg": "/static/media/close-btn.2c17a333fb5dee4eca8c2c0ebe1ed248.svg",
     "static/media/open-stick.svg": "/static/media/open-stick.f68461a990f358d19c94d0c34f712d2f.svg",
-    "main.60de204b.css.map": "/static/css/main.60de204b.css.map",
-    "main.00201e25.js.map": "/static/js/main.00201e25.js.map"
+    "main.6e694020.css.map": "/static/css/main.6e694020.css.map",
+    "main.04863418.js.map": "/static/js/main.04863418.js.map"
   },
   "entrypoints": [
-    "static/css/main.60de204b.css",
-    "static/js/main.00201e25.js"
+    "static/css/main.6e694020.css",
+    "static/js/main.04863418.js"
   ]
 }
