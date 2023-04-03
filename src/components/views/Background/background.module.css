@@ -1,0 +1,22 @@
+.background {
+  display: none;
+}
+
+@media screen and (min-width: 1180px) {
+  .background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 150px 167px;
+    position: relative;
+    z-index: 15;
+    background-color: #18bbfe;
+  }
+
+  .background__image {
+    display: inline-block;
+    width: 1105px;
+    height: 490px;
+  }
+}

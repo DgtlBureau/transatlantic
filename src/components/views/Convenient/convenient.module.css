@@ -1,12 +1,13 @@
 .convenient {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   background-color: #222222;
   padding: 64px 20px;
+  height: 100vh;
 }
 
 .convenient__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   margin: 0 auto;
   width: 280px;
 }
@@ -47,7 +48,6 @@
 }
 
 .convenient__descr--second {
-  margin-bottom: 34px;
   width: 280px;
 }
 
@@ -60,6 +60,7 @@
 .convenient__wrapper {
   position: relative;
   height: 336px;
+  margin-bottom: 34px;
 }
 
 .convenient__image {
@@ -94,7 +95,6 @@
   }
 
   .convenient__descr--second {
-    margin-bottom: 40px;
     width: 345px;
   }
 
@@ -103,6 +103,7 @@
   }
 
   .convenient__wrapper {
+    margin-bottom: 40px;
     width: 100%;
   }
 
@@ -110,5 +111,57 @@
     background-image: url("../../../assets/images/tablet/truck.png");
     width: 1494px;
     right: -196px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .convenient {
+    padding: 112px 100px 80px;
+  }
+
+  .convenient__container {
+    align-items: center;
+  }
+
+  .convenient__wrapper {
+    height: 304px;
+    margin-bottom: 73px;
+  }
+
+  .convenient__title {
+    margin-bottom: 0;
+  }
+
+  .convenient__info--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .convenient__info--bottom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wrapper__descr {
+    margin-bottom: 67px;
+  }
+
+  .convenient__descr--first {
+    margin-bottom: 24px;
+  }
+
+  .convenient__descr--third {
+    width: 255px;
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+
+  .convenient__image {
+    background-image: url("../../../assets/images/desktop/truck.png");
+    width: 1440px;
+    right: 0;
+    left: -31px;
   }
 }

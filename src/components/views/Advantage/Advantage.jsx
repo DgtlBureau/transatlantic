@@ -5,8 +5,10 @@ const Advantage = () => {
   return (
     <section className={styles.advantage}>
       <div className={styles.advantage__container}>
-        <h2 className={styles.advantage__title}>250 000 тонн за год</h2>
-        <p className={styles.advantage__subtitle}>Импорт и экспорт</p>
+        <div className={styles.advantage__info}>
+          <h2 className={styles.advantage__title}>250 000 тонн за год</h2>
+          <p className={styles.advantage__subtitle}>Импорт и экспорт</p>
+        </div>
         <div className={styles.figures}>
           <div
             className={cn(

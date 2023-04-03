@@ -5,11 +5,13 @@ const Team = () => {
   return (
     <section className={styles.team}>
       <div className={styles.team__container}>
-        <h2 className={styles.team__title}>Наша команда</h2>
-        <p className={styles.team__descr}>
-          Сплоченный коллектив и четкие цели помогли нам вырасти во время
-          пандемии Covid-19
-        </p>
+        <div className={styles.team__top}>
+          <h2 className={styles.team__title}>Наша команда</h2>
+          <p className={styles.team__descr}>
+            Сплоченный коллектив и четкие цели помогли нам вырасти во время
+            пандемии Covid-19
+          </p>
+        </div>
         <div className={styles.team__wrapper}>
           <ul className={styles.team__list}>
             {Teams?.map(({ id, name, business, avatar }) => {
