@@ -152,3 +152,6 @@
     background-image: url("../../../assets/images/tablet/container-hero.png");
   }
 }
+
+@media screen and (min-width: 1440px) {
+}
