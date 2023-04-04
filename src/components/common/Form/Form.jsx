@@ -41,12 +41,7 @@ const Form = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <div className={styles.form__button}>
-          <Button
-            className={styles.form__button}
-            text="отправить заявку"
-            color="blue"
-            type="submit"
-          />
+          <Button text="отправить заявку" color="blue" type="submit" />
         </div>
       </form>
       <p className={styles.form__policy}>

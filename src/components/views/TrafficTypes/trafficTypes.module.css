@@ -1,12 +1,12 @@
 .traffic {
   background-color: #edf6ff;
+  padding: 64px 20px;
 }
 
 .traffic__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 64px 20px;
+  align-items: flex-start;
 }
 
 .traffic__title {
@@ -131,5 +131,79 @@
     background-image: url("../../../assets/images/tablet/transportation/shipping.png");
     height: 205px;
     width: 460px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .traffic {
+    padding: 112px 96px 121px 54px;
+  }
+
+  /* .traffic__container {
+    max-width: 1300px;
+  } */
+
+  .traffic__info {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .traffic__title {
+    width: 780px;
+    margin-bottom: 96px;
+  }
+
+  .traffic__descr {
+    margin-bottom: 0;
+    width: 362px;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+
+  .traffic__list {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .traffic__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .traffic__heading {
+    width: 370px;
+  }
+
+  .traffic__subheading {
+    width: 233px;
+    margin-bottom: 24px;
+  }
+
+  .traffic__item:not(:last-child) h2 {
+    margin-bottom: 70px;
+  }
+
+  .traffic__item:last-child h2 {
+    margin-bottom: 40px;
+  }
+
+  .traffic__img--auto {
+    background-image: url("../../../assets/images/desktop/transportation/auto.png");
+    height: 147px;
+    width: 306px;
+  }
+
+  .traffic__img--rail {
+    background-image: url("../../../assets/images/desktop/transportation/rail.png");
+    height: 146px;
+    width: 357px;
+  }
+
+  .traffic__img--shipping {
+    background-image: url("../../../assets/images/desktop/transportation/shipping.png");
+    height: 138px;
+    width: 413px;
   }
 }

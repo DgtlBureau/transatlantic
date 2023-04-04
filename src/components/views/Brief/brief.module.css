@@ -8,7 +8,6 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 280px;
-  margin: 0 auto;
 }
 
 .brief__title {
@@ -30,7 +29,7 @@
   line-height: 1.2;
   color: #ffffff;
   display: inline-block;
-  width: 266px;
+  width: 256px;
   margin-bottom: 24px;
 }
 
@@ -46,8 +45,30 @@
   }
 
   .brief__descr {
-    font-size: 18px;
     margin-bottom: 32px;
-    width: 297px;
+    width: 254px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .brief {
+    padding: 56px 58px 60px 58px;
+  }
+
+  .brief__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 47px;
+  }
+
+  .brief__title {
+    margin-bottom: 0;
+    margin-right: 320px;
+  }
+
+  .brief__descr {
+    margin-bottom: 0;
+    margin-top: 15px;
   }
 }

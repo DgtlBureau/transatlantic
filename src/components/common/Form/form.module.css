@@ -19,6 +19,7 @@
   line-height: 1.2;
   width: 100%;
   margin-bottom: 20px;
+  color: #ffffff;
 }
 
 .form__input::placeholder {
@@ -58,5 +59,38 @@
     align-self: flex-end;
     margin-top: -53px;
     width: 165px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .form {
+    max-width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
+
+  .form__input {
+    margin-bottom: 0;
+  }
+
+  .form__input {
+    margin-right: 20px;
+  }
+
+  .form__input:first-child {
+    width: 204px;
+  }
+
+  .form__input:not(:first-child) {
+    width: 316px;
+  }
+
+  .form__policy {
+    align-self: center;
+    margin-right: -205px;
+    margin-top: 24px;
+    font-size: 12px;
+    width: 213px;
   }
 }

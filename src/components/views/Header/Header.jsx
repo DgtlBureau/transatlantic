@@ -6,18 +6,16 @@ import logo from "../../../assets/images/mobile/svg/logo-mobile-header.svg";
 import stick from "../../../assets/images/mobile/svg/open-stick.svg";
 import cn from "classnames";
 import styles from "./header.module.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <header className={styles.header}>
-      <HandySvg
-        src={logo}
-        className={styles.header__logo}
-        width="141"
-        height="32"
-      />
+      <Link to="/" className={styles.header__logo}>
+        <HandySvg src={logo} width="141" height="32" />
+      </Link>
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <div className={styles.openBtn__wrapper}>
         <IconButton
@@ -49,6 +47,10 @@ const Header = () => {
             })}
           />
         </IconButton>
+      </div>
+      <div className={styles.header__tel}>
+        <a href="tel:+73432879414">+7 (343) 287-94-14</a>
+        <a href="tel:+74954454592">+7 (495) 445-45-92</a>
       </div>
     </header>
   );

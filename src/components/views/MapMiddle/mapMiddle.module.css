@@ -1,0 +1,54 @@
+.mapMiddle {
+  display: none;
+}
+
+@media screen and (min-width: 1180px) {
+  .mapMiddle {
+    display: flex;
+    background-color: #edf6ff;
+    position: relative;
+    height: 100vh;
+    padding: 112px 44px 0 58px;
+  }
+
+  .mapMiddle__container {
+    width: 100%;
+  }
+
+  .mapMiddle__info {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .mapMiddle__title {
+    font-family: "Dewi";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1;
+    color: #121c46;
+    z-index: 2;
+  }
+
+  .mapMiddle__descr {
+    font-family: "Inter Tight";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #121c46;
+    z-index: 2;
+    display: inline-block;
+    width: 269px;
+    margin-top: 15px;
+  }
+
+  .mapMiddle__img {
+    width: 98%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
