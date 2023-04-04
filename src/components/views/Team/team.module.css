@@ -6,8 +6,7 @@
 .team__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin: 0 auto;
+  justify-content: flex-start;
   width: 280px;
   align-items: flex-start;
 }
@@ -118,6 +117,11 @@
 @media screen and (min-width: 1180px) {
   .team {
     padding: 112px 163px 56px 59px;
+  }
+
+  .team__container {
+    max-width: 1218px;
+    width: initial;
   }
 
   .team__top {

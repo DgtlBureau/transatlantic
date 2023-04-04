@@ -78,7 +78,7 @@ const Cases = () => {
             Посмотреть все
           </Link>
         </div>
-        <img src={ship} alt="ship" />
+        <img src={ship} alt="ship" className={styles.cases__imageBg} />
       </div>
     </section>
   );
