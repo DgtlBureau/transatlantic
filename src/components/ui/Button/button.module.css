@@ -6,7 +6,7 @@
 .button__blue {
   font-family: "Inter Tight";
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.2;
   color: #ffffff;
   padding: 10px 20px 10px;
@@ -29,7 +29,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1180px) {
   .button__blue {
     width: 204px;
     padding: 10px 30px;

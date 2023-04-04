@@ -4,18 +4,16 @@ import NavBar from "components/common/NavBar";
 import logo from "../../../assets/images/mobile/svg/logo-mobile-header.svg";
 import styles from "./footer.module.css";
 import ButtonLink from "components/ui/ButtonLink/ButtonLink";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__container}>
         <h2 className={styles.footer__title}>Контакты</h2>
-        <HandySvg
-          src={logo}
-          className={styles.footer__logo}
-          width="115"
-          height="27"
-        />
+        <Link to="/" className={styles.footer__logo}>
+          <HandySvg src={logo} width="115" height="27" />
+        </Link>
 
         <div className={styles.address}>
           <Contacts

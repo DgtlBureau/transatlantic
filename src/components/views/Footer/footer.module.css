@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #222222;
   padding: 56px 20px;
 }
@@ -177,18 +177,19 @@
   }
 
   .footer__button {
-    grid-column: 6;
+    grid-column: 5;
     grid-row: 3;
   }
 
   .privasy {
     margin-top: 0;
-    grid-column: 6/8;
+    grid-column: 5/7;
     grid-row: 2;
     align-items: flex-end;
   }
 
-  .privasy__year {
+  .privasy__company {
+    width: 267px;
   }
 
   .footer__logo {

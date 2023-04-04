@@ -45,6 +45,7 @@
 
   .mapMiddle__img {
     width: 98%;
+    height: 100%;
     display: block;
     position: absolute;
     bottom: 0;

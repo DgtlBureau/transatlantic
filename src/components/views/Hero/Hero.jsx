@@ -5,7 +5,15 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.hero__container}>
-        <h1 className={styles.hero__title}>Контейнерные перевозки</h1>
+        <div className={styles.hero__info}>
+          <h1 className={styles.hero__title}>Контейнерные перевозки</h1>
+          <p className={styles.hero__descr}>
+            Быстрый и экономичный способ доставить груз в любую точку мира.
+            Стандартизированные контейнеры легко грузятся на любое транспортное
+            средство, сохраняют герметичность и имеют большое количество
+            разновидностей под разные задачи.
+          </p>
+        </div>
         <div className={styles.hero__background}>
           <div className={styles.hero__wrapper}>
             <div className={styles.hero__truck}></div>
@@ -23,12 +31,6 @@ const Hero = () => {
             ></div>
           </div>
         </div>
-        <p className={styles.hero__descr}>
-          Быстрый и экономичный способ доставить груз в любую точку мира.
-          Стандартизированные контейнеры легко грузятся на любое транспортное
-          средство, сохраняют герметичность и имеют большое количество
-          разновидностей под разные задачи.
-        </p>
       </div>
     </section>
   );
