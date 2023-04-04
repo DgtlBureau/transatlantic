@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  background: linear-gradient(180deg, #222222 0%, #1a1a1a 100%);
   background-color: #222222;
   padding: 64px 20px;
 }
