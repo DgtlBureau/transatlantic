@@ -1,4 +1,4 @@
-import Form from "components/common/Form/Form";
+import BriefForm from "components/common/BriefForm /BriefForm ";
 import styles from "./brief.module.css";
 
 const Brief = () => {
@@ -11,7 +11,7 @@ const Brief = () => {
             Оставьте завяку, мы свяжемся с вами и обсудим детали отправки груза
           </p>
         </div>
-        <Form />
+        <BriefForm />
       </div>
     </section>
   );
