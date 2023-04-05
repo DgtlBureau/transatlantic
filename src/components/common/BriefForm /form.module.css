@@ -40,11 +40,11 @@
 }
 
 .input__errors {
-  border: 3px solid red;
+  border: 3px solid #ff2164;
 }
 
 .input__errors::placeholder {
-  color: red;
+  color: #ff2164;
 }
 
 @media screen and (min-width: 768px) {
