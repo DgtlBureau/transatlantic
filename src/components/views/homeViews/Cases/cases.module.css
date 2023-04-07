@@ -1,0 +1,219 @@
+.cases {
+  padding: 64px 20px 27px 20px;
+  background-color: #18bbfe;
+}
+
+.cases__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 280px;
+}
+
+.cases__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cases__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  margin-bottom: 32px;
+  margin-right: auto;
+}
+
+.cases__list {
+  margin-bottom: 16px;
+}
+
+.cases__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  background-color: #00a3e6;
+  border-radius: 16px;
+  width: 280px;
+  height: 172px;
+  padding: 0 0 19px 23px;
+}
+
+.cases__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.cases__heading {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  width: 227px;
+  display: inline-block;
+}
+
+.cases__info {
+  display: flex;
+  position: relative;
+  z-index: 10;
+}
+
+.cases__arrow {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cases__image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  border-radius: 16px;
+  top: 0;
+  right: 0;
+}
+
+.cases__image--shipSecond {
+  background-image: url("../../../../assets/images/mobile/cases/ship-2.png");
+  width: 210px;
+  height: 172px;
+}
+.cases__image--crane {
+  background-image: url("../../../../assets/images/mobile/cases/crane.png");
+  width: 232px;
+  height: 172px;
+}
+.cases__image--lighthouse {
+  background-image: url("../../../../assets/images/mobile/cases/lighthouse.png");
+  width: 157px;
+  height: 162px;
+  top: 11px;
+  right: -1px;
+}
+.cases__image--shipFirst {
+  background-image: url("../../../../assets/images/mobile/cases/ship-1.png");
+  width: 182px;
+  height: 172px;
+}
+
+.cases__button {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.cases__imageBg {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cases__title {
+    font-size: 56px;
+  }
+
+  .cases__container {
+    width: 768px;
+  }
+
+  .cases__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(20px * -1);
+    margin-left: calc(20px * -1);
+    margin-bottom: calc(20px * -1);
+    width: 768px;
+  }
+
+  .cases__button {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  .cases__item {
+    width: 354px;
+    height: 248px;
+    padding: 0 0 17px 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .cases__heading {
+    font-size: 24px;
+  }
+
+  .cases__image--shipSecond {
+    background-image: url("../../../../assets/images/tablet/cases/ship-2.png");
+    width: 168px;
+    height: 248px;
+  }
+  .cases__image--crane {
+    background-image: url("../../../../assets/images/tablet/cases/crane.png");
+    width: 260px;
+    height: 248px;
+  }
+  .cases__image--lighthouse {
+    background-image: url("../../../../assets/images/tablet/cases/lighthouse.png");
+    width: 155px;
+    height: 248px;
+    top: 0;
+    right: 0;
+  }
+  .cases__image--shipFirst {
+    background-image: url("../../../../assets/images/tablet/cases/ship-1.png");
+    width: 259px;
+    height: 248px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .cases {
+    padding: 110px 18px 58px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cases__container {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .cases__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  .cases__title {
+    margin-bottom: 56px;
+  }
+
+  .cases__list {
+    width: 900px;
+    margin-bottom: 22px;
+    align-items: flex-start;
+  }
+
+  .cases__item {
+    width: 428px;
+  }
+
+  .cases__button {
+    margin: 0;
+  }
+
+  .cases__imageBg {
+    display: block;
+  }
+}

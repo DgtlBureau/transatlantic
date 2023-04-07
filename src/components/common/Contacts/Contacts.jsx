@@ -1,14 +1,20 @@
+import { useLocation } from "react-router";
 import PropTypes from "prop-types";
 import cn from "classnames";
 import styles from "./contacts.module.css";
 
 const Contacts = ({ address, tel, mail, className, type }) => {
+  const { pathname } = useLocation();
+  const variant =
+    `${pathname}` === "/contacts" || `${pathname}` === "/containers";
+
   return (
     <div className={cn(styles.address, styles[`${className}`])}>
       <address
         className={cn(
           styles.contacts__address,
-          styles[`contacts__address--${type}`]
+          styles[`contacts__address--${type}`],
+          { [styles["contacts__address--dark"]]: variant }
         )}
       >
         {address}
@@ -29,7 +35,8 @@ const Contacts = ({ address, tel, mail, className, type }) => {
             href={`tel:${tel}`}
             className={cn(
               styles.contacts__tel,
-              styles[`contacts__tel--${type}`]
+              styles[`contacts__tel--${type}`],
+              { [styles["contacts__tel--dark"]]: variant }
             )}
           >
             {tel}
@@ -45,7 +52,8 @@ const Contacts = ({ address, tel, mail, className, type }) => {
             href={`mailto:${mail}`}
             className={cn(
               styles.contacts__mail,
-              styles[`contacts__mail--${type}`]
+              styles[`contacts__mail--${type}`],
+              { [styles["contacts__mail--blue"]]: variant }
             )}
           >
             {mail}

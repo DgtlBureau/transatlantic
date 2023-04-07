@@ -1,3 +1,5 @@
+/* CONTACTS DARK */
+
 .address {
   display: flex;
   flex-direction: column;
@@ -59,4 +61,16 @@
     margin-right: 34px;
     font-size: 24px;
   }
+}
+
+/* CONTACTS BLUE */
+
+.contacts__address--dark,
+.contacts__tel--dark {
+  color: #121c46;
+}
+
+.contacts__mail--blue {
+  text-decoration-line: underline;
+  color: #18bbfe;
 }

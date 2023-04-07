@@ -1,3 +1,5 @@
+/* FORM DARK */
+
 .form__wrapper {
   display: flex;
   flex-direction: column;
@@ -44,11 +46,13 @@
   margin-top: 20px;
 }
 
-.input__errors {
+.input__errors,
+.input__errors.form__input--light {
   border: 3px solid #ff2164;
   margin-bottom: 10px;
 }
 
+.input__errors.form__input--light::placeholder,
 .input__errors::placeholder,
 .errors__text {
   color: #ff2164;
@@ -115,4 +119,15 @@
     font-size: 12px;
     width: 213px;
   }
+}
+
+/* FORM LIGHT */
+
+.form__input--light {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.form__input--light::placeholder {
+  color: rgba(0, 0, 0, 0.3);
 }

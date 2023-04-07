@@ -1,0 +1,57 @@
+.hero {
+  background-color: #ffffff;
+}
+
+.hero__container {
+  padding: 48px 20px 0 20px;
+}
+
+.hero__top {
+  margin-bottom: 48px;
+}
+
+.hero__title,
+.hero__heading {
+  font-family: "Dewi";
+  font-weight: 700;
+  color: #121c46;
+
+  letter-spacing: -0.04em;
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 1;
+}
+
+.hero__heading {
+  font-size: 22px;
+  line-height: 1.18;
+  margin-bottom: 24px;
+}
+
+.hero__button__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 172px;
+}
+
+.hero__button {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration-line: underline;
+  color: #18bbfe;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+.hero__button:first-child {
+  margin-right: 32px;
+}
+
+.hero__button:last-child {
+  margin-top: 16px;
+}
