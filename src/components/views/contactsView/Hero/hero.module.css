@@ -3,11 +3,16 @@
 }
 
 .hero__container {
-  padding: 48px 20px 0 20px;
+  padding: 114px 20px 48px 20px;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .hero__top {
-  margin-bottom: 48px;
 }
 
 .hero__title,
@@ -20,6 +25,7 @@
 }
 
 .hero__title {
+  margin-bottom: 48px;
   font-size: 36px;
   line-height: 1;
 }
@@ -34,6 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 172px;
+  margin-bottom: 48px;
 }
 
 .hero__button {
@@ -54,4 +61,29 @@
 
 .hero__button:last-child {
   margin-top: 16px;
+}
+
+.hero__bottom div:first-child {
+  margin-bottom: 46px;
+}
+
+@media screen and (min-width: 1180px) {
+  .hero__title {
+    font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .hero__container {
+    padding: 134px 63px 48px 63px;
+  }
+
+  .hero__wrapper {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+
+  .hero__top {
+    margin-left: 130px;
+  }
 }

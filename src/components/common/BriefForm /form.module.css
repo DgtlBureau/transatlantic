@@ -72,12 +72,16 @@
     align-items: baseline;
   }
 
-  .form input:not(:nth-child(2n)) {
+  .input__wrapper:not(:nth-child(2n)) {
     margin-right: 20px;
   }
 
-  .form__input {
+  .input__wrapper {
     width: 353px;
+  }
+
+  .form__input {
+    width: 100%;
   }
 
   .form__policy {
@@ -126,6 +130,7 @@
 .form__input--light {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .form__input--light::placeholder {

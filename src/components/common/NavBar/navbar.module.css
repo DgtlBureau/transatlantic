@@ -57,6 +57,7 @@
 @media screen and (min-width: 768px) {
   .nav__list--footer {
     flex-direction: row;
+    margin-left: 33px;
   }
 
   .nav__item--footer:not(:last-child) {

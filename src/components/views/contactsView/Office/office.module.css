@@ -46,6 +46,7 @@
 
 @media screen and (min-width: 768px) {
   .office__img {
+    width: 729px;
   }
   .office__img--msk {
     background-image: url("../../../../assets/images/contacts/moscow-laptop.png");
@@ -58,6 +59,7 @@
 
 @media screen and (min-width: 1180px) {
   .office__img {
+    width: 760px;
   }
   .office__img--msk {
     background-image: url("../../../../assets/images/contacts/moscow-desktop.png");

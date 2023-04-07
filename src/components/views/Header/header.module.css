@@ -7,14 +7,14 @@
   position: relative;
   padding: 20px;
   background-color: #edf6ff;
+  position: fixed;
+  z-index: 20;
+  width: 100%;
 }
 
 .header__logo {
   cursor: pointer;
   fill: #18bbfe;
-}
-
-.header__logo:hover {
 }
 
 .openBtn__wrapper {
@@ -64,9 +64,7 @@
     padding: 22px 58px 37px 58px;
     justify-content: flex-start;
     align-items: flex-end;
-    position: fixed;
-    z-index: 20;
-    width: 100%;
+
     background-color: transparent;
   }
 
@@ -103,5 +101,5 @@
 /* HEADER TRANSPARENT */
 
 .header--transparent {
-  background-color: transparent;
+  background-color: #ffffff;
 }

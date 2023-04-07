@@ -16,13 +16,17 @@ const Footer = () => {
     <footer
       className={cn(styles.footer, { [styles["footer--blue"]]: variant })}
     >
-      <div className={styles.footer__container}>
+      <div
+        className={cn(styles.footer__container, {
+          [styles["footer__container--blue"]]: variant,
+        })}
+      >
         <h2
           className={cn(styles.footer__title, {
             [styles["footer__title--dark"]]: variant,
           })}
         >
-          Контакты
+          {!variant ? "Контакты" : null}
         </h2>
         <Link
           to="/"
@@ -33,7 +37,9 @@ const Footer = () => {
           <HandySvg src={logo} width="115" height="27" />
         </Link>
 
-        <div className={styles.address}>
+        <div
+          className={cn(styles.address, { [styles["address--blue"]]: variant })}
+        >
           <Contacts
             address="Екатеринбург"
             tel="+7 (343) 287-94-14"
@@ -49,7 +55,11 @@ const Footer = () => {
         </div>
 
         {variant ? (
-          <div className={styles.footer__button}>
+          <div
+            className={cn(styles.footer__button, {
+              [styles["footer__button--blue"]]: variant,
+            })}
+          >
             <ButtonLink to={"#"} text="Войти в личный кабинет" color="blue" />
           </div>
         ) : (
@@ -58,11 +68,17 @@ const Footer = () => {
           </div>
         )}
 
-        <div className={styles.footer__nav}>
+        <div
+          className={cn(styles.footer__nav, {
+            [styles["footer__nav--blue"]]: variant,
+          })}
+        >
           <NavBar type={"footer"} />
         </div>
 
-        <div className={styles.privasy}>
+        <div
+          className={cn(styles.privasy, { [styles["privasy--blue"]]: variant })}
+        >
           <div className={styles["privasy__wrapper--left"]}>
             <span
               className={cn(styles.privasy__policy, {
