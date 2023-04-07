@@ -1,10 +1,15 @@
 import { useFormik } from "formik";
+import { useLocation } from "react-router";
 import { validate } from "./utils/validate";
 import Button from "components/ui/Button/Button";
 import cn from "classnames";
 import styles from "./form.module.css";
 
 const BriefForm = () => {
+  const { pathname } = useLocation();
+  const variant =
+    `${pathname}` === "/contacts" || `${pathname}` === "/containers";
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -34,6 +39,7 @@ const BriefForm = () => {
               className={cn(styles.form__input, {
                 [styles["input__errors"]]:
                   formik.errors.name && formik.touched.name,
+                [styles["form__input--light"]]: variant,
               })}
               onChange={formik.handleChange}
             />
@@ -51,6 +57,7 @@ const BriefForm = () => {
               className={cn(styles.form__input, {
                 [styles["input__errors"]]:
                   formik.errors.tel && formik.touched.tel,
+                [styles["form__input--light"]]: variant,
               })}
               onChange={formik.handleChange}
             />
@@ -69,6 +76,7 @@ const BriefForm = () => {
               className={cn(styles.form__input, {
                 [styles["input__errors"]]:
                   formik.errors.email && formik.touched.email,
+                [styles["form__input--light"]]: variant,
               })}
               onChange={formik.handleChange}
             />

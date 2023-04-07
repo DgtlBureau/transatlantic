@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { HandySvg } from "handy-svg";
 import Menu from "components/common/Menu/Menu";
 import IconButton from "components/ui/IconButton";
@@ -6,13 +7,20 @@ import logo from "../../../assets/images/mobile/svg/logo-mobile-header.svg";
 import stick from "../../../assets/images/mobile/svg/open-stick.svg";
 import cn from "classnames";
 import styles from "./header.module.css";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
+  const { pathname } = useLocation();
+  const variant =
+    `${pathname}` === "/contacts" || `${pathname}` === "/containers";
+
   return (
-    <header className={styles.header}>
+    <header
+      className={cn(styles.header, {
+        [styles["header--transparent"]]: variant,
+      })}
+    >
       <Link to="/" className={styles.header__logo}>
         <HandySvg src={logo} width="141" height="32" />
       </Link>

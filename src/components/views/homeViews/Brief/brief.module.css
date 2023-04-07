@@ -1,0 +1,87 @@
+/* BRIEF DARK */
+
+.brief {
+  padding: 40px 20px;
+  background-color: #222222;
+}
+
+.brief__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 280px;
+}
+
+.brief__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.9;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  display: inline-block;
+  width: 257px;
+  margin-bottom: 24px;
+}
+
+.brief__descr {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;
+  display: inline-block;
+  width: 256px;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .brief__container {
+    width: 100%;
+  }
+
+  .brief__title {
+    font-size: 56px;
+    width: 575px;
+    margin-bottom: 40px;
+  }
+
+  .brief__descr {
+    margin-bottom: 32px;
+    width: 254px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .brief {
+    padding: 56px 58px 60px 58px;
+  }
+
+  .brief__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 47px;
+  }
+
+  .brief__title {
+    margin-bottom: 0;
+    margin-right: 320px;
+  }
+
+  .brief__descr {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+}
+
+/* BRIEF BLUE */
+
+.brief--blue {
+  background-color: #edf6ff;
+}
+
+.brief__title--dark,
+.brief__descr--dark {
+  color: #121c46;
+}

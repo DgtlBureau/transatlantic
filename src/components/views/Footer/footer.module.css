@@ -1,3 +1,5 @@
+/* FOOTER DARK */
+
 .footer {
   display: flex;
   justify-content: flex-start;
@@ -195,4 +197,26 @@
   .footer__logo {
     grid-row: 3;
   }
+}
+
+/* FOOTER BLUE */
+
+.footer--blue {
+  background-color: #edf6ff;
+}
+
+.footer__logo--blue svg {
+  fill: #18bbfe;
+}
+
+.privasy__policy--blue {
+  color: #18bbfe;
+}
+
+.privasy__company--dark,
+.privasy__year--dark {
+  color: #121c46;
+}
+
+.footer__title--dark {
 }

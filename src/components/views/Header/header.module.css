@@ -1,3 +1,5 @@
+/* HEADER BLUE */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -96,4 +98,10 @@
     color: #18bbfe;
     width: 111px;
   }
+}
+
+/* HEADER TRANSPARENT */
+
+.header--transparent {
+  background-color: transparent;
 }
