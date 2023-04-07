@@ -4,6 +4,10 @@ import third from "../src/assets/images/teams/image-3.png";
 import fourth from "../src/assets/images/teams/image-4.png";
 import fifth from "../src/assets/images/teams/image-5.png";
 import sixth from "../src/assets/images/teams/image-6.png";
+import shipOne from "../src/assets/images/cases-page/ship-1.png";
+import shipSecond from "../src/assets/images/cases-page/ship-2.png";
+import crane from "../src/assets/images/cases-page/crane.png";
+import lighthouse from "../src/assets/images/cases-page/lighthouse.png";
 
 export const Teams = [
   {
@@ -65,5 +69,53 @@ export const Teams = [
     avatar: fourth,
     name: "Дмитрий Коледа",
     business: "Руководитель офиса в Москве",
+  },
+];
+
+export const casesPage = [
+  {
+    id: 0,
+    path: "1",
+    img: crane,
+    heading: "Мы везли груз из Австралии в России",
+    alt: "crane",
+  },
+  { id: 1, path: "2", img: shipOne, heading: "Металл 2022", alt: "ship" },
+  {
+    id: 2,
+    path: "3",
+    img: shipSecond,
+    heading: "Evergreen в Суэцком канале",
+    alt: "ship",
+  },
+  {
+    id: 3,
+    path: "3",
+    img: shipSecond,
+    heading: "Evergreen в Суэцком канале",
+    alt: "ship",
+  },
+  {
+    id: 4,
+    path: "4",
+    img: lighthouse,
+    heading: "Самая быстрая грузоперевозка в 2022 году",
+    alt: "lighthouse",
+  },
+  { id: 5, path: "2", img: shipOne, heading: "Металл 2022", alt: "ship" },
+  {
+    id: 6,
+    path: "4",
+    img: lighthouse,
+    heading: "Самая быстрая грузоперевозка в 2022 году",
+    alt: "lighthouse",
+  },
+  { id: 7, path: "2", img: shipOne, heading: "Металл 2022", alt: "ship" },
+  {
+    id: 8,
+    path: "1",
+    img: crane,
+    heading: "Мы везли груз из Австралии в России",
+    alt: "crane",
   },
 ];
