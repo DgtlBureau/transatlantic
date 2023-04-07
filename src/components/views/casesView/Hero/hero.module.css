@@ -1,0 +1,78 @@
+.hero {
+  background-color: #ffffff;
+}
+
+.hero__container {
+  padding: 86px 20px 48px 20px;
+}
+
+.hero__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  color: #121c46;
+}
+
+.hero__wrapper {
+}
+
+.hero__list {
+}
+
+.hero__item {
+  padding: 0 1px 9px 23px;
+  width: 280px;
+  height: 172px;
+  background: #edf6ff;
+  border-radius: 16px;
+  position: relative;
+}
+
+.hero__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.hero__link {
+}
+
+.hero__info {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2%;
+  letter-spacing: -0.04em;
+  color: #121c46;
+  width: 182px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero__heading {
+}
+
+.hero__arrow {
+}
+
+.hero__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  height: 172px;
+  border-radius: 16px;
+}
+
+.hero__btn {
+  font-family: "RF Dewi Extended";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #18bbfe;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+}

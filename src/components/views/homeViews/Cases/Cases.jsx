@@ -29,7 +29,7 @@ const Cases = () => {
               <Link className={styles.cases__link}>
                 <div className={styles.cases__info}>
                   <h4 className={styles.cases__heading}>
-                    Мы везли груз из Австралии в России{" "}
+                    Мы везли груз из Австралии в России
                     <span className={styles.cases__arrow}>→</span>
                   </h4>
                 </div>
@@ -45,7 +45,7 @@ const Cases = () => {
               <Link className={styles.cases__link}>
                 <div className={styles.cases__info}>
                   <h4 className={styles.cases__heading}>
-                    Самая быстрая грузоперевозка в 2022 году{" "}
+                    Самая быстрая грузоперевозка в 2022 году
                     <span className={styles.cases__arrow}>→</span>
                   </h4>
                 </div>
@@ -61,7 +61,7 @@ const Cases = () => {
               <Link className={styles.cases__link}>
                 <div className={styles.cases__info}>
                   <h4 className={styles.cases__heading}>
-                    Evergreen в Суэцком канале{" "}
+                    Evergreen в Суэцком канале
                     <span className={styles.cases__arrow}>→</span>
                   </h4>
                 </div>
@@ -74,7 +74,7 @@ const Cases = () => {
               </Link>
             </li>
           </ul>
-          <Link className={styles.cases__button} to="#">
+          <Link className={styles.cases__button} to="/cases">
             Посмотреть все
           </Link>
         </div>
