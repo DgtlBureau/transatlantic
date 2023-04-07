@@ -124,6 +124,10 @@
     margin-bottom: 0;
   }
 
+  .privasy__company {
+    width: 267px;
+  }
+
   .privasy__wrapper--left {
     width: 243px;
   }
@@ -202,11 +206,37 @@
 /* FOOTER BLUE */
 
 .footer--blue {
+  padding: 20px 58px 56px 58px;
   background-color: #edf6ff;
+}
+
+.footer__container--blue {
+  grid-template-rows: 117px 30px;
 }
 
 .footer__logo--blue svg {
   fill: #18bbfe;
+}
+.address--blue {
+  grid-row: 1;
+}
+
+.footer__nav--blue {
+  grid-row: 2;
+}
+
+.privasy--blue {
+  grid-column: 5/7;
+  grid-row: 1;
+}
+
+.footer__logo {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.footer__button--blue {
+  grid-row: 2;
 }
 
 .privasy__policy--blue {
@@ -216,7 +246,4 @@
 .privasy__company--dark,
 .privasy__year--dark {
   color: #121c46;
-}
-
-.footer__title--dark {
 }
