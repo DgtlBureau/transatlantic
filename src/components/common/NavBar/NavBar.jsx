@@ -25,7 +25,7 @@ const NavBar = ({ type }) => {
         </li>
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
-            to="#"
+            to="/contacts"
             className={cn(styles.nav__link, styles[`nav__link--${type}`])}
           >
             Контакты
