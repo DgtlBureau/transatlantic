@@ -10,6 +10,12 @@
   align-items: center;
 }
 
+.input__wrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
 .form__input {
   padding: 10px 14px 11px;
   background-color: #323232;
@@ -18,7 +24,6 @@
   font-size: 14px;
   line-height: 1.2;
   width: 100%;
-  margin-bottom: 20px;
   color: #ffffff;
 }
 
@@ -41,10 +46,18 @@
 
 .input__errors {
   border: 3px solid #ff2164;
+  margin-bottom: 10px;
 }
 
-.input__errors::placeholder {
+.input__errors::placeholder,
+.errors__text {
   color: #ff2164;
+}
+
+.errors__text {
+  position: absolute;
+  bottom: -8px;
+  left: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -78,20 +91,21 @@
     align-items: baseline;
   }
 
-  .form__input {
+  .input__wrapper {
     margin-bottom: 0;
-  }
-
-  .form__input {
     margin-right: 20px;
   }
 
-  .form__input:first-child {
+  .input__wrapper:first-child {
     width: 204px;
   }
 
-  .form__input:not(:first-child) {
+  .input__wrapper:not(:first-child) {
     width: 316px;
+  }
+
+  .form__input {
+    width: 100%;
   }
 
   .form__policy {

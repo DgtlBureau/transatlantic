@@ -1,27 +1,10 @@
 import { useFormik } from "formik";
+import { validate } from "./utils/validate";
 import Button from "components/ui/Button/Button";
 import cn from "classnames";
 import styles from "./form.module.css";
 
 const BriefForm = () => {
-  const validate = (values) => {
-    const errors = {};
-    if (!values.email) {
-      errors.email = "заполните поле";
-    } else if (
-      !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-    ) {
-      errors.email = "некорректный email";
-    }
-    if (!values.name) {
-      errors.name = "введите имя";
-    }
-    if (!values.tel) {
-      errors.tel = "заполните поле";
-    }
-    return errors;
-  };
-
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -43,44 +26,57 @@ const BriefForm = () => {
           autoComplete="off"
           onSubmit={formik.handleSubmit}
         >
-          <input
-            placeholder="Ваше имя"
-            name="name"
-            value={formik.values.name}
-            className={cn(styles.form__input, {
-              [styles["input__errors"]]:
-                formik.errors.name && formik.touched.name,
-            })}
-            onChange={formik.handleChange}
-          />
+          <div className={styles.input__wrapper}>
+            <input
+              placeholder="Ваше имя"
+              name="name"
+              value={formik.values.name}
+              className={cn(styles.form__input, {
+                [styles["input__errors"]]:
+                  formik.errors.name && formik.touched.name,
+              })}
+              onChange={formik.handleChange}
+            />
 
-          <input
-            placeholder="Номер телефона*"
-            name="tel"
-            value={formik.values.tel}
-            className={cn(styles.form__input, {
-              [styles["input__errors"]]:
-                formik.errors.tel && formik.touched.tel,
-            })}
-            onChange={formik.handleChange}
-            required
-          />
+            {formik.touched.name && formik.errors.name ? (
+              <div className={styles.errors__text}>{formik.errors.name}</div>
+            ) : null}
+          </div>
 
-          <input
-            type="email"
-            placeholder="Ваш email"
-            name="email"
-            value={formik.values.email}
-            className={cn(styles.form__input, {
-              [styles["input__errors"]]:
-                formik.errors.email && formik.touched.email,
-            })}
-            onChange={formik.handleChange}
-          />
+          <div className={styles.input__wrapper}>
+            <input
+              placeholder="Номер телефона*"
+              name="tel"
+              value={formik.values.tel}
+              className={cn(styles.form__input, {
+                [styles["input__errors"]]:
+                  formik.errors.tel && formik.touched.tel,
+              })}
+              onChange={formik.handleChange}
+            />
 
-          {formik.touched.email && formik.errors.email ? (
-            <div style={{ color: "red" }}>{formik.errors.email}</div>
-          ) : null}
+            {formik.touched.tel && formik.errors.tel ? (
+              <div className={styles.errors__text}>{formik.errors.tel}</div>
+            ) : null}
+          </div>
+
+          <div className={styles.input__wrapper}>
+            <input
+              type="text"
+              placeholder="Ваш email"
+              name="email"
+              value={formik.values.email}
+              className={cn(styles.form__input, {
+                [styles["input__errors"]]:
+                  formik.errors.email && formik.touched.email,
+              })}
+              onChange={formik.handleChange}
+            />
+
+            {formik.touched.email && formik.errors.email ? (
+              <div className={styles.errors__text}>{formik.errors.email}</div>
+            ) : null}
+          </div>
 
           <div className={styles.form__button}>
             <Button text="отправить заявку" color="blue" type="submit" />
