@@ -118,4 +118,20 @@ export const casesPage = [
     heading: "Мы везли груз из Австралии в России",
     alt: "crane",
   },
+  { id: 9, path: "2", img: shipOne, heading: "Металл 2022", alt: "ship" },
+  {
+    id: 10,
+    path: "4",
+    img: lighthouse,
+    heading: "Самая быстрая грузоперевозка в 2022 году",
+    alt: "lighthouse",
+  },
+  { id: 11, path: "2", img: shipOne, heading: "Металл 2022", alt: "ship" },
+  {
+    id: 12,
+    path: "1",
+    img: crane,
+    heading: "Мы везли груз из Австралии в России",
+    alt: "crane",
+  },
 ];

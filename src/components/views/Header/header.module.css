@@ -98,8 +98,20 @@
   }
 }
 
-/* HEADER TRANSPARENT */
+/* HEADER TRANSPARENT OR CASES */
 
 .header--transparent {
   background-color: #ffffff;
+}
+
+@media screen and (min-width: 1180px) {
+  .header--transparent {
+    padding: 22px 20px 37px 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header--transparent {
+    padding: 22px 58px 37px 58px;
+  }
 }
