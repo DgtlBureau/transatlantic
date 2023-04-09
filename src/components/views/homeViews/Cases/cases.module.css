@@ -1,6 +1,6 @@
 .cases {
-  padding: 64px 20px 27px 20px;
   background-color: #18bbfe;
+  padding: 64px 20px 27px 20px;
 }
 
 .cases__container {
@@ -66,6 +66,7 @@
 .cases__arrow {
   font-size: 14px;
   font-weight: 500;
+  margin-left: 3px;
 }
 
 .cases__image {
