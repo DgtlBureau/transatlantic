@@ -1,0 +1,59 @@
+.task {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.task__container {
+  padding: 40px 20px 28px 20px;
+  background-color: #ffffff;
+}
+
+.task__title,
+.task__heading {
+  font-family: "Dewi";
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #121c46;
+  margin-bottom: 24px;
+}
+
+.task__title {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.task__descr {
+  margin-bottom: 24px;
+  width: 280px;
+}
+
+.task__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.task__item {
+  background: #edf6ff;
+  border-radius: 16px;
+  padding: 22px 18px;
+  height: 122px;
+  width: 280px;
+  margin-right: 16px;
+}
+
+.task__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.task__heading {
+  font-size: 22px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.task__text {
+  color: #121c46;
+}

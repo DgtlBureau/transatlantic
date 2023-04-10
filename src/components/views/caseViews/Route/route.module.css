@@ -1,0 +1,55 @@
+.route {
+  background-color: #edf6ff;
+}
+
+.route__container {
+  padding: 56px 20px;
+}
+
+.route__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #121c46;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.route__container,
+.route__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.route__list {
+  margin-bottom: 24px;
+}
+
+.route__item {
+  min-width: 280px;
+}
+
+.route__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.route__descr,
+.route__subheading {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #121c46;
+}
+
+.route__heading {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #18bbfe;
+  margin-bottom: 8px;
+}

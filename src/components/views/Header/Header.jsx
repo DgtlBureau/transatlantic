@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { HandySvg } from "handy-svg";
 import Menu from "components/common/Menu/Menu";
 import IconButton from "components/ui/IconButton";
@@ -11,11 +11,14 @@ import styles from "./header.module.css";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
+  const { id } = useParams();
   const { pathname } = useLocation();
+
   const variant =
     `${pathname}` === "/contacts" ||
     `${pathname}` === "/containers" ||
-    `${pathname}` === "/cases";
+    `${pathname}` === "/cases" ||
+    `${pathname}` === `/cases/${id}`;
 
   return (
     <header
