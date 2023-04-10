@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import { HandySvg } from "handy-svg";
 import Menu from "components/common/Menu/Menu";
@@ -18,7 +18,8 @@ const Header = () => {
     `${pathname}` === "/contacts" ||
     `${pathname}` === "/containers" ||
     `${pathname}` === "/cases" ||
-    `${pathname}` === `/cases/${id}`;
+    `${pathname}` === `/cases/${id}` ||
+    `${pathname}` === "/services";
 
   return (
     <header
