@@ -62,7 +62,7 @@ const Hero = () => {
             {servicesShow?.map(({ id, path, heading, img, alt }) => {
               return (
                 <li className={styles.hero__item} key={id}>
-                  <Link className={styles.hero__link} to={`/cases/${path}`}>
+                  <Link className={styles.hero__link} to={`/services/${path}`}>
                     <div className={styles.hero__info}>
                       <h4 className={styles.hero__heading}>
                         {heading} <span className={styles.hero__arrow}>→</span>
