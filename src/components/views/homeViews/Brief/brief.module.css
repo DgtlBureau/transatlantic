@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 280px;
+  max-width: 320px;
   padding: 40px 20px;
 }
 
@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 768px) {
   .brief__container {
-    width: 768px;
+    max-width: 768px;
   }
 
   .brief__title {
@@ -55,7 +55,7 @@
 @media screen and (min-width: 1180px) {
   .brief__container {
     padding: 56px 58px 40px 58px;
-    width: 1158px;
+    max-width: 1158px;
   }
 
   .brief__info {
@@ -72,6 +72,12 @@
   .brief__descr {
     margin-bottom: 0;
     margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .brief__container {
+    max-width: 1268px;
   }
 }
 

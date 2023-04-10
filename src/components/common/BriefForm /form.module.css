@@ -88,7 +88,6 @@
     align-self: flex-end;
     margin-top: -53px;
     width: 165px;
-    margin-right: 32px;
   }
 }
 
@@ -110,7 +109,7 @@
   }
 
   .input__wrapper:not(:first-child) {
-    width: 316px;
+    width: 263px;
   }
 
   .form__input {
@@ -118,11 +117,17 @@
   }
 
   .form__policy {
-    align-self: center;
-    margin-right: -205px;
+    align-self: flex-end;
+    margin-right: 40px;
     margin-top: 24px;
     font-size: 12px;
     width: 213px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .input__wrapper:not(:first-child) {
+    width: 316px;
   }
 }
 
