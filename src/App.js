@@ -5,6 +5,7 @@ import ContactsPage from "pages/ContactsPage/ContactsPage";
 import CasesPage from "pages/CasesPage/CasesPage";
 import CasePage from "pages/CasePage/CasePage";
 import ServicesPage from "pages/ServicesPage/ServicesPage";
+import ServicePage from "pages/ServicePage/ServicePage";
 import "./App.css";
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
           <Route path="/cases" element={<CasesPage />} />
           <Route path="/cases/:id" element={<CasePage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/services/:id" element={<ServicesPage />} />
+          <Route path="/services/:id" element={<ServicePage />} />
         </Route>
       </Routes>
     </div>
