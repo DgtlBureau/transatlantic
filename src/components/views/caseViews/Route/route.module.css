@@ -3,6 +3,8 @@
 }
 
 .route__container {
+  display: flex;
+  flex-direction: column;
   padding: 56px 20px;
 }
 
@@ -52,4 +54,40 @@
   letter-spacing: -0.04em;
   color: #18bbfe;
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .route__container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 56px 20px;
+    max-width: 768px;
+  }
+
+  .route__title {
+    font-size: 40px;
+  }
+
+  .route__right {
+    max-width: 354px;
+  }
+
+  .route__list {
+    margin-bottom: 17px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .route__container {
+    padding: 56px 58px;
+    max-width: 1180px;
+  }
+
+  .route__title {
+    max-width: 414px;
+  }
+
+  .route__right {
+    max-width: 650px;
+  }
 }

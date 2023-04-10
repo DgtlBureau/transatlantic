@@ -10,6 +10,7 @@ const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.hero__container}>
         <h2 className={styles.hero__title}>{caseEl?.heading}</h2>
+        <img src={caseEl.img} alt={caseEl.alt} className={styles.hero__img} />
       </div>
     </section>
   );

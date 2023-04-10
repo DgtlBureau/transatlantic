@@ -41,13 +41,8 @@ const Result = () => {
               );
             })}
           </ul>
-          <Button
-            text="Еще кейсы"
-            onClick={goBack}
-            color="case"
-            type="button"
-          />
         </div>
+        <Button text="Еще кейсы" onClick={goBack} color="case" type="button" />
       </div>
     </section>
   );
