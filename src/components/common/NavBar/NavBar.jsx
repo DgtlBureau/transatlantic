@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import cn from "classnames";
 import styles from "./navbar.module.css";
 
-const NavBar = ({ type }) => {
+const NavBar = ({ type, setOpenMenu }) => {
   const { pathname } = useLocation();
   const variant =
     `${pathname}` === "/contacts" || `${pathname}` === "/containers";
@@ -13,36 +13,40 @@ const NavBar = ({ type }) => {
       <ul className={cn(styles.nav__list, styles[`nav__list--${type}`])}>
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
-            to="/services"
+            onClick={() => setOpenMenu(false)}
+            to={type === "footer" ? "#" : "/services"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
             })}
           >
-            Услуги
+            {type === "footer" ? "О компании" : "Услуги"}
           </NavLink>
         </li>
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
-            to="/cases"
+            onClick={() => setOpenMenu(false)}
+            to={type === "footer" ? "/services" : "/cases"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
             })}
           >
-            Кейсы
+            {type === "footer" ? "Услуги" : "Кейсы"}
           </NavLink>
         </li>
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
-            to="/contacts"
+            onClick={() => setOpenMenu(false)}
+            to={type === "footer" ? "/cases" : "/contacts"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
             })}
           >
-            Контакты
+            {type === "footer" ? "Кейсы" : "Контакты"}
           </NavLink>
         </li>
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
+            onClick={() => setOpenMenu(false)}
             to="#"
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
@@ -58,10 +62,12 @@ const NavBar = ({ type }) => {
 
 NavBar.propTypes = {
   type: PropTypes.string,
+  setOpenMenu: PropTypes.func,
 };
 
 NavBar.defaultProps = {
   type: "",
+  setOpenMenu: () => {},
 };
 
 export default NavBar;

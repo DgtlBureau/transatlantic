@@ -2,9 +2,9 @@ import PropTypes from "prop-types";
 import cn from "classnames";
 import styles from "./office.module.css";
 
-const Office = ({ tel, mail, address, name, type, title }) => {
+const Office = ({ tel, mail, address, name, type, title, id }) => {
   return (
-    <div className={styles.office}>
+    <div className={styles.office} id={`${id}`}>
       <h3 className={styles.office__title}>{title}</h3>
       <ul className={styles.office__list}>
         <li className={styles.office__item}>
@@ -45,6 +45,7 @@ Office.propTypes = {
   name: PropTypes.string,
   type: PropTypes.string,
   title: PropTypes.string,
+  id: PropTypes.string,
 };
 
 Office.defaultProps = {
@@ -54,6 +55,7 @@ Office.defaultProps = {
   name: "",
   type: "",
   title: "",
+  id: "",
 };
 
 export default Office;

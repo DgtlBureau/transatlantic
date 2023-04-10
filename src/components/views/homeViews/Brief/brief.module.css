@@ -1,7 +1,6 @@
 /* BRIEF DARK */
 
 .brief {
-  padding: 40px 20px;
   background-color: #222222;
 }
 
@@ -10,6 +9,7 @@
   flex-direction: column;
   justify-content: flex-start;
   width: 280px;
+  padding: 40px 20px;
 }
 
 .brief__title {
@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 768px) {
   .brief__container {
-    width: 100%;
+    width: 768px;
   }
 
   .brief__title {
@@ -53,20 +53,20 @@
 }
 
 @media screen and (min-width: 1180px) {
-  .brief {
-    padding: 56px 58px 60px 58px;
+  .brief__container {
+    padding: 56px 58px 40px 58px;
+    width: 1158px;
   }
 
   .brief__info {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-bottom: 47px;
   }
 
   .brief__title {
     margin-bottom: 0;
-    margin-right: 320px;
   }
 
   .brief__descr {
