@@ -1,9 +1,10 @@
+import { Routes, Route } from "react-router-dom";
 import Layouts from "components/common/Layouts";
 import Homepage from "pages/Homepage";
 import ContactsPage from "pages/ContactsPage/ContactsPage";
 import CasesPage from "pages/CasesPage/CasesPage";
 import CasePage from "pages/CasePage/CasePage";
-import { Routes, Route } from "react-router-dom";
+import ServicesPage from "pages/ServicesPage/ServicesPage";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/cases" element={<CasesPage />} />
           <Route path="/cases/:id" element={<CasePage />} />
+          <Route path="/services" element={<ServicesPage />} />
         </Route>
       </Routes>
     </div>

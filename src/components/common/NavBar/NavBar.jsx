@@ -13,7 +13,7 @@ const NavBar = ({ type }) => {
       <ul className={cn(styles.nav__list, styles[`nav__list--${type}`])}>
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
-            to="#"
+            to="/services"
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
             })}

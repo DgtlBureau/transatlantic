@@ -1,0 +1,155 @@
+.hero {
+  background-color: #ffffff;
+}
+
+.hero__container {
+  padding: 86px 20px 48px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 0.8;
+  letter-spacing: -0.04em;
+  color: #121c46;
+  margin-bottom: 40px;
+}
+
+.hero__wrapper {
+  margin-bottom: 32px;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(16px * -1);
+  margin-left: calc(16px * -1);
+}
+
+.hero__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  padding: 0 1px 9px 23px;
+  width: 280px;
+  height: 172px;
+  background: #edf6ff;
+  border-radius: 16px;
+  margin-right: 16px;
+}
+
+.hero__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.hero__info {
+  display: flex;
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #121c46;
+  width: 182px;
+  position: relative;
+  z-index: 10;
+}
+
+.hero__arrow {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 3px;
+}
+
+.hero__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  height: 172px;
+  border-radius: 16px;
+}
+
+.hero__btn {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #18bbfe;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  align-self: center;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__item {
+    width: 354px;
+    height: 248px;
+  }
+
+  .hero__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .hero__item {
+    margin-right: 16px;
+  }
+
+  .hero__img {
+    height: 248px;
+    width: 223px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .hero__container {
+    padding: 110px 20px 48px 20px;
+  }
+
+  .hero__title {
+    font-size: 56px;
+  }
+
+  .hero__list {
+    justify-content: flex-start;
+  }
+
+  .hero__info {
+    font-size: 24px;
+    width: 243px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__item {
+    width: 428px;
+  }
+
+  .hero__img {
+    width: 256px;
+  }
+
+  .hero__container {
+    max-width: 1440px;
+    padding: 110px 58px 48px 58px;
+  }
+  .hero__list {
+    max-width: 1360px;
+    justify-content: flex-start;
+  }
+}
