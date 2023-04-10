@@ -9,7 +9,10 @@ const Brief = () => {
     `${pathname}` === "/contacts" || `${pathname}` === "/containers";
 
   return (
-    <section className={cn(styles.brief, { [styles["brief--blue"]]: variant })}>
+    <section
+      className={cn(styles.brief, { [styles["brief--blue"]]: variant })}
+      id="brief"
+    >
       <div className={styles.brief__container}>
         <div className={styles.brief__info}>
           <h2

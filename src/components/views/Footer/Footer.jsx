@@ -21,13 +21,6 @@ const Footer = () => {
           [styles["footer__container--blue"]]: variant,
         })}
       >
-        <h2
-          className={cn(styles.footer__title, {
-            [styles["footer__title--dark"]]: variant,
-          })}
-        >
-          {!variant ? "Контакты" : null}
-        </h2>
         <Link
           to="/"
           className={cn(styles.footer__logo, {

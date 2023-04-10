@@ -33,7 +33,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
         <ButtonLink text="Войти в личный кабинет" to="#" color="blue-big" />
       </div>
 
-      <NavBar />
+      <NavBar setOpenMenu={setOpenMenu} />
 
       <div className={styles.address}>
         <Contacts

@@ -2,7 +2,7 @@ export const validate = (values) => {
   const errors = {};
 
   const schemeName = /^[А-ЯЁ][а-яё]+$/i.test;
-  const schemeTel = /^((8|\+7)[\- ]?)?(\(?\d{3,4}\)?[\- ]?)?[\d\- ]{5,10}$/i
+  const schemeTel = /^((8|\+7)[ - ]?)?(\(?\d{3,4}\)?[ - ]?)?[\d\- ]{5,10}$/i
     .test;
   const schemeMail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test;
 
