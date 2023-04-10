@@ -62,7 +62,7 @@ const Hero = () => {
             {casesShow?.map(({ id, path, heading, img, alt }) => {
               return (
                 <li className={styles.hero__item} key={id}>
-                  <Link className={styles.hero__link} to={path}>
+                  <Link className={styles.hero__link} to={`/cases/${path}`}>
                     <div className={styles.hero__info}>
                       <h4 className={styles.hero__heading}>
                         {heading} <span className={styles.hero__arrow}>→</span>

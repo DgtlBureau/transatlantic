@@ -1,0 +1,40 @@
+.process {
+  background-color: #ffffff;
+}
+
+.process__container {
+  padding: 28px 20px 56px 20px;
+}
+
+.process__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #121c46;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.process__container,
+.process__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.process__item {
+  min-width: 280px;
+}
+
+.process__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.process__descr {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+}
