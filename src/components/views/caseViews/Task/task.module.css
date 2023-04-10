@@ -7,8 +7,16 @@
 }
 
 .task__container {
+  display: flex;
+  flex-direction: column;
   padding: 40px 20px 28px 20px;
   background-color: #ffffff;
+}
+
+.task__left {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
 }
 
 .task__title,
@@ -26,7 +34,6 @@
 }
 
 .task__descr {
-  margin-bottom: 24px;
   width: 280px;
 }
 
@@ -56,4 +63,83 @@
 
 .task__text {
   color: #121c46;
+}
+
+@media screen and (min-width: 768px) {
+  .task__container {
+    padding-bottom: 30px;
+    max-width: 768px;
+  }
+
+  .task__left {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .task__title {
+    font-size: 40px;
+  }
+
+  .task__descr {
+    margin-right: 70px;
+  }
+
+  .task__right {
+    max-width: 768px;
+    margin-left: 16px;
+  }
+
+  .task__list {
+    margin-right: calc(16px * -1);
+    margin-left: calc(16px * -1);
+    margin-bottom: calc(16px * -1);
+  }
+
+  .task__item {
+    width: 354px;
+    height: 104px;
+  }
+
+  .task__heading {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .task__container {
+    padding: 56px 58px 30px 58px;
+    max-width: 1180px;
+  }
+
+  .task__descr {
+    width: 314px;
+  }
+
+  .task__title {
+    margin-right: 264px;
+  }
+
+  .task__left {
+    justify-content: flex-start;
+  }
+
+  .task__right {
+    align-self: flex-end;
+    max-width: initial;
+  }
+
+  .task__list {
+    justify-content: flex-end;
+    max-width: 672px;
+    margin-right: calc(20px * -1);
+    margin-left: calc(20px * -1);
+    margin-bottom: calc(20px * -1);
+  }
+
+  .task__item {
+    width: 316px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
 }

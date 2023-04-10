@@ -12,9 +12,9 @@ const Task = () => {
       <div className={styles.task__container}>
         <div className={styles.task__left}>
           <h3 className={styles.task__title}>{caseEl?.tasks?.title}</h3>
+          <p className={styles.task__descr}>{caseEl?.tasks?.descr}</p>
         </div>
         <div className={styles.task__right}>
-          <p className={styles.task__descr}>{caseEl?.tasks?.descr}</p>
           <ul className={styles.task__list}>
             {conditions?.map(({ id, heading, text }) => {
               return (
