@@ -1,15 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.45e95ba8.css",
-    "main.js": "/static/js/main.68c841dd.js",
+    "main.css": "/static/css/main.9e2600ce.css",
+    "main.js": "/static/js/main.89bd530c.js",
     "static/media/container-hero.png": "/static/media/container-hero.d6bd3937d425f7771c2c.png",
     "static/media/InterTight-VariableFont_wght.ttf": "/static/media/InterTight-VariableFont_wght.ce235502edcb4d3e7643.ttf",
     "static/media/container-front.png": "/static/media/container-front.5773e20c5324bd29e6f9.png",
     "static/media/ship-big.png": "/static/media/ship-big.0b9f5c6c5efd79f2df57.png",
     "static/media/truck.png": "/static/media/truck.b0daf653c98b4c925661.png",
+    "static/media/case-1.png": "/static/media/case-1.082d949f3d6738383f59.png",
     "static/media/map-far.png": "/static/media/map-far.fde9482bffdace788e48.png",
+    "static/media/moscow-desktop.png": "/static/media/moscow-desktop.0309fabba11702b5e6a5.png",
+    "static/media/moscow-laptop.png": "/static/media/moscow-laptop.cfc687eb584e61685198.png",
+    "static/media/ekaterinburg-desktop.png": "/static/media/ekaterinburg-desktop.d81c7ad313099994642a.png",
+    "static/media/ekaterinburg-laptop.png": "/static/media/ekaterinburg-laptop.243dfd3daa78644ca13b.png",
     "static/media/map-middle.png": "/static/media/map-middle.cd10c479305c90ad0316.png",
+    "static/media/ekaterinburg-mobile.png": "/static/media/ekaterinburg-mobile.d9d5d46408c5572dc7c7.png",
     "static/media/shipping.png": "/static/media/shipping.709f5d19307e75cf62f2.png",
+    "static/media/moscow-mobile.png": "/static/media/moscow-mobile.0ef1fb8d5aa2da3b96b8.png",
     "static/media/map-close.png": "/static/media/map-close.d86952edea14d180c3e0.png",
     "static/media/RFDewiExtended-Bold.ttf": "/static/media/RFDewiExtended-Bold.b5f873b45da3ca49fb9a.ttf",
     "static/media/auto.png": "/static/media/auto.1a5fec344eec0f1fd272.png",
@@ -17,7 +24,7 @@
     "static/media/crane.png": "/static/media/crane.46cd48ca7c8c8cf96711.png",
     "static/media/letter-bottom.png": "/static/media/letter-bottom.b61488f71994cf6a696f.png",
     "static/media/ship-1.png": "/static/media/ship-1.53bb87cd84adb12ef8bd.png",
-    "static/media/ship-2.png": "/static/media/ship-2.8db9d6d7862f689f7c5e.png",
+    "static/media/ship-2.png": "/static/media/ship-2.6760f793b0eda2597c21.png",
     "static/media/lighthouse.png": "/static/media/lighthouse.d09d9846b4b10e4a70b0.png",
     "static/media/image-6.png": "/static/media/image-6.d44c930b2f8e51c4f319.png",
     "static/media/image-2.png": "/static/media/image-2.39af85158f31fe5d8e47.png",
@@ -31,11 +38,11 @@
     "index.html": "/index.html",
     "static/media/close-btn.svg": "/static/media/close-btn.2c17a333fb5dee4eca8c2c0ebe1ed248.svg",
     "static/media/open-stick.svg": "/static/media/open-stick.f68461a990f358d19c94d0c34f712d2f.svg",
-    "main.45e95ba8.css.map": "/static/css/main.45e95ba8.css.map",
-    "main.68c841dd.js.map": "/static/js/main.68c841dd.js.map"
+    "main.9e2600ce.css.map": "/static/css/main.9e2600ce.css.map",
+    "main.89bd530c.js.map": "/static/js/main.89bd530c.js.map"
   },
   "entrypoints": [
-    "static/css/main.45e95ba8.css",
-    "static/js/main.68c841dd.js"
+    "static/css/main.9e2600ce.css",
+    "static/js/main.89bd530c.js"
   ]
 }
