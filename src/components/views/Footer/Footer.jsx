@@ -10,7 +10,9 @@ import styles from "./footer.module.css";
 const Footer = () => {
   const { pathname } = useLocation();
   const variant =
-    `${pathname}` === "/contacts" || `${pathname}` === "/containers";
+    `${pathname}` === "/contacts" ||
+    `${pathname}` === "/containers" ||
+    `${pathname}` === "/park";
 
   return (
     <footer

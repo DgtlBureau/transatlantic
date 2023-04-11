@@ -6,7 +6,9 @@ import styles from "./navbar.module.css";
 const NavBar = ({ type, setOpenMenu }) => {
   const { pathname } = useLocation();
   const variant =
-    `${pathname}` === "/contacts" || `${pathname}` === "/containers";
+    `${pathname}` === "/contacts" ||
+    `${pathname}` === "/containers" ||
+    `${pathname}` === "/park";
 
   return (
     <nav className={cn(styles.nav, styles[`nav--${type}`])}>
@@ -47,7 +49,7 @@ const NavBar = ({ type, setOpenMenu }) => {
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
             onClick={() => setOpenMenu(false)}
-            to="#"
+            to="/park"
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
             })}

@@ -1,0 +1,133 @@
+.hero {
+  background-color: #ffffff;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 85px 20px 10px 20px;
+}
+
+.hero__heading,
+.hero__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #121c46;
+}
+
+.hero__title {
+  width: 180px;
+  margin-bottom: 24px;
+}
+
+.hero__bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px 27px;
+  width: 280px;
+  height: 337px;
+  background-image: url(../../../../assets/images/park/background/bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+
+.hero__heading {
+  margin-bottom: 16px;
+}
+
+.hero__descr {
+  margin-bottom: 37px;
+}
+
+.hero__descr,
+.hero__text {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #121c46;
+}
+
+.hero__btn {
+  padding: 9px 37px;
+}
+
+.hero__text {
+  max-width: 280px;
+}
+
+.hero__right {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__container {
+    max-width: 768px;
+    padding: 99px 20px 21px 20px;
+  }
+
+  .hero__bg {
+    background-image: url(../../../../assets/images/park/background/bg-tablet.png);
+    width: 727px;
+    height: 286px;
+    margin-bottom: 24px;
+  }
+
+  .hero__title {
+    font-size: 56px;
+  }
+
+  .hero__descr {
+    width: 388px;
+  }
+
+  .hero__btn {
+    width: 191px;
+    padding: 8px 21px 9px;
+  }
+
+  .hero__text {
+    max-width: 650px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .hero__container {
+    padding: 134px 56px 34px;
+    max-width: 1180px;
+  }
+
+  .hero__title {
+    margin-bottom: 49px;
+  }
+
+  .hero__heading {
+    margin-bottom: 24px;
+  }
+
+  .hero__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .hero__bg {
+    background-image: url(../../../../assets/images/park/background/bg-desktop.png);
+    width: 766px;
+  }
+
+  .hero__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__link:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

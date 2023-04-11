@@ -8,7 +8,9 @@ import styles from "./form.module.css";
 const BriefForm = () => {
   const { pathname } = useLocation();
   const variant =
-    `${pathname}` === "/contacts" || `${pathname}` === "/containers";
+    `${pathname}` === "/contacts" ||
+    `${pathname}` === "/containers" ||
+    `${pathname}` === "/park";
 
   const formik = useFormik({
     initialValues: {

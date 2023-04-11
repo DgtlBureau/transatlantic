@@ -12,6 +12,7 @@ import caseImg from "../src/assets/images/case-page/case-1.png";
 import tankOne from "../src/assets/images/service/tanks/tank-1.png";
 import tankSecond from "../src/assets/images/service/tanks/tank-2.png";
 import containerHero from "../src/assets/images/service/tanks/container-hero.png";
+import containerPark from "../src/assets/images/park/container.png";
 
 export const Teams = [
   {
@@ -394,4 +395,44 @@ export const servicesPage = [
     heading: "Авиа",
     alt: "ship",
   },
+];
+
+export const parkPage = [
+  {
+    id: 0,
+    img: containerPark,
+    heading: "20 футов Dry Cube",
+    descr:
+      "Самый универсальный вид контейнера. Подойдет для большинства грузов",
+    weight: "22000",
+    volume: "33",
+    length: "5898",
+    width: "2352",
+    height: "2393",
+    property: "Жесткие",
+  },
+  {
+    id: 1,
+    img: containerPark,
+    heading: "40 футов Dry Cube",
+    descr:
+      "Удлиненная вдвое версия самого популярного контейнера для перевозок ",
+    weight: "27000",
+    volume: "67",
+    length: "12032",
+    width: "2352",
+    height: "2393",
+    property: "Жесткие",
+  },
+];
+
+export const cargo = [
+  { id: 0, text: "Грузы на паллетах" },
+  { id: 1, text: "Любые упакованные “мелкие товары”" },
+  { id: 2, text: "Электрооборудование" },
+  { id: 3, text: "Опасные грузы (при наличии документов)" },
+  { id: 4, text: "Металлопрокат" },
+  { id: 5, text: "Пиломатериалы" },
+  { id: 6, text: "Жидкие грузы во флекситанках" },
+  { id: 7, text: "И почти все, что угодно" },
 ];
