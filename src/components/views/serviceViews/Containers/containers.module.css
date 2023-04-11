@@ -44,7 +44,7 @@
   width: 280px;
   height: 200px;
   background-color: #edf6ff;
-  padding: 25px;
+  padding: 10px 25px;
   margin-bottom: 12px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -53,8 +53,14 @@
   -o-border-radius: 12px;
 }
 
-.standart__img,
 .containers__img {
+  width: 218px;
+  height: 186px;
+}
+
+.standart__img {
+  width: 230px;
+  height: 180px;
 }
 
 .standart__descr,
@@ -103,6 +109,11 @@
     height: 288px;
   }
 
+  .standart__img {
+    width: 678px;
+    height: 268px;
+  }
+
   .containers__wrapper {
     width: 354px;
     height: 222px;
@@ -141,6 +152,10 @@
   .standart__wrapper {
     width: 647px;
     height: 288px;
+  }
+
+  .standart__img {
+    width: 593px;
   }
 
   .containers__item {

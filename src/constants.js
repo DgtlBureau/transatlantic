@@ -9,6 +9,9 @@ import shipSecond from "../src/assets/images/cases-page/ship-2.png";
 import crane from "../src/assets/images/cases-page/crane.png";
 import lighthouse from "../src/assets/images/cases-page/lighthouse.png";
 import caseImg from "../src/assets/images/case-page/case-1.png";
+import tankOne from "../src/assets/images/service/tanks/tank-1.png";
+import tankSecond from "../src/assets/images/service/tanks/tank-2.png";
+import containerHero from "../src/assets/images/service/tanks/container-hero.png";
 
 export const Teams = [
   {
@@ -221,7 +224,7 @@ export const servicesPage = [
   {
     id: 1,
     path: "2",
-    img: lighthouse,
+    img: containerHero,
     heading: "Контейнерные перевозки",
     alt: "lighthouse",
     process: {
@@ -300,7 +303,7 @@ export const servicesPage = [
       title: "Типы контейнеров",
       standart: {
         heading: "Стандартный крытый контейнер 20-40 футов",
-        img: "",
+        img: tankOne,
         descr:
           "Имеем собственный парк стандартных 20 и 40 футовых контейнеров для перевозок в самых важных портах России и ключевых стран. При необходимости погрузки нетипичных грузов мы подбираем оборудование для вашей перевозки. ",
         dimensionsHeading: "Габариты:",
@@ -321,7 +324,7 @@ export const servicesPage = [
         {
           id: 0,
           heading: "Контейнер-рефрижератор",
-          img: "",
+          img: tankSecond,
           alt: "container",
           descr:
             "За счет возможности поддержания в них определенной температуры могут применяться для перевозок температурных грузов.",
@@ -329,7 +332,7 @@ export const servicesPage = [
         {
           id: 1,
           heading: "Высокие контейнеры",
-          img: "",
+          img: tankSecond,
           alt: "container",
           descr:
             "Благодаря увеличенному объему подходят для транспортировки крупных товарных партий.",
@@ -337,14 +340,14 @@ export const servicesPage = [
         {
           id: 2,
           heading: "Флекси-танк",
-          img: "",
+          img: tankSecond,
           alt: "container",
           descr: "Актуален при перевозке химических растворов и средств.",
         },
         {
           id: 3,
           heading: "Платформа",
-          img: "",
+          img: tankSecond,
           alt: "container",
           descr:
             "Из-за отсутствия боковых стенок зачастую эксплуатируется при доставке негабаритных партий.",
@@ -352,7 +355,7 @@ export const servicesPage = [
         {
           id: 4,
           heading: "Негабаритные платформы",
-          img: "",
+          img: tankSecond,
           alt: "container",
           descr:
             "Подходят для контейнерных перевозок жд транспортом, когда необходимо доставить товары разного типа на самые дальние расстояния.",
@@ -360,7 +363,7 @@ export const servicesPage = [
         {
           id: 5,
           heading: "C открытым верхом",
-          img: "",
+          img: tankSecond,
           alt: "container",
           descr:
             "Используются для транспортировки предметов, чья высота превышает 2,4 метра. В пути они укрываются тентом для защиты от негативных погодных явлений.",
