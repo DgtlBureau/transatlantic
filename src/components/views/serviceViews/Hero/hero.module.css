@@ -42,7 +42,7 @@
   }
 
   .hero__img {
-    width: 418px;
+    width: 768px;
   }
 }
 
@@ -56,7 +56,7 @@
   }
 
   .hero__img {
-    width: 380px;
+    width: 800px;
     height: 400px;
   }
 }
