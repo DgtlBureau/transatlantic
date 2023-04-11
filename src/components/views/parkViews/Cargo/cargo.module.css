@@ -1,0 +1,68 @@
+.cargo {
+  background-color: #ffffff;
+}
+
+.cargo__container {
+  padding: 24px 20px 48px 20px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cargo__title {
+  font-family: "Dewi";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+  color: #121c46;
+  margin-bottom: 24px;
+}
+
+.cargo__item {
+  padding: 16px 19px;
+  box-shadow: 0px 1px 0px #eceef1;
+}
+
+.cargo__text {
+  position: relative;
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #121c46;
+}
+
+.cargo__text::before {
+  content: "";
+  display: inline-block;
+  background-color: #18bbfe;
+  position: absolute;
+  left: -19px;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .cargo__container {
+    max-width: 768px;
+    padding: 34px 20px 68px;
+  }
+
+  .cargo__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .cargo__container {
+    padding: 32px 56px 70px;
+    max-width: 1180px;
+  }
+}

@@ -19,7 +19,8 @@ const Header = () => {
     `${pathname}` === "/containers" ||
     `${pathname}` === "/cases" ||
     `${pathname}` === `/cases/${id}` ||
-    `${pathname}` === "/services";
+    `${pathname}` === "/services" ||
+    `${pathname}` === `/park`;
 
   return (
     <header

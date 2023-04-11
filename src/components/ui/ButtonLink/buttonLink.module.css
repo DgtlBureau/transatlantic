@@ -46,3 +46,12 @@
   transition-duration: 500ms;
   background: rgba(255, 255, 255, 0.1);
 }
+
+.buttonLink__link {
+  font-family: "Inter Tight";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  text-decoration-line: underline;
+  color: #18bbfe;
+}

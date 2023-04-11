@@ -6,7 +6,9 @@ import styles from "./contacts.module.css";
 const Contacts = ({ address, tel, mail, className, type }) => {
   const { pathname } = useLocation();
   const variant =
-    `${pathname}` === "/contacts" || `${pathname}` === "/containers";
+    `${pathname}` === "/contacts" ||
+    `${pathname}` === "/containers" ||
+    `${pathname}` === "/park";
 
   return (
     <div className={cn(styles.address, styles[`${className}`])}>

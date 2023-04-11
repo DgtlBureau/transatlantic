@@ -6,7 +6,9 @@ import styles from "./brief.module.css";
 const Brief = () => {
   const { pathname } = useLocation();
   const variant =
-    `${pathname}` === "/contacts" || `${pathname}` === "/containers";
+    `${pathname}` === "/contacts" ||
+    `${pathname}` === "/containers" ||
+    `${pathname}` === "/park";
 
   return (
     <section

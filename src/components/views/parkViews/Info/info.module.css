@@ -1,0 +1,107 @@
+.info {
+  background-color: #ffffff;
+}
+
+.info__container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 24px 20px;
+  max-width: 320px;
+}
+
+.info__top {
+  margin-bottom: 68px;
+}
+
+.info__title {
+  font-size: 24px;
+  margin-bottom: 34px;
+}
+
+.info__title,
+.info__heading {
+  font-family: "Dewi";
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #121c46;
+}
+
+.info__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.info__svg {
+  margin-bottom: 8px;
+}
+
+.info__heading {
+  width: 219px;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.info__descr {
+  width: 219px;
+}
+
+.info__price {
+  margin-bottom: 24px;
+}
+
+.info__descr,
+.info__price {
+  font-family: "Inter Tight";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #121c46;
+}
+
+.info__btn {
+  padding: 9px 21px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .info__container {
+    padding: 34px 20px;
+    max-width: 768px;
+  }
+
+  .info__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(32px * -1);
+  }
+
+  .info__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .info__item {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .info__heading {
+    width: 260px;
+  }
+
+  .info__price {
+    width: 478px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .info__container {
+    padding: 44px 56px 32px;
+    max-width: 1180px;
+  }
+}

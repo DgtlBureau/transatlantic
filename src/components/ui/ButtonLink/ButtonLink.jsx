@@ -3,11 +3,15 @@ import PropTypes from "prop-types";
 import cn from "classnames";
 import styles from "./buttonLink.module.css";
 
-const ButtonLink = ({ text, onClick, to, color }) => {
+const ButtonLink = ({ text, onClick, to, color, className }) => {
   return (
     <Link
       to={to}
-      className={cn(styles.buttonLink, styles[`buttonLink__${color}`])}
+      className={cn(
+        styles.buttonLink,
+        styles[`buttonLink__${color}`],
+        `${className}`
+      )}
       onClick={onClick}
     >
       {text}
@@ -20,6 +24,7 @@ ButtonLink.propTypes = {
   to: PropTypes.string,
   color: PropTypes.string,
   onClick: PropTypes.func,
+  className: PropTypes.string,
 };
 
 ButtonLink.defaultProps = {
@@ -27,6 +32,7 @@ ButtonLink.defaultProps = {
   to: "",
   color: "",
   onClick: () => {},
+  className: "",
 };
 
 export default ButtonLink;
