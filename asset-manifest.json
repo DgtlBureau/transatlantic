@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.3aff4141.css",
-    "main.js": "/static/js/main.a038cede.js",
-    "static/media/container-hero.png": "/static/media/container-hero.d6bd3937d425f7771c2c.png",
+    "main.css": "/static/css/main.66211854.css",
+    "main.js": "/static/js/main.ea0b1ed7.js",
+    "static/media/container-hero.png": "/static/media/container-hero.773c9e65ee86054e0319.png",
     "static/media/InterTight-VariableFont_wght.ttf": "/static/media/InterTight-VariableFont_wght.ce235502edcb4d3e7643.ttf",
     "static/media/container-front.png": "/static/media/container-front.5773e20c5324bd29e6f9.png",
     "static/media/ship-big.png": "/static/media/ship-big.0b9f5c6c5efd79f2df57.png",
@@ -17,10 +17,12 @@
     "static/media/ekaterinburg-mobile.png": "/static/media/ekaterinburg-mobile.d9d5d46408c5572dc7c7.png",
     "static/media/shipping.png": "/static/media/shipping.709f5d19307e75cf62f2.png",
     "static/media/moscow-mobile.png": "/static/media/moscow-mobile.0ef1fb8d5aa2da3b96b8.png",
+    "static/media/tank-1.png": "/static/media/tank-1.f33126330b17a12bc89f.png",
     "static/media/map-close.png": "/static/media/map-close.d86952edea14d180c3e0.png",
     "static/media/RFDewiExtended-Bold.ttf": "/static/media/RFDewiExtended-Bold.b5f873b45da3ca49fb9a.ttf",
     "static/media/auto.png": "/static/media/auto.1a5fec344eec0f1fd272.png",
     "static/media/rail.png": "/static/media/rail.d4201cdb29bddb8e7e5c.png",
+    "static/media/tank-2.png": "/static/media/tank-2.5f4b4a38f3b0bd18e8ad.png",
     "static/media/crane.png": "/static/media/crane.46cd48ca7c8c8cf96711.png",
     "static/media/letter-bottom.png": "/static/media/letter-bottom.b61488f71994cf6a696f.png",
     "static/media/ship-1.png": "/static/media/ship-1.53bb87cd84adb12ef8bd.png",
@@ -38,11 +40,11 @@
     "index.html": "/index.html",
     "static/media/close-btn.svg": "/static/media/close-btn.2c17a333fb5dee4eca8c2c0ebe1ed248.svg",
     "static/media/open-stick.svg": "/static/media/open-stick.f68461a990f358d19c94d0c34f712d2f.svg",
-    "main.3aff4141.css.map": "/static/css/main.3aff4141.css.map",
-    "main.a038cede.js.map": "/static/js/main.a038cede.js.map"
+    "main.66211854.css.map": "/static/css/main.66211854.css.map",
+    "main.ea0b1ed7.js.map": "/static/js/main.ea0b1ed7.js.map"
   },
   "entrypoints": [
-    "static/css/main.3aff4141.css",
-    "static/js/main.a038cede.js"
+    "static/css/main.66211854.css",
+    "static/js/main.ea0b1ed7.js"
   ]
 }
