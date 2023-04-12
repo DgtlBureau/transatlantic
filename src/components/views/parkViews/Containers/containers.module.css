@@ -23,6 +23,11 @@
   line-height: 1.2;
 }
 
+.tanks__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .common__item {
   margin-bottom: 43px;
 }
@@ -36,11 +41,30 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 22px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+
+.tanks__wrapper {
+  margin-bottom: 22px;
+  width: 280px;
+  height: 221px;
+  background-color: #edf6ff;
+  padding: 16px;
+  display: flex;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
 
 .containers__img {
-  width: 222px;
-  height: 170px;
+  width: 120px;
+  height: 83px;
 }
 
 .containers__heading {
@@ -128,15 +152,24 @@
     font-size: 16px;
   }
 
-  .containers__common,
-  .notstandard {
+  .containers__common {
     max-width: 354px;
+  }
+
+  .tanks__wrapper {
+    width: 354px;
+    height: 221px;
   }
 
   .containers__wrapper {
     width: 354px;
     height: 221px;
     padding: 21px 51px 20px 68px;
+  }
+
+  .containers__img {
+    width: 160px;
+    height: 97px;
   }
 
   .common__list {
@@ -167,16 +200,16 @@
     padding: 11px 42px 10px 69px;
   }
 
+  .tanks__wrapper {
+    width: 372px;
+    height: 221px;
+  }
+
   .containers__common {
     max-width: 372px;
   }
 
   .common__list {
     margin-bottom: 60px;
-  }
-
-  .containers__img {
-    width: 261px;
-    height: 200px;
   }
 }
