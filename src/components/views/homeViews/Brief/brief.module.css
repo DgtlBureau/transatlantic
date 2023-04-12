@@ -1,6 +1,7 @@
 /* BRIEF DARK */
 
 .brief {
+  position: relative;
   background-color: #222222;
 }
 
