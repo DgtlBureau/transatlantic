@@ -1,8 +1,12 @@
+import { useEffect } from "react";
 import Hero from "components/views/casesView/Hero/Hero";
 import Brief from "components/views/homeViews/Brief/Brief";
-import React from "react";
 
 const CasesPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Hero />

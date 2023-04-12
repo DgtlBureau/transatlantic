@@ -4,15 +4,22 @@ import third from "../src/assets/images/teams/image-3.png";
 import fourth from "../src/assets/images/teams/image-4.png";
 import fifth from "../src/assets/images/teams/image-5.png";
 import sixth from "../src/assets/images/teams/image-6.png";
-import shipOne from "../src/assets/images/cases-page/ship-1.png";
-import shipSecond from "../src/assets/images/cases-page/ship-2.png";
-import crane from "../src/assets/images/cases-page/crane.png";
-import lighthouse from "../src/assets/images/cases-page/lighthouse.png";
+
 import caseImg from "../src/assets/images/case-page/case-1.png";
 import tankOne from "../src/assets/images/service/tanks/tank-1.png";
 import tankSecond from "../src/assets/images/service/tanks/tank-2.png";
 import containerHero from "../src/assets/images/service/tanks/container-hero.png";
 import containerPark from "../src/assets/images/park/container.png";
+
+import containerBlue from "../src/assets/images/cases/containers-blue.png";
+import craneBlue from "../src/assets/images/cases/crane-blue.png";
+import machineBlue from "../src/assets/images/cases/machine-blue.png";
+import shipBlue from "../src/assets/images/cases/ship-blue.png";
+
+import containerGray from "../src/assets/images/cases/containers-gray.png";
+import craneGray from "../src/assets/images/cases/crane-gray.png";
+import machineGray from "../src/assets/images/cases/machine-gray.png";
+import shipGray from "../src/assets/images/cases/ship-gray.png";
 
 export const Teams = [
   {
@@ -81,31 +88,11 @@ export const casesPage = [
   {
     id: 0,
     path: "1",
-    img: crane,
-    heading: "Мы везли груз из Австралии в России",
-    alt: "crane",
-  },
-  { id: 1, path: "2", img: shipOne, heading: "Металл 2022", alt: "ship" },
-  {
-    id: 2,
-    path: "3",
-    img: shipSecond,
-    heading: "Evergreen в Суэцком канале",
-    alt: "ship",
-  },
-  {
-    id: 3,
-    path: "3",
-    img: shipSecond,
-    heading: "Evergreen в Суэцком канале",
-    alt: "ship",
-  },
-  {
-    id: 4,
-    path: "4",
-    img: lighthouse,
-    heading: "Самая быстрая грузоперевозка в 2022 году",
-    alt: "lighthouse",
+    imgBlue: machineBlue,
+    imgGray: machineGray,
+    heading: "Станок весом 172 тонны из Китая",
+    caseHeading: "Доставка станка весом 172 тонны из Китая",
+    alt: "machine",
     tasks: {
       title: "Задача",
       descr:
@@ -180,37 +167,29 @@ export const casesPage = [
       ],
     },
   },
-  { id: 5, path: "2", img: shipOne, heading: "Металл 2022", alt: "ship" },
   {
-    id: 6,
-    path: "4",
-    img: lighthouse,
-    heading: "Самая быстрая грузоперевозка в 2022 году",
-    alt: "lighthouse",
-  },
-  { id: 7, path: "2", img: shipOne, heading: "Металл 2022", alt: "ship" },
-  {
-    id: 8,
-    path: "1",
-    img: crane,
-    heading: "Мы везли груз из Австралии в России",
+    id: 1,
+    path: "2",
+    imgBlue: craneBlue,
+    imgGray: craneGray,
+    heading: "Гусеничные экскаваторы из Индии",
     alt: "crane",
   },
-  { id: 9, path: "2", img: shipOne, heading: "Металл 2022", alt: "ship" },
   {
-    id: 10,
-    path: "4",
-    img: lighthouse,
-    heading: "Самая быстрая грузоперевозка в 2022 году",
-    alt: "lighthouse",
+    id: 2,
+    path: "3",
+    imgBlue: containerBlue,
+    imgGray: containerGray,
+    heading: "1000 контейнеров за 6 лет из Китая",
+    alt: "container",
   },
-  { id: 11, path: "2", img: shipOne, heading: "Металл 2022", alt: "ship" },
   {
-    id: 12,
-    path: "1",
-    img: crane,
-    heading: "Мы везли груз из Австралии в России",
-    alt: "crane",
+    id: 3,
+    path: "4",
+    imgBlue: shipBlue,
+    imgGray: shipGray,
+    heading: "20 000 тонн опасного груза из Китая →",
+    alt: "ship",
   },
 ];
 
@@ -218,7 +197,7 @@ export const servicesPage = [
   {
     id: 0,
     path: "1",
-    img: crane,
+    // img: crane,
     heading: "Контейнерные перевозки",
     alt: "crane",
   },
@@ -376,14 +355,14 @@ export const servicesPage = [
   {
     id: 2,
     path: "3",
-    img: shipSecond,
+    // img: shipSecond,
     heading: "ЖД перевозки",
     alt: "ship",
   },
   {
     id: 3,
     path: "4",
-    img: shipOne,
+    // img: shipOne,
     heading: "Автомобильные перевозки",
     alt: "ship",
   },
@@ -391,7 +370,7 @@ export const servicesPage = [
   {
     id: 4,
     path: "5",
-    img: shipSecond,
+    // img: shipSecond,
     heading: "Авиа",
     alt: "ship",
   },

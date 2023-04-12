@@ -3,8 +3,8 @@ import { casesPage } from "constants";
 import styles from "./route.module.css";
 
 const Route = () => {
-  const { id } = useParams();
-  const caseEl = casesPage?.find((el) => el.id === Number(id)) || {};
+  const { caseID } = useParams();
+  const caseEl = casesPage?.find((el) => el.path === caseID) || {};
   const descrs = caseEl?.route?.descr;
 
   return (

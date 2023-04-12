@@ -1,10 +1,12 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useParams } from "react-router-dom";
 import PropTypes from "prop-types";
 import cn from "classnames";
 import styles from "./navbar.module.css";
 
 const NavBar = ({ type, setOpenMenu }) => {
   const { pathname } = useLocation();
+  const { caseID } = useParams();
+
   const variant =
     `${pathname}` === "/contacts" ||
     `${pathname}` === "/containers" ||
@@ -19,6 +21,7 @@ const NavBar = ({ type, setOpenMenu }) => {
             to={type === "footer" ? "#" : "/services"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
+              [styles["nav__link--light"]]: pathname === `/cases/${caseID}`,
             })}
           >
             {type === "footer" ? "О компании" : "Услуги"}
@@ -30,6 +33,7 @@ const NavBar = ({ type, setOpenMenu }) => {
             to={type === "footer" ? "/services" : "/cases"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
+              [styles["nav__link--light"]]: pathname === `/cases/${caseID}`,
             })}
           >
             {type === "footer" ? "Услуги" : "Кейсы"}
@@ -41,6 +45,7 @@ const NavBar = ({ type, setOpenMenu }) => {
             to={type === "footer" ? "/cases" : "/contacts"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
+              [styles["nav__link--light"]]: pathname === `/cases/${caseID}`,
             })}
           >
             {type === "footer" ? "Кейсы" : "Контакты"}
@@ -52,6 +57,7 @@ const NavBar = ({ type, setOpenMenu }) => {
             to="/park"
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
+              [styles["nav__link--light"]]: pathname === `/cases/${caseID}`,
             })}
           >
             Контейнерный парк

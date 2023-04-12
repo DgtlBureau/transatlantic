@@ -3,14 +3,18 @@ import { casesPage } from "../../../../constants";
 import styles from "./hero.module.css";
 
 const Hero = () => {
-  const { id } = useParams();
-  const caseEl = casesPage?.find((el) => el.id === Number(id)) || {};
+  const { caseID } = useParams();
+  const caseEl = casesPage?.find((el) => el.path === caseID) || {};
 
   return (
     <section className={styles.hero}>
       <div className={styles.hero__container}>
-        <h2 className={styles.hero__title}>{caseEl?.heading}</h2>
-        <img src={caseEl.img} alt={caseEl.alt} className={styles.hero__img} />
+        <h2 className={styles.hero__title}>{caseEl?.caseHeading}</h2>
+        <img
+          src={caseEl.imgBlue}
+          alt={caseEl.alt}
+          className={styles.hero__img}
+        />
       </div>
     </section>
   );

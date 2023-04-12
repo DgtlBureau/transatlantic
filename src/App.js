@@ -8,8 +8,13 @@ import ParkPage from "pages/ParkPage/ParkPage";
 import ServicesPage from "pages/ServicesPage/ServicesPage";
 import ServicePage from "pages/ServicePage/ServicePage";
 import "./App.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="App">
       <Routes>
@@ -17,7 +22,7 @@ function App() {
           <Route path="/" element={<Homepage />} />
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/cases" element={<CasesPage />} />
-          <Route path="/cases/:id" element={<CasePage />} />
+          <Route path="/cases/:caseID" element={<CasePage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/:id" element={<ServicePage />} />
           <Route path="/park" element={<ParkPage />} />

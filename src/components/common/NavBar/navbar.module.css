@@ -108,3 +108,7 @@
   text-decoration-line: underline;
   color: #18bbfe;
 }
+
+.nav__link--light {
+  color: #ffffff;
+}

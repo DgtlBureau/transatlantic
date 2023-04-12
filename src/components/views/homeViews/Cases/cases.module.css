@@ -76,29 +76,31 @@
   border-radius: 16px;
   top: 0;
   right: 0;
+  height: 172px;
+  transition-duration: 200ms;
 }
 
-.cases__image--shipSecond {
-  background-image: url("../../../../assets/images/mobile/cases/ship-2.png");
-  width: 210px;
-  height: 172px;
+/* HOVER ON CARD */
+
+.cases__image--gray {
+  display: none;
 }
-.cases__image--crane {
-  background-image: url("../../../../assets/images/mobile/cases/crane.png");
-  width: 232px;
-  height: 172px;
+
+.cases__item:hover {
+  background-color: #edf6ff;
+  transition-duration: 200ms;
 }
-.cases__image--lighthouse {
-  background-image: url("../../../../assets/images/mobile/cases/lighthouse.png");
-  width: 157px;
-  height: 162px;
-  top: 11px;
-  right: -1px;
+
+.cases__item:hover .cases__heading {
+  color: #121c46;
 }
-.cases__image--shipFirst {
-  background-image: url("../../../../assets/images/mobile/cases/ship-1.png");
-  width: 182px;
-  height: 172px;
+
+.cases__item:hover .cases__image--gray {
+  display: block;
+}
+
+.cases__item:hover .cases__image--blue {
+  display: none;
 }
 
 .cases__button {
@@ -149,26 +151,7 @@
     font-size: 24px;
   }
 
-  .cases__image--shipSecond {
-    background-image: url("../../../../assets/images/tablet/cases/ship-2.png");
-    width: 168px;
-    height: 248px;
-  }
-  .cases__image--crane {
-    background-image: url("../../../../assets/images/tablet/cases/crane.png");
-    width: 260px;
-    height: 248px;
-  }
-  .cases__image--lighthouse {
-    background-image: url("../../../../assets/images/tablet/cases/lighthouse.png");
-    width: 155px;
-    height: 248px;
-    top: 0;
-    right: 0;
-  }
-  .cases__image--shipFirst {
-    background-image: url("../../../../assets/images/tablet/cases/ship-1.png");
-    width: 259px;
+  .cases__image {
     height: 248px;
   }
 }

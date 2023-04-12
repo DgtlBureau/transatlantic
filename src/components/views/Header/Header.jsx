@@ -11,24 +11,34 @@ import styles from "./header.module.css";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  const { id } = useParams();
+  const { caseID } = useParams();
   const { pathname } = useLocation();
 
   const variant =
     `${pathname}` === "/contacts" ||
     `${pathname}` === "/containers" ||
     `${pathname}` === "/cases" ||
-    `${pathname}` === `/cases/${id}` ||
     `${pathname}` === "/services" ||
     `${pathname}` === `/park`;
 
   return (
     <header
-      className={cn(styles.header, {
-        [styles["header--transparent"]]: variant,
-      })}
+      className={cn(
+        styles.header,
+        {
+          [styles["header--transparent"]]: pathname === `/cases/${caseID}`,
+        },
+        {
+          [styles["header--light"]]: variant,
+        }
+      )}
     >
-      <Link to="/" className={styles.header__logo}>
+      <Link
+        to="/"
+        className={cn(styles.header__logo, {
+          [styles["header__logo--white"]]: pathname === `/cases/${caseID}`,
+        })}
+      >
         <HandySvg src={logo} width="141" height="32" />
       </Link>
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
@@ -63,7 +73,11 @@ const Header = () => {
           />
         </IconButton>
       </div>
-      <div className={styles.header__tel}>
+      <div
+        className={cn(styles.header__tel, {
+          [styles["header__tel--light"]]: pathname === `/cases/${caseID}`,
+        })}
+      >
         <a href="tel:+73432879414">+7 (343) 287-94-14</a>
         <a href="tel:+74954454592">+7 (495) 445-45-92</a>
       </div>
