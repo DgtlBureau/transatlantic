@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.57a02f5f.css",
-    "main.js": "/static/js/main.078080a5.js",
+    "main.css": "/static/css/main.6d9afab4.css",
+    "main.js": "/static/js/main.d01070e8.js",
     "static/media/container-hero.png": "/static/media/container-hero.773c9e65ee86054e0319.png",
     "static/media/InterTight-VariableFont_wght.ttf": "/static/media/InterTight-VariableFont_wght.ce235502edcb4d3e7643.ttf",
     "static/media/container-front.png": "/static/media/container-front.5773e20c5324bd29e6f9.png",
@@ -24,17 +24,20 @@
     "static/media/ekaterinburg-laptop.png": "/static/media/ekaterinburg-laptop.243dfd3daa78644ca13b.png",
     "static/media/machine-blue.png": "/static/media/machine-blue.b490dfa5f56f787c2c4a.png",
     "static/media/map-middle.png": "/static/media/map-middle.cd10c479305c90ad0316.png",
+    "static/media/container-40.png": "/static/media/container-40.2c263936378bd1f5c8b0.png",
     "static/media/ekaterinburg-mobile.png": "/static/media/ekaterinburg-mobile.d9d5d46408c5572dc7c7.png",
     "static/media/shipping.png": "/static/media/shipping.709f5d19307e75cf62f2.png",
     "static/media/moscow-mobile.png": "/static/media/moscow-mobile.0ef1fb8d5aa2da3b96b8.png",
-    "static/media/tank-1.png": "/static/media/tank-1.f33126330b17a12bc89f.png",
+    "static/media/container-20.png": "/static/media/container-20.299d608f5dded0533354.png",
+    "static/media/tank-1.png": "/static/media/tank-1.0f6f9743ebbf3e4cdfc7.png",
     "static/media/map-close.png": "/static/media/map-close.d86952edea14d180c3e0.png",
     "static/media/bg-mobile.png": "/static/media/bg-mobile.4f93b707b8e0f29a2d5b.png",
     "static/media/RFDewiExtended-Bold.ttf": "/static/media/RFDewiExtended-Bold.b5f873b45da3ca49fb9a.ttf",
     "static/media/auto.png": "/static/media/auto.1a5fec344eec0f1fd272.png",
     "static/media/rail.png": "/static/media/rail.d4201cdb29bddb8e7e5c.png",
-    "static/media/container.png": "/static/media/container.75a1f8bd90bfa72cfbf9.png",
-    "static/media/tank-2.png": "/static/media/tank-2.5f4b4a38f3b0bd18e8ad.png",
+    "static/media/tank-2.png": "/static/media/tank-2.18dfa2c3b526a4491666.png",
+    "static/media/tank-3.png": "/static/media/tank-3.fc33b7783c34962c5f65.png",
+    "static/media/tank-4.png": "/static/media/tank-4.34997607881c2f740d0d.png",
     "static/media/letter-bottom.png": "/static/media/letter-bottom.b61488f71994cf6a696f.png",
     "static/media/image-6.png": "/static/media/image-6.d44c930b2f8e51c4f319.png",
     "static/media/image-2.png": "/static/media/image-2.39af85158f31fe5d8e47.png",
@@ -46,21 +49,21 @@
     "static/media/letter-right.png": "/static/media/letter-right.de2f29be005b84245228.png",
     "static/media/logo-mobile-header.svg": "/static/media/logo-mobile-header.08c5ebfc2a7c4d56970e6e54867676c8.svg",
     "static/media/weight.svg": "/static/media/weight.f516da1aa88350681a234d8fbc228ce1.svg",
-    "static/media/volume.svg": "/static/media/volume.d8ac93c7c8fe0c00f4d6d89a38f75beb.svg",
+    "static/media/volume.svg": "/static/media/volume.9a81d49553cac31cc935c82b47da840b.svg",
     "static/media/size.svg": "/static/media/size.5f329c15e74187858727047888cd591d.svg",
     "static/media/svg-1.svg": "/static/media/svg-1.9d917ac04ba9836c127566e3b563838f.svg",
+    "static/media/property.svg": "/static/media/property.1952ffb60a4074d373cebc440b493abc.svg",
     "static/media/svg-2.svg": "/static/media/svg-2.6ccde7aa845e83fc0a3cd7baafb7b37b.svg",
     "static/media/svg-3.svg": "/static/media/svg-3.c5e2e2e2d22ac7ddf7d551992704f523.svg",
     "index.html": "/index.html",
     "static/media/done.svg": "/static/media/done.ea69a819ddf07e64af48d7d49646ac92.svg",
-    "static/media/property.svg": "/static/media/property.02228d42e55108b991c99fbbeaa49d00.svg",
     "static/media/close-btn.svg": "/static/media/close-btn.2c17a333fb5dee4eca8c2c0ebe1ed248.svg",
     "static/media/open-stick.svg": "/static/media/open-stick.f68461a990f358d19c94d0c34f712d2f.svg",
-    "main.57a02f5f.css.map": "/static/css/main.57a02f5f.css.map",
-    "main.078080a5.js.map": "/static/js/main.078080a5.js.map"
+    "main.6d9afab4.css.map": "/static/css/main.6d9afab4.css.map",
+    "main.d01070e8.js.map": "/static/js/main.d01070e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.57a02f5f.css",
-    "static/js/main.078080a5.js"
+    "static/css/main.6d9afab4.css",
+    "static/js/main.d01070e8.js"
   ]
 }
