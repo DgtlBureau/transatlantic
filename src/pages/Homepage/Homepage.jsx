@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Advantage from "components/views/homeViews/Advantage";
 import Background from "components/views/homeViews/Background/Background";
 import Brief from "components/views/homeViews/Brief/Brief";
@@ -13,6 +14,10 @@ import TrafficTypes from "components/views/homeViews/TrafficTypes";
 import Team from "components/views/homeViews/Team/Team";
 
 const Homepage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Hero />

@@ -4,8 +4,8 @@ import { casesPage } from "constants";
 import styles from "./result.module.css";
 
 const Result = () => {
-  const { id } = useParams();
-  const caseEl = casesPage?.find((el) => el.id === Number(id)) || {};
+  const { caseID } = useParams();
+  const caseEl = casesPage?.find((el) => el.path === caseID) || {};
   const results = caseEl?.result?.results;
   const images = caseEl?.result?.images;
   const navigate = useNavigate();

@@ -59,7 +59,7 @@ const Hero = () => {
         <h2 className={styles.hero__title}>Наши кейсы</h2>
         <div className={styles.hero__wrapper}>
           <ul className={styles.hero__list}>
-            {casesShow?.map(({ id, path, heading, img, alt }) => {
+            {casesShow?.map(({ id, path, heading, imgBlue, imgGray, alt }) => {
               return (
                 <li className={styles.hero__item} key={id}>
                   <Link className={styles.hero__link} to={`/cases/${path}`}>
@@ -68,7 +68,22 @@ const Hero = () => {
                         {heading} <span className={styles.hero__arrow}>→</span>
                       </h4>
                     </div>
-                    <img src={img} alt={alt} className={styles.hero__img} />
+                    <img
+                      src={imgGray}
+                      alt={alt}
+                      className={cn(
+                        styles.hero__img,
+                        styles["hero__img--gray"]
+                      )}
+                    />
+                    <img
+                      src={imgBlue}
+                      alt={alt}
+                      className={cn(
+                        styles.hero__img,
+                        styles["hero__img--blue"]
+                      )}
+                    />
                   </Link>
                 </li>
               );

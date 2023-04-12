@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import styles from "./task.module.css";
 
 const Task = () => {
-  const { id } = useParams();
-  const caseEl = casesPage?.find((el) => el.id === Number(id)) || {};
+  const { caseID } = useParams();
+  const caseEl = casesPage?.find((el) => el.path === caseID) || {};
   const conditions = caseEl?.tasks?.conditions || [];
 
   return (

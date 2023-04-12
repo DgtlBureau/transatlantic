@@ -25,7 +25,6 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 320px;
   height: 490px;
   background-color: #18bbfe;
 }
@@ -40,14 +39,11 @@
     min-width: 511px;
     align-self: flex-start;
   }
-
-  .hero__img {
-    width: 418px;
-  }
 }
 
 @media screen and (min-width: 1180px) {
   .hero__container {
+    height: 400px;
     padding: 232px 58px 56px 58px;
   }
 
@@ -56,7 +52,6 @@
   }
 
   .hero__img {
-    width: 380px;
     height: 400px;
   }
 }

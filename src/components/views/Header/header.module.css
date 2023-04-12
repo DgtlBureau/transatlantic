@@ -61,10 +61,9 @@
 
 @media screen and (min-width: 1180px) {
   .header {
-    padding: 22px 58px 37px 58px;
+    padding: 22px 58px 22px 58px;
     justify-content: flex-start;
     align-items: flex-end;
-
     background-color: transparent;
   }
 
@@ -100,7 +99,19 @@
 
 /* HEADER TRANSPARENT OR CASES */
 
+.header__tel--light a {
+  color: #ffffff;
+}
+
+.header__logo--white {
+  fill: #ffffff;
+}
+
 .header--transparent {
+  background-color: transparent;
+}
+
+.header--light {
   background-color: #ffffff;
 }
 
