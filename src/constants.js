@@ -9,7 +9,8 @@ import caseImg from "../src/assets/images/case-page/case-1.png";
 import tankOne from "../src/assets/images/service/tanks/tank-1.png";
 import tankSecond from "../src/assets/images/service/tanks/tank-2.png";
 import containerHero from "../src/assets/images/service/tanks/container-hero.png";
-import containerPark from "../src/assets/images/park/container.png";
+import containerSmall from "../src/assets/images/park/container-20.png";
+import containerBig from "../src/assets/images/park/container-40.png";
 
 import containerBlue from "../src/assets/images/cases/containers-blue.png";
 import craneBlue from "../src/assets/images/cases/crane-blue.png";
@@ -379,7 +380,7 @@ export const servicesPage = [
 export const parkPage = [
   {
     id: 0,
-    img: containerPark,
+    img: containerSmall,
     heading: "20 футов Dry Cube",
     descr:
       "Самый универсальный вид контейнера. Подойдет для большинства грузов",
@@ -392,7 +393,7 @@ export const parkPage = [
   },
   {
     id: 1,
-    img: containerPark,
+    img: containerBig,
     heading: "40 футов Dry Cube",
     descr:
       "Удлиненная вдвое версия самого популярного контейнера для перевозок ",

@@ -1,11 +1,14 @@
 import { HandySvg } from "handy-svg";
 import { parkPage } from "constants";
 import ButtonLink from "components/ui/ButtonLink/ButtonLink";
-import containerImg from "../../../../assets/images/park/container.png";
 import weightSvg from "../../../../assets/images/park/containers/weight.svg";
 import volumeSvg from "../../../../assets/images/park/containers/volume.svg";
 import sizeSvg from "../../../../assets/images/park/containers/size.svg";
 import propertySvg from "../../../../assets/images/park/containers/property.svg";
+import tankFirst from "../../../../assets/images/park/tanks/tank-1.png";
+import tankSecond from "../../../../assets/images/park/tanks/tank-2.png";
+import tankThird from "../../../../assets/images/park/tanks/tank-3.png";
+import tankForth from "../../../../assets/images/park/tanks/tank-4.png";
 import styles from "./containers.module.css";
 
 const Containers = () => {
@@ -128,13 +131,38 @@ const Containers = () => {
           )}
         </ul>
 
-        <div className={styles.notstandard}>
-          <div className={styles.containers__wrapper}>
-            <img
-              className={styles.containers__img}
-              src={containerImg}
-              alt="container"
-            />
+        <div className={styles.tanks}>
+          <div className={styles.tanks__wrapper}>
+            <ul className={styles.tanks__list}>
+              <li className={styles.tanks__item}>
+                <img
+                  className={styles.containers__img}
+                  src={tankFirst}
+                  alt="tank"
+                />
+              </li>
+              <li className={styles.tanks__item}>
+                <img
+                  className={styles.containers__img}
+                  src={tankSecond}
+                  alt="tank"
+                />
+              </li>
+              <li className={styles.tanks__item}>
+                <img
+                  className={styles.containers__img}
+                  src={tankThird}
+                  alt="tank"
+                />
+              </li>
+              <li className={styles.tanks__item}>
+                <img
+                  className={styles.containers__img}
+                  src={tankForth}
+                  alt="tank"
+                />
+              </li>
+            </ul>
           </div>
           <h4 className={styles.containers__heading}>Нестандартный груз?</h4>
           <p className={styles.containers__descr}>
