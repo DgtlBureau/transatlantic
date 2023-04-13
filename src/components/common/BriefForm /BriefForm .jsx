@@ -45,7 +45,7 @@ const BriefForm = () => {
     },
     validate,
     onSubmit: (values) => {
-      console.log(formik.touched);
+      console.log(formik);
       formik.resetForm();
     },
   });
@@ -122,7 +122,7 @@ const BriefForm = () => {
               color="blue"
               type="submit"
               onClick={handleClick}
-              disabled={!formik.isValid && !formik.touched}
+              disabled={!(formik.isValid && formik.dirty)}
             />
           </div>
         </form>
