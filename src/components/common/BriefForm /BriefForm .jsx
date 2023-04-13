@@ -11,24 +11,15 @@ import FormContent from "../FormContent/FormContent";
 const BriefForm = () => {
   const [modalActive, setModalActive] = useState(false);
 
+  // this is the logic of changing styles
+
   const { pathname } = useLocation();
   const variant =
     `${pathname}` === "/contacts" ||
     `${pathname}` === "/containers" ||
     `${pathname}` === "/park";
 
-  const formik = useFormik({
-    initialValues: {
-      name: "",
-      tel: "",
-      email: "",
-    },
-    validate,
-    onSubmit: (values) => {
-      console.log(values);
-      formik.resetForm();
-    },
-  });
+  // this is the logic of opening and closing the modal
 
   const closeModal = () => {
     setModalActive(false);
@@ -43,6 +34,22 @@ const BriefForm = () => {
 
     return () => clearTimeout(timer);
   };
+
+  // this is the logic of the form
+
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      tel: "",
+      email: "",
+    },
+    validate,
+    onSubmit: (values) => {
+      console.log(formik.touched);
+      formik.resetForm();
+    },
+  });
+
   return (
     <>
       <div className={styles.form__wrapper}>
@@ -62,6 +69,7 @@ const BriefForm = () => {
                 [styles["form__input--light"]]: variant,
               })}
               onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
             />
 
             {formik.touched.name && formik.errors.name ? (
@@ -80,6 +88,7 @@ const BriefForm = () => {
                 [styles["form__input--light"]]: variant,
               })}
               onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
             />
 
             {formik.touched.tel && formik.errors.tel ? (
@@ -93,6 +102,7 @@ const BriefForm = () => {
               placeholder="Ваш email"
               name="email"
               value={formik.values.email}
+              onBlur={formik.handleBlur}
               className={cn(styles.form__input, {
                 [styles["input__errors"]]:
                   formik.errors.email && formik.touched.email,
@@ -112,7 +122,7 @@ const BriefForm = () => {
               color="blue"
               type="submit"
               onClick={handleClick}
-              disabled={true}
+              disabled={!formik.isValid && !formik.touched}
             />
           </div>
         </form>
