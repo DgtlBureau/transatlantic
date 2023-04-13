@@ -1,10 +1,31 @@
+import { motion } from "framer-motion";
 import cn from "classnames";
 import styles from "./advantage.module.css";
 
 const Advantage = () => {
+  const blockAnimation = {
+    hidden: {
+      y: 0,
+      opacity: 1,
+    },
+    vivsible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
-    <section className={styles.advantage}>
-      <div className={styles.advantage__container}>
+    <motion.section
+      className={styles.advantage}
+      initial="hidden"
+      whileInView="vivsible"
+      viewport={{ amount: 0.95, once: true }}
+    >
+      <motion.div
+        className={styles.advantage__container}
+        variants={blockAnimation}
+        transition={{ duration: 5 }}
+      >
         <div className={styles.advantage__info}>
           <h2 className={styles.advantage__title}>250 000 тонн за год</h2>
           <p className={styles.advantage__subtitle}>Импорт и экспорт</p>
@@ -83,8 +104,8 @@ const Advantage = () => {
             </span>
           </div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 

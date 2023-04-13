@@ -5,6 +5,7 @@
   position: relative;
   background-color: #edf6ff;
   padding: 5px 20px 34px 20px;
+  height: 100vh;
 }
 
 .hero__container {
