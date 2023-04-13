@@ -6,6 +6,7 @@ import styles from "./buttonLink.module.css";
 const ButtonLink = ({ text, onClick, to, color, className }) => {
   const { pathname } = useLocation();
   const { caseID } = useParams();
+  const { id } = useParams();
 
   return (
     <Link
@@ -14,7 +15,10 @@ const ButtonLink = ({ text, onClick, to, color, className }) => {
         styles.buttonLink,
         styles[`buttonLink__${color}`],
         `${className}`,
-        { [styles["buttonLink--light"]]: pathname === `/cases/${caseID}` }
+        {
+          [styles["buttonLink--light"]]:
+            pathname === `/cases/${caseID}` || pathname === `/services/${id}`,
+        }
       )}
       onClick={onClick}
     >
