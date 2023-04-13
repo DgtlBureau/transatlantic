@@ -93,6 +93,10 @@
   margin-bottom: 24px;
 }
 
+.containers__top {
+  margin-bottom: 64px;
+}
+
 @media screen and (min-width: 768px) {
   .containers__container {
     padding: 48px 20px;
@@ -141,7 +145,10 @@
   .containers__container {
     padding: 48px 63px;
     max-width: 1180px;
-    flex-direction: row;
+  }
+
+  .containers__top {
+    display: flex;
     justify-content: space-between;
   }
 
@@ -169,5 +176,9 @@
 
   .containers__right {
     max-width: 650px;
+  }
+
+  .containers__btn {
+    align-self: flex-start;
   }
 }

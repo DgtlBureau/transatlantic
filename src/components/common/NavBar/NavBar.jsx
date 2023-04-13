@@ -6,6 +6,7 @@ import styles from "./navbar.module.css";
 const NavBar = ({ type, setOpenMenu }) => {
   const { pathname } = useLocation();
   const { caseID } = useParams();
+  const { id } = useParams();
 
   const variant =
     `${pathname}` === "/contacts" ||
@@ -21,7 +22,9 @@ const NavBar = ({ type, setOpenMenu }) => {
             to={type === "footer" ? "#" : "/services"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
-              [styles["nav__link--light"]]: pathname === `/cases/${caseID}`,
+              [styles["nav__link--light"]]:
+                pathname === `/cases/${caseID}` ||
+                pathname === `/services/${id}`,
             })}
           >
             {type === "footer" ? "О компании" : "Услуги"}
@@ -33,7 +36,9 @@ const NavBar = ({ type, setOpenMenu }) => {
             to={type === "footer" ? "/services" : "/cases"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
-              [styles["nav__link--light"]]: pathname === `/cases/${caseID}`,
+              [styles["nav__link--light"]]:
+                pathname === `/cases/${caseID}` ||
+                pathname === `/services/${id}`,
             })}
           >
             {type === "footer" ? "Услуги" : "Кейсы"}
@@ -45,7 +50,9 @@ const NavBar = ({ type, setOpenMenu }) => {
             to={type === "footer" ? "/cases" : "/contacts"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
-              [styles["nav__link--light"]]: pathname === `/cases/${caseID}`,
+              [styles["nav__link--light"]]:
+                pathname === `/cases/${caseID}` ||
+                pathname === `/services/${id}`,
             })}
           >
             {type === "footer" ? "Кейсы" : "Контакты"}
@@ -57,7 +64,9 @@ const NavBar = ({ type, setOpenMenu }) => {
             to="/park"
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
-              [styles["nav__link--light"]]: pathname === `/cases/${caseID}`,
+              [styles["nav__link--light"]]:
+                pathname === `/cases/${caseID}` ||
+                pathname === `/services/${id}`,
             })}
           >
             Контейнерный парк
