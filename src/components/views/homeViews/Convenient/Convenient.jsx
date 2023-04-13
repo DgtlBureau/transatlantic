@@ -1,10 +1,26 @@
+import { motion } from "framer-motion";
 import ButtonLink from "components/ui/ButtonLink/ButtonLink";
+import container from "../../../../assets/images/desktop/track-container.png";
 import cn from "classnames";
 import styles from "./convenient.module.css";
 
 const Convenient = () => {
+  const blockAnimation = {
+    hidden: {
+      x: -900,
+    },
+    vivsible: {
+      x: 16,
+    },
+  };
+
   return (
-    <section className={styles.convenient}>
+    <motion.section
+      className={styles.convenient}
+      initial="hidden"
+      whileInView="vivsible"
+      viewport={{ amount: 0.3, once: true }}
+    >
       <div className={styles.convenient__container}>
         <div className={styles["convenient__info--top"]}>
           <h2 className={styles.convenient__title}>Даже если вы далеко</h2>
@@ -29,9 +45,17 @@ const Convenient = () => {
             </p>
           </div>
         </div>
-        <div className={styles.convenient__wrapper}>
-          <div className={styles.convenient__image}></div>
-        </div>
+        <motion.div
+          className={styles.convenient__wrapper}
+          variants={blockAnimation}
+          transition={{ duration: 2.7 }}
+        >
+          <img
+            src={container}
+            alt="container"
+            className={styles.convenient__image}
+          />
+        </motion.div>
         <div className={styles["convenient__info--bottom"]}>
           <p
             className={cn(
@@ -47,7 +71,7 @@ const Convenient = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,16 +1,18 @@
 import { motion } from "framer-motion";
 import containerBg from "../../../../assets/images/desktop/container-front.png";
-import styles from "./background.module.css";
+import styles from "./background2.module.css";
 
-const Background = () => {
+const Background2 = () => {
   const blockAnimation = {
     hidden: {
-      y: -150,
-      opacity: 1,
+      y: -900,
+      scale: 1,
+      opacity: 0,
     },
     vivsible: {
-      y: 750,
-      opacity: 0,
+      y: 773,
+      scale: 0.435,
+      opacity: 1,
     },
   };
 
@@ -19,7 +21,7 @@ const Background = () => {
       className={styles.background}
       initial="hidden"
       whileInView="vivsible"
-      viewport={{ amount: 0.1, once: true }}
+      viewport={{ amount: 0.3, once: true }}
     >
       <motion.img
         src={containerBg}
@@ -32,4 +34,4 @@ const Background = () => {
   );
 };
 
-export default Background;
+export default Background2;
