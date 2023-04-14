@@ -35,55 +35,68 @@ const Header = () => {
         }
       )}
     >
-      <Link
-        to="/"
-        className={cn(styles.header__logo, {
-          [styles["header__logo--white"]]:
-            pathname === `/cases/${caseID}` || pathname === `/services/${id}`,
-        })}
-      >
-        <HandySvg src={logo} width="141" height="32" />
-      </Link>
-      <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      <div className={styles.openBtn__wrapper}>
-        <IconButton
-          className={styles.openBtn}
-          onClick={() => setOpenMenu(!openMenu)}
-        >
-          <HandySvg
-            src={stick}
-            width={22}
-            height={3}
-            className={cn(styles.openBtn__top, {
-              [styles["openBtn__top--open"]]: openMenu,
-            })}
-          />
-          <HandySvg
-            src={stick}
-            width={22}
-            height={3}
-            className={cn(styles.openBtn__middle, {
-              [styles["openBtn__middle--open"]]: openMenu,
-            })}
-          />
-          <HandySvg
-            src={stick}
-            width={22}
-            height={3}
-            className={cn(styles.openBtn__bottom, {
-              [styles["openBtn__bottom--open"]]: openMenu,
-            })}
-          />
-        </IconButton>
-      </div>
       <div
-        className={cn(styles.header__tel, {
-          [styles["header__tel--light"]]:
-            pathname === `/cases/${caseID}` || pathname === `/services/${id}`,
-        })}
+        className={cn(
+          styles.header__container,
+          {
+            [styles["header__container--transparent"]]:
+              pathname === `/cases/${caseID}` || pathname === `/services/${id}`,
+          },
+          {
+            [styles["header__container--light"]]: variant,
+          }
+        )}
       >
-        <a href="tel:+73432879414">+7 (343) 287-94-14</a>
-        <a href="tel:+74954454592">+7 (495) 445-45-92</a>
+        <Link
+          to="/"
+          className={cn(styles.header__logo, {
+            [styles["header__logo--white"]]:
+              pathname === `/cases/${caseID}` || pathname === `/services/${id}`,
+          })}
+        >
+          <HandySvg src={logo} width="141" height="32" />
+        </Link>
+        <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
+        <div className={styles.openBtn__wrapper}>
+          <IconButton
+            className={styles.openBtn}
+            onClick={() => setOpenMenu(!openMenu)}
+          >
+            <HandySvg
+              src={stick}
+              width={22}
+              height={3}
+              className={cn(styles.openBtn__top, {
+                [styles["openBtn__top--open"]]: openMenu,
+              })}
+            />
+            <HandySvg
+              src={stick}
+              width={22}
+              height={3}
+              className={cn(styles.openBtn__middle, {
+                [styles["openBtn__middle--open"]]: openMenu,
+              })}
+            />
+            <HandySvg
+              src={stick}
+              width={22}
+              height={3}
+              className={cn(styles.openBtn__bottom, {
+                [styles["openBtn__bottom--open"]]: openMenu,
+              })}
+            />
+          </IconButton>
+        </div>
+        <div
+          className={cn(styles.header__tel, {
+            [styles["header__tel--light"]]:
+              pathname === `/cases/${caseID}` || pathname === `/services/${id}`,
+          })}
+        >
+          <a href="tel:+73432879414">+7 (343) 287-94-14</a>
+          <a href="tel:+74954454592">+7 (495) 445-45-92</a>
+        </div>
       </div>
     </header>
   );
