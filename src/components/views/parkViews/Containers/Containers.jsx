@@ -1,6 +1,6 @@
+import { Link } from "react-scroll";
 import { HandySvg } from "handy-svg";
 import { parkPage } from "constants";
-import ButtonLink from "components/ui/ButtonLink/ButtonLink";
 import weightSvg from "../../../../assets/images/park/containers/weight.svg";
 import volumeSvg from "../../../../assets/images/park/containers/volume.svg";
 import sizeSvg from "../../../../assets/images/park/containers/size.svg";
@@ -118,12 +118,15 @@ const Containers = () => {
                         </div>
                       </li>
                     </ul>
-                    <ButtonLink
-                      text="Арендовать"
-                      to="#"
-                      color="blue"
+                    <Link
+                      to="brief"
+                      smooth={true}
+                      offset={-150}
+                      duration={500}
                       className={styles.container__btn}
-                    />
+                    >
+                      Арендовать
+                    </Link>
                   </div>
                 </li>
               );
@@ -169,12 +172,15 @@ const Containers = () => {
             Поможем подобрать подходящее оборудование для перевозки любого
             нестандартного груза и организуем его перевозку
           </p>
-          <ButtonLink
-            text="Связаться"
-            to="#"
-            color="blue"
+          <Link
+            to="brief"
+            smooth={true}
+            offset={-150}
+            duration={500}
             className={styles.container__btn}
-          />
+          >
+            Связаться
+          </Link>
         </div>
       </div>
     </section>

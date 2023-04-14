@@ -1,16 +1,17 @@
 import { servicesPage } from "constants";
-import { useNavigate, useParams } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import styles from "./containers.module.css";
-import Button from "components/ui/Button/Button";
+// import Button from "components/ui/Button/Button";
 
 const Containers = () => {
-  const { id } = useParams();
-  const serviceEl = servicesPage?.find((el) => el.id === Number(id)) || {};
+  // const { id } = useParams();
+  const serviceEl = servicesPage?.find((el) => el.path === "/cargo") || {};
+  // const serviceEl = servicesPage?.find((el) => el.id === Number(id)) || {};
   const containers = serviceEl?.containers?.list || [];
   const dimensions = serviceEl?.containers?.standart?.dimensions || [];
 
-  const navigate = useNavigate();
-  const goBack = () => navigate("/services", { replace: true });
+  // const navigate = useNavigate();
+  // const goBack = () => navigate("/services", { replace: true });
 
   return (
     <section className={styles.containers}>
@@ -73,14 +74,14 @@ const Containers = () => {
             </ul>
           </div>
         </div>
-        <div className={styles.containers__btn}>
+        {/* <div className={styles.containers__btn}>
           <Button
             text="Еще услуги"
             onClick={goBack}
             color="case"
             type="button"
           />
-        </div>
+        </div> */}
       </div>
     </section>
   );

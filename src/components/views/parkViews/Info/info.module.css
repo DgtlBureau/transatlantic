@@ -64,9 +64,24 @@
 }
 
 .info__btn {
+  border: none;
+  display: inline-block;
+  transition-duration: 500ms;
+  border-radius: 6px;
+  background-color: #18bbfe;
+  font-family: "Inter Tight";
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
   padding: 9px 21px;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.info__btn:hover {
+  transition-duration: 500ms;
+  background-color: #d5edff;
+  color: #18bbfe;
 }
 
 @media screen and (min-width: 768px) {

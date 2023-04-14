@@ -189,7 +189,7 @@ export const casesPage = [
     path: "4",
     imgBlue: shipBlue,
     imgGray: shipGray,
-    heading: "20 000 тонн опасного груза из Китая →",
+    heading: "20 000 тонн опасного груза из Китая",
     alt: "ship",
   },
 ];
@@ -204,7 +204,7 @@ export const servicesPage = [
   },
   {
     id: 1,
-    path: "2",
+    path: "/cargo",
     img: containerHero,
     heading: "Контейнерные перевозки",
     alt: "lighthouse",
@@ -316,7 +316,7 @@ export const servicesPage = [
           img: tankSecond,
           alt: "container",
           descr:
-            "Благодаря увеличенному объему подходят для транспортировки крупных товарных партий.",
+            "Благодаря увеличенному объему подходят для транспортировки крупных товарных партий.",
         },
         {
           id: 2,

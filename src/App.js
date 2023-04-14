@@ -5,7 +5,7 @@ import ContactsPage from "pages/ContactsPage/ContactsPage";
 import CasesPage from "pages/CasesPage/CasesPage";
 import CasePage from "pages/CasePage/CasePage";
 import ParkPage from "pages/ParkPage/ParkPage";
-import ServicesPage from "pages/ServicesPage/ServicesPage";
+// import ServicesPage from "pages/ServicesPage/ServicesPage";
 import ServicePage from "pages/ServicePage/ServicePage";
 import "./App.css";
 import { useEffect } from "react";
@@ -23,8 +23,8 @@ function App() {
           <Route path="/contacts" element={<ContactsPage />} />
           <Route path="/cases" element={<CasesPage />} />
           <Route path="/cases/:caseID" element={<CasePage />} />
-          <Route path="/services" element={<ServicesPage />} />
-          <Route path="/services/:id" element={<ServicePage />} />
+          {/* <Route path="/services" element={<ServicesPage />} /> */}
+          <Route path="/cargo" element={<ServicePage />} />
           <Route path="/park" element={<ParkPage />} />
         </Route>
       </Routes>

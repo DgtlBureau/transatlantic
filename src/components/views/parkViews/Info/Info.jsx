@@ -1,8 +1,8 @@
+import { Link } from "react-scroll";
 import { HandySvg } from "handy-svg";
 import svgFirst from "../../../../assets/images/park/advantage/svg-1.svg";
 import svgSecond from "../../../../assets/images/park/advantage/svg-2.svg";
 import styles from "./info.module.css";
-import ButtonLink from "components/ui/ButtonLink/ButtonLink";
 
 const Info = () => {
   return (
@@ -43,12 +43,15 @@ const Info = () => {
             Зависит от места нахождения и маршрута перевозки, сможем посчитать
             за 30 минут после получения вашей задачи.  Обращайтесь!
           </p>
-          <ButtonLink
-            text="Арендовать контейнер"
-            to="#"
+          <Link
+            to="brief"
+            smooth={true}
+            offset={-150}
+            duration={500}
             className={styles.info__btn}
-            color="blue"
-          />
+          >
+            Арендовать контейнер
+          </Link>
         </div>
       </div>
     </section>
