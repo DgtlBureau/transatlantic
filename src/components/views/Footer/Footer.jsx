@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { HandySvg } from "handy-svg";
 import Contacts from "components/common/Contacts";
 import NavBar from "components/common/NavBar";
-import ButtonLink from "components/ui/ButtonLink/ButtonLink";
+// import ButtonLink from "components/ui/ButtonLink/ButtonLink";
 import logo from "../../../assets/images/mobile/svg/logo-mobile-header.svg";
 import cn from "classnames";
 import styles from "./footer.module.css";
@@ -49,7 +49,7 @@ const Footer = () => {
           />
         </div>
 
-        {variant ? (
+        {/* {variant ? (
           <div
             className={cn(styles.footer__button, {
               [styles["footer__button--blue"]]: variant,
@@ -61,7 +61,7 @@ const Footer = () => {
           <div className={styles.footer__button}>
             <ButtonLink to={"#"} text="Войти в личный кабинет" color="gray" />
           </div>
-        )}
+        )} */}
 
         <div
           className={cn(styles.footer__nav, {

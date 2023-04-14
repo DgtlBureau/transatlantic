@@ -6,7 +6,6 @@
 
   background-color: #222222;
   padding: 64px 20px;
-  height: 100vh;
 }
 
 .convenient__container {
@@ -85,6 +84,26 @@
   right: -631px;
 } */
 
+.convenient__button a {
+  border: none;
+  display: inline-block;
+  transition-duration: 500ms;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background-color: #18bbfe;
+  font-family: "Inter Tight";
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.convenient__button a:hover {
+  transition-duration: 500ms;
+  background-color: #d5edff;
+  color: #18bbfe;
+}
+
 @media screen and (min-width: 768px) {
   .convenient {
     padding: 56px 20px 64px 20px;
@@ -131,6 +150,7 @@
 @media screen and (min-width: 1180px) {
   .convenient {
     padding: 112px 100px 80px;
+    height: 100vh;
   }
 
   .convenient__container {

@@ -31,11 +31,11 @@
   -o-transform: scale(1.05) translateZ(0);
 }
 
-.nav__link:active,
+/* .nav__link:active,
 .nav__link:focus,
 .active {
   color: #18bbfe;
-}
+} */
 
 .nav--footer {
   margin-top: 40px;
@@ -97,6 +97,11 @@
   .nav__link--light {
     color: #ffffff;
   }
+
+  /* .nav__link--light:active,
+  .nav__link--light:focus {
+    color: #0030fc;
+  } */
 }
 
 /* NAVBAR BLUE */
@@ -105,3 +110,8 @@
   text-decoration-line: underline;
   color: #18bbfe;
 }
+/* 
+.nav__link--blue:active,
+.nav__link--blue:focus {
+  color: #0030fc;
+} */

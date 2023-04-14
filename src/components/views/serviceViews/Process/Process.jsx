@@ -1,10 +1,12 @@
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import { servicesPage } from "constants";
 import styles from "./process.module.css";
 
 const Process = () => {
-  const { id } = useParams();
-  const serviceEl = servicesPage?.find((el) => el.id === Number(id)) || {};
+  // const { id } = useParams();
+  // const serviceEl = servicesPage?.find((el) => el.id === Number(id)) || {};
+  const serviceEl = servicesPage?.find((el) => el.path === "/cargo") || {};
+
   const services = serviceEl?.process?.services;
 
   return (

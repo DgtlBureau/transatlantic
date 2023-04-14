@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ButtonLink from "components/ui/ButtonLink/ButtonLink";
+import { Link } from "react-scroll";
 import container from "../../../../assets/images/desktop/track-container.png";
 import cn from "classnames";
 import styles from "./convenient.module.css";
@@ -67,7 +67,9 @@ const Convenient = () => {
             выгодной цене
           </p>
           <div className={styles.convenient__button}>
-            <ButtonLink text="Арендовать контейнер" to="#" color="blue" />
+            <Link to="brief" smooth={true} offset={-150} duration={500}>
+              Арендовать контейнер
+            </Link>
           </div>
         </div>
       </div>

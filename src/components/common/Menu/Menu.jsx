@@ -1,7 +1,7 @@
 import { HandySvg } from "handy-svg";
 import PropTypes from "prop-types";
 import IconButton from "components/ui/IconButton";
-import ButtonLink from "components/ui/ButtonLink/ButtonLink";
+// import ButtonLink from "components/ui/ButtonLink/ButtonLink";
 import Contacts from "components/common/Contacts";
 import NavBar from "components/common/NavBar";
 import closeBtn from "../../../assets/images/mobile/svg/close-btn.svg";
@@ -29,9 +29,9 @@ const Menu = ({ openMenu, setOpenMenu }) => {
         </IconButton>
       </div>
 
-      <div className={styles.menu__blueButton}>
+      {/* <div className={styles.menu__blueButton}>
         <ButtonLink text="Войти в личный кабинет" to="#" color="blue-big" />
-      </div>
+      </div> */}
 
       <NavBar setOpenMenu={setOpenMenu} />
 
