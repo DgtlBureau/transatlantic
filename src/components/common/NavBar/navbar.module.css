@@ -15,21 +15,24 @@
 }
 
 .nav__link {
-  transition-duration: 500ms;
   font-family: "Dewi";
   font-weight: 700;
   font-size: 18px;
   letter-spacing: -0.04em;
   color: #121c46;
+  display: inline-block;
+}
+
+.nav__item:hover .nav__link {
+  transform: scale(1.05) translateZ(0);
+  -webkit-transform: scale(1.05) translateZ(0);
+  -moz-transform: scale(1.05) translateZ(0);
+  -ms-transform: scale(1.05) translateZ(0);
+  -o-transform: scale(1.05) translateZ(0);
 }
 
 .nav__link:active,
 .nav__link:focus,
-.nav__link:hover {
-  transition-duration: 500ms;
-  color: #18bbfe;
-}
-
 .active {
   color: #18bbfe;
 }
@@ -39,19 +42,9 @@
 }
 
 .nav__link--footer {
-  transition-duration: 500ms;
   text-decoration: underline;
   color: #ffffff;
   font-size: 12px;
-  opacity: 1;
-}
-
-.nav__link--footer:active,
-.nav__link--footer:focus,
-.nav__link--footer:hover {
-  transition-duration: 500ms;
-  opacity: 0.3;
-  color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
