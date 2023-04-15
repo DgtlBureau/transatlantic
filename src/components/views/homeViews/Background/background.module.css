@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1440px) {
   .background {
     display: flex;
     align-items: center;

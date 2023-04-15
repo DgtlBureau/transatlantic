@@ -1,5 +1,4 @@
 import { Link } from "react-scroll";
-import ButtonLink from "components/ui/ButtonLink/ButtonLink";
 import styles from "./hero.module.css";
 
 const Hero = () => {

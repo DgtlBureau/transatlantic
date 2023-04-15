@@ -47,11 +47,11 @@ const NavBar = ({ type, setOpenMenu }) => {
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
             onClick={() => setOpenMenu(false)}
-            to="/park"
+            to={type === "footer" ? "/cases" : "/park"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
-                pathname === `/cases/${caseID}` || pathname === "/cargo",
+                pathname === `/cases/${caseID}` || pathname === "/cases",
             })}
           >
             {type === "footer" ? "Кейсы" : "Контейнерный парк"}
@@ -60,11 +60,11 @@ const NavBar = ({ type, setOpenMenu }) => {
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
             onClick={() => setOpenMenu(false)}
-            to={type === "footer" ? "/cases" : "/contacts"}
+            to={type === "footer" ? "/park" : "/contacts"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
-                pathname === `/cases/${caseID}` || pathname === "/cargo",
+                pathname === `/cases/${caseID}` || pathname === "/park",
             })}
           >
             {type === "footer" ? "Контейнерный парк" : "Контакты"}

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import { useFormik } from "formik";
 import { useLocation } from "react-router";
 import { validate } from "./utils/validate";
@@ -50,16 +50,16 @@ const BriefForm = () => {
     // обращение к env файлу, который лежит на хосте
 
     onSubmit: (values) => {
-      const data = JSON.stringify(values, null, 2);
-      try {
-        axios.post(`${process.env.NEXT_PUBLIC_SENDMAIL_HOST}`, {
-          data,
-        });
-      } catch (error) {
-        console.log(error);
-      }
-      console.log(data);
-      alert(JSON.stringify(values, null, 2));
+      // const data = JSON.stringify(values, null, 2);
+      // try {
+      //   axios.post(`${process.env.NEXT_PUBLIC_SENDMAIL_HOST}`, {
+      //     data,
+      //   });
+      // } catch (error) {
+      //   console.log(error);
+      // }
+      // console.log(data);
+      // alert(JSON.stringify(values, null, 2));
       formik.resetForm();
     },
   });
