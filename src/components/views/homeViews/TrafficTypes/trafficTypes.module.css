@@ -1,6 +1,5 @@
 .traffic {
   background-color: #edf6ff;
-  height: 100vh;
 }
 
 .traffic__container {
@@ -136,7 +135,7 @@
 }
 
 @media screen and (min-width: 1180px) {
-  .traffic {
+  .traffic__container {
     padding: 112px 96px 121px 54px;
   }
 
@@ -199,5 +198,11 @@
   .traffic__img--shipping {
     height: 138px;
     width: 413px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .traffic {
+    height: 100vh;
   }
 }

@@ -70,6 +70,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: -651px;
 }
 
 /* .convenient__image {
@@ -137,7 +138,7 @@
 
   .convenient__wrapper {
     margin-bottom: 40px;
-    width: 100%;
+    margin-left: -251px;
   }
 
   /* .convenient__image {
@@ -150,7 +151,6 @@
 @media screen and (min-width: 1180px) {
   .convenient {
     padding: 112px 100px 80px;
-    height: 100vh;
   }
 
   .convenient__container {
@@ -201,5 +201,11 @@
   .convenient__image {
     width: 1482px;
     height: 366px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .convenient {
+    height: 100vh;
   }
 }
