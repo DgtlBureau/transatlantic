@@ -5,7 +5,20 @@ import fourth from "../src/assets/images/teams/image-4.png";
 import fifth from "../src/assets/images/teams/image-5.png";
 import sixth from "../src/assets/images/teams/image-6.png";
 
-import caseImg from "../src/assets/images/case-page/case-1.png";
+// CASES CHINA
+
+import casesChinaMobileFirst from "../src/assets/images/cases/china/china-mobile-1.jpg";
+import casesChinaMobileSecond from "../src/assets/images/cases/china/china-mobile-2.jpg";
+import casesChinaMobileThird from "../src/assets/images/cases/china/china-mobile-3.jpg";
+
+import casesChinaTabletFirst from "../src/assets/images/cases/china/china-tablet-1.jpg";
+import casesChinaTabletSecond from "../src/assets/images/cases/china/china-tablet-2.jpg";
+import casesChinaTabletThird from "../src/assets/images/cases/china/china-tablet-3.jpg";
+
+import casesChinaDesktopFirst from "../src/assets/images/cases/china/china-desktop-1.jpg";
+import casesChinaDesktopSecond from "../src/assets/images/cases/china/china-desktop-2.jpg";
+import casesChinaDesktopThird from "../src/assets/images/cases/china/china-desktop-3.jpg";
+
 import tankOne from "../src/assets/images/service/tanks/tank-1.png";
 import tankSecond from "../src/assets/images/service/tanks/tank-2.png";
 import containerHero from "../src/assets/images/service/tanks/container-hero.png";
@@ -97,19 +110,19 @@ export const casesPage = [
     tasks: {
       title: "Задача",
       descr:
-        "Доставить сварочное оборудование для автоматической электродуговой сварки металлов из порта Ксинганг в город Волгодонск",
+        "Доставка оборудования для автоматической электродуговой сварки металлов общим весом 172 072 кг из порта Ксинганг в город Волгодонск",
       conditions: [
         {
           id: 0,
-          heading: "33 места",
-          text: "10 контейнеров 40HC + 3 негабаритных",
+          heading: "Контейнеры",
+          text: "10 контейнеров 40 футов",
         },
         {
           id: 1,
           heading: "172 072 кг",
           text: "Общий вес станка в собранном виде",
         },
-        { id: 2, heading: "2 варианта отправки", text: "FR/OT или балком" },
+        { id: 2, heading: "Негабарит", text: "3 крупных места" },
         { id: 3, heading: "Срок", text: "45 дней от погрузки до получения" },
       ],
     },
@@ -118,53 +131,110 @@ export const casesPage = [
       descr: [
         {
           id: 0,
-          text: "Так как это является единым станком, то весь груз должен был приплыть на один терминал для подачи одной декларации.",
+          text: "Нам предстояло рассчитать оптимальное кол-во контейнеров для перевозки мелких деталей станка и предложить вариант транспортировки негабаритных деталей. Особое условие – груз должен прибыть в порт назначения на один терминал (для таможенной очистки) и примерно в одно и то же время (для избежания лишних расходов по хранению).",
         },
         {
           id: 1,
-          text: "Десять 40-футовых контейнеров было решено отправить на линии FESCO на терминал ВМТП (Владивосток).",
+          text: "Мелкие детали было решено отправить в 10*40 футовых контейнерах на линии FESCO в порт ВМТП. Почему именно этот порт? – Здесь есть возможности по разгрузке тяжелых и негабаритных грузов. Это тоже нужно было учитывать при выборе порта назначения.",
         },
         {
           id: 2,
-          text: "А 3 негабаритных места отправляли балком на другой линии и другом судне. Так же цель была чтобы они пришли примерно одновременно, чтобы не возник простой и расходы. В результате слаженной работы грузы были отправлены примерно в разрезе 5 дней друг от друга на разных судах и линиях, пришли на один терминал и примерно в одно и тоже время.",
+          text: "По негабаритным местам – сначала хотели использовать контейнеры типа Flat Rack (FR), но это оказалось очень дорого. Предложили клиенту отправить их балкерным судном (когда груз просто ставится на корабль), что оказалось в разы дешевле и не менее надежно. Осталось только подобрать суда примерно с одной датой выхода и подстроится под готовность груза клиента.",
         },
       ],
     },
     route: {
-      title: "Маршрут грузоперевозки",
+      title: "Маршрут",
       descr: [
         {
           id: 0,
-          text: "Далее десять 40-футовых контейнеров были отгружены в Ростов с дальнейшим вывозом в Волгодонск до склада.",
+          text: "Груз был получен в Китае и доставлен в порт Ксинганг, откуда морским путем был переправлен во Владивосток на двух разных судах с разницей в 5 дней.",
         },
         {
           id: 1,
-          text: "3 места были погружены на автопоезд и отправлены тралом до Волгодонска до склада.",
-        },
-        {
-          id: 2,
-          text: "Весь товар пришел в сохранности, что являлось очень важной частью перевозки, так как стоимость груза очень дорогая.",
+          text: "Сухопутная часть проходила так: с контейнерами проблем не возникло, они все были отправлены по жд до станции Ростов-Товарный с дальнейшим вывозом на авто до склада клиента в г. Волгодонск. А негабаритные детали были отправлены автопоездом, ввиду высокой стоимости жд платформ.",
         },
       ],
-      to: "Сухопутный путь в Китай",
-      from: "Из Забайкальска",
     },
     result: {
       title: "Результат",
       results: [
         {
           id: 0,
-          text: "1. Загрузили и уплыли это все из Китая в течение 5 дней с даты готовности груза",
+          text: "1. Срок доставки составил 45 суток",
         },
-        { id: 1, text: "2. Прибыли на 1 терминал" },
-        { id: 2, text: "3. Прибыли обе партии практически одновременно" },
-        { id: 3, text: "4. Погрузили на тралы без задержек и повреждений" },
-        { id: 4, text: "5. Доставили все в сохранности" },
+        {
+          id: 1,
+          text: "2. Груз пришел в сохранности, без каких-либо повреждений, несмотря на перегрузы и сложности транспортировки негабаритных деталей",
+        },
+        {
+          id: 2,
+          text: "3. Выполнены особые условия по доставке в одно время и на один терминал",
+        },
+        {
+          id: 3,
+          text: "4. Предложена оптимальная стоимость на всех этапах перевозки",
+        },
       ],
-      images: [
-        { id: 0, src: caseImg, alt: "image", imgDescr: "Подпись к фотографии" },
-        { id: 1, src: caseImg, alt: "image", imgDescr: "Подпись к фотографии" },
-        { id: 2, src: caseImg, alt: "image", imgDescr: "Подпись к фотографии" },
+      imagesMobile: [
+        {
+          id: 0,
+          src: casesChinaMobileFirst,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 1,
+          src: casesChinaMobileSecond,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 2,
+          src: casesChinaMobileThird,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+      ],
+      imagesTablet: [
+        {
+          id: 0,
+          src: casesChinaTabletFirst,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 1,
+          src: casesChinaTabletSecond,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 2,
+          src: casesChinaTabletThird,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+      ],
+      imagesDesktop: [
+        {
+          id: 0,
+          src: casesChinaDesktopFirst,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 1,
+          src: casesChinaDesktopSecond,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 2,
+          src: casesChinaDesktopThird,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
       ],
     },
   },
