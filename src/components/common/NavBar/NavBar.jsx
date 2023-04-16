@@ -19,11 +19,13 @@ const NavBar = ({ type, setOpenMenu }) => {
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
             onClick={() => setOpenMenu(false)}
-            to={type === "footer" ? "#" : "/cargo"}
+            to={type === "footer" ? "/about" : "/cargo"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
-                pathname === `/cases/${caseID}` || pathname === "/cargo",
+                pathname === `/cases/${caseID}` ||
+                pathname === "/cargo" ||
+                pathname === "/about",
             })}
           >
             {type === "footer" ? "О компании" : "Контейнерные перевозки"}
@@ -36,7 +38,9 @@ const NavBar = ({ type, setOpenMenu }) => {
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
-                pathname === `/cases/${caseID}` || pathname === "/cargo",
+                pathname === `/cases/${caseID}` ||
+                pathname === "/cargo" ||
+                pathname === "/about",
             })}
           >
             {type === "footer" ? "Контейнерные перевозки" : "Кейсы"}
@@ -50,7 +54,9 @@ const NavBar = ({ type, setOpenMenu }) => {
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
-                pathname === `/cases/${caseID}` || pathname === "/cargo",
+                pathname === `/cases/${caseID}` ||
+                pathname === "/cargo" ||
+                pathname === "/about",
             })}
           >
             {type === "footer" ? "Кейсы" : "Контейнерный парк"}
@@ -63,7 +69,9 @@ const NavBar = ({ type, setOpenMenu }) => {
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
-                pathname === `/cases/${caseID}` || pathname === "/cargo",
+                pathname === `/cases/${caseID}` ||
+                pathname === "/cargo" ||
+                pathname === "/about",
             })}
           >
             {type === "footer" ? "Контейнерный парк" : "Контакты"}

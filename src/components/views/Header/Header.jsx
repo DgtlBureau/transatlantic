@@ -28,7 +28,9 @@ const Header = () => {
         styles.header,
         {
           [styles["header--transparent"]]:
-            pathname === `/cases/${caseID}` || pathname === "/cargo",
+            pathname === `/cases/${caseID}` ||
+            pathname === "/cargo" ||
+            pathname === "/about",
         },
         {
           [styles["header--light"]]: variant,
@@ -40,7 +42,9 @@ const Header = () => {
           styles.header__container,
           {
             [styles["header__container--transparent"]]:
-              pathname === `/cases/${caseID}` || pathname === "/cargo",
+              pathname === `/cases/${caseID}` ||
+              pathname === "/cargo" ||
+              pathname === "/about",
           },
           {
             [styles["header__container--light"]]: variant,
@@ -51,7 +55,9 @@ const Header = () => {
           to="/"
           className={cn(styles.header__logo, {
             [styles["header__logo--white"]]:
-              pathname === `/cases/${caseID}` || pathname === "/cargo",
+              pathname === `/cases/${caseID}` ||
+              pathname === "/cargo" ||
+              pathname === "/about",
           })}
         >
           <HandySvg src={logo} width="141" height="32" />
@@ -91,7 +97,9 @@ const Header = () => {
         <div
           className={cn(styles.header__tel, {
             [styles["header__tel--light"]]:
-              pathname === `/cases/${caseID}` || pathname === "/cargo",
+              pathname === `/cases/${caseID}` ||
+              pathname === "/cargo" ||
+              pathname === "/about",
           })}
         >
           <a href="tel:+73432879414">+7 (343) 287-94-14</a>
