@@ -49,19 +49,19 @@ const BriefForm = () => {
     // ${process.env.NEXT_PUBLIC_SENDMAIL_HOST}
     // обращение к env файлу, который лежит на хосте
 
-    onSubmit: (values) => {
-      const data = JSON.stringify(values, null, 2);
-      try {
-        axios.post(`${process.env.NEXT_PUBLIC_SENDMAIL_HOST}`, {
-          data,
-        });
-      } catch (error) {
-        console.log(error);
-      }
-      console.log(data);
-      alert(JSON.stringify(values, null, 2));
-      formik.resetForm();
-    },
+    // onSubmit: (values) => {
+    //   const data = JSON.stringify(values, null, 2);
+    //   try {
+    //     axios.post(`${process.env.NEXT_PUBLIC_SENDMAIL_HOST}`, {
+    //       data,
+    //     });
+    //   } catch (error) {
+    //     console.log(error);
+    //   }
+    //   console.log(data);
+    //   alert(JSON.stringify(values, null, 2));
+    //   formik.resetForm();
+    // },
   });
 
   return (
@@ -70,7 +70,8 @@ const BriefForm = () => {
         <form
           className={styles.form}
           autoComplete="off"
-          onSubmit={formik.handleSubmit}
+          action="https://formsubmit.co/21c9abb204327e5a95f8c622c29508b2"
+          method="POST"
         >
           <div className={styles.input__wrapper}>
             <input
