@@ -198,6 +198,6 @@
   }
 
   .cases__imageBg {
-    display: block;
+    display: none;
   }
 }

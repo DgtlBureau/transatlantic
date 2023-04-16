@@ -1,45 +1,40 @@
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+// import { useState, useEffect } from "react";
+// import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import container from "../../../../assets/images/desktop/track-container.png";
+// import container from "../../../../assets/images/desktop/track-container.png";
 import containerMobile from "../../../../assets/images/mobile/truck.png";
 
 import cn from "classnames";
 import styles from "./convenient.module.css";
 
 const Convenient = () => {
-  const [width, setWidth] = useState(0);
+  // const [width, setWidth] = useState(0);
 
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
+  // useEffect(() => {
+  //   function handleResize() {
+  //     setWidth(window.innerWidth);
+  //   }
 
-    window.addEventListener("resize", handleResize);
+  //   window.addEventListener("resize", handleResize);
 
-    handleResize();
+  //   handleResize();
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // });
 
-  const blockAnimation = {
-    hidden: {
-      x: -900,
-    },
-    vivsible: {
-      x: 16,
-    },
-  };
+  // const blockAnimation = {
+  //   hidden: {
+  //     x: -900,
+  //   },
+  //   vivsible: {
+  //     x: 16,
+  //   },
+  // };
 
   return (
-    <motion.section
-      className={styles.convenient}
-      initial="hidden"
-      whileInView="vivsible"
-      viewport={{ amount: 0.3, once: true }}
-    >
+    <section className={styles.convenient}>
       <div className={styles.convenient__container}>
         <div className={styles["convenient__info--top"]}>
           <h2 className={styles.convenient__title}>Даже если вы далеко</h2>
@@ -64,7 +59,7 @@ const Convenient = () => {
             </p>
           </div>
         </div>
-        {width >= 1440 ? (
+        {/* {width >= 1440 ? (
           <motion.div
             className={styles.convenient__wrapper}
             variants={blockAnimation}
@@ -76,15 +71,15 @@ const Convenient = () => {
               className={styles.convenient__image}
             />
           </motion.div>
-        ) : (
-          <div className={styles.convenient__wrapper}>
-            <img
-              src={containerMobile}
-              alt="container"
-              className={styles.convenient__image}
-            />
-          </div>
-        )}
+        ) : ( */}
+        <div className={styles.convenient__wrapper}>
+          <img
+            src={containerMobile}
+            alt="container"
+            className={styles.convenient__image}
+          />
+        </div>
+        {/* )} */}
 
         <div className={styles["convenient__info--bottom"]}>
           <p
@@ -103,7 +98,7 @@ const Convenient = () => {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

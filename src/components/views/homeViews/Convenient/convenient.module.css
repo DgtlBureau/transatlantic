@@ -160,6 +160,7 @@
   .convenient__wrapper {
     height: 304px;
     margin-bottom: 73px;
+    margin-left: 130px;
   }
 
   .convenient__title {
@@ -199,7 +200,7 @@
   }
 
   .convenient__image {
-    width: 1482px;
+    width: 1382px;
     height: 366px;
   }
 }
