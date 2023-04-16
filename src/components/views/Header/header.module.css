@@ -82,7 +82,7 @@
   }
 
   .header__container {
-    padding: 22px 58px 22px 58px;
+    padding: 22px 40px 22px 40px;
   }
 
   .header__logo {
@@ -149,7 +149,8 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .header__container--transparent {
+  .header__container--transparent,
+  .header__container {
     padding: 22px 58px 37px 58px;
   }
 }

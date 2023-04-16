@@ -10,7 +10,7 @@ const Result = () => {
   const results = caseEl?.result?.results;
   const imagesMobile = caseEl?.result?.imagesMobile;
   const imagesTablet = caseEl?.result?.imagesTablet;
-  const imagesDesktop = caseEl?.result?.imagesDesktop;
+  // const imagesDesktop = caseEl?.result?.imagesDesktop;
   const navigate = useNavigate();
   const goBack = () => navigate("/cases", { replace: true });
 
@@ -50,7 +50,7 @@ const Result = () => {
           </div>
         </div>
         <div className={styles.result__bottom}>
-          {width >= 320 ? (
+          {width < 768 ? (
             <ul className={styles["result__list-images"]}>
               {imagesMobile?.map(({ id, imgDescr, src, alt }) => {
                 return (

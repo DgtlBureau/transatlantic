@@ -12,7 +12,6 @@ const NavBar = ({ type, setOpenMenu }) => {
     `${pathname}` === "/contacts" ||
     `${pathname}` === "/containers" ||
     `${pathname}` === "/park";
-  // `${pathname}` === "/cases"
 
   return (
     <nav className={cn(styles.nav, styles[`nav--${type}`])}>
@@ -51,7 +50,7 @@ const NavBar = ({ type, setOpenMenu }) => {
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
-                pathname === `/cases/${caseID}` || pathname === "/cases",
+                pathname === `/cases/${caseID}` || pathname === "/cargo",
             })}
           >
             {type === "footer" ? "Кейсы" : "Контейнерный парк"}
@@ -64,7 +63,7 @@ const NavBar = ({ type, setOpenMenu }) => {
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
-                pathname === `/cases/${caseID}` || pathname === "/park",
+                pathname === `/cases/${caseID}` || pathname === "/cargo",
             })}
           >
             {type === "footer" ? "Контейнерный парк" : "Контакты"}
