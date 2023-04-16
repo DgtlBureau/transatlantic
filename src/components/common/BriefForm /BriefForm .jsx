@@ -12,6 +12,8 @@ import FormContent from "../FormContent/FormContent";
 const BriefForm = () => {
   const [modalActive, setModalActive] = useState(false);
 
+  const location = useLocation();
+
   // this is the logic of changing styles
 
   const { pathname } = useLocation();
@@ -130,6 +132,14 @@ const BriefForm = () => {
               <div className={styles.errors__text}>{formik.errors.email}</div>
             ) : null}
           </div>
+
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            id="_send_form_next_page"
+            name="_next"
+            value={location}
+          />
 
           <div className={styles.form__button}>
             <Button
