@@ -5,7 +5,53 @@ import fourth from "../src/assets/images/teams/image-4.png";
 import fifth from "../src/assets/images/teams/image-5.png";
 import sixth from "../src/assets/images/teams/image-6.png";
 
-import caseImg from "../src/assets/images/case-page/case-1.png";
+// CASES CHINA
+
+import casesChinaMobileFirst from "../src/assets/images/cases/china/china-mobile-1.jpg";
+import casesChinaMobileSecond from "../src/assets/images/cases/china/china-mobile-2.jpg";
+import casesChinaMobileThird from "../src/assets/images/cases/china/china-mobile-3.jpg";
+
+import casesChinaTabletFirst from "../src/assets/images/cases/china/china-tablet-1.jpg";
+import casesChinaTabletSecond from "../src/assets/images/cases/china/china-tablet-2.jpg";
+import casesChinaTabletThird from "../src/assets/images/cases/china/china-tablet-3.jpg";
+
+import casesChinaDesktopFirst from "../src/assets/images/cases/china/china-desktop-1.jpg";
+import casesChinaDesktopSecond from "../src/assets/images/cases/china/china-desktop-2.jpg";
+import casesChinaDesktopThird from "../src/assets/images/cases/china/china-desktop-3.jpg";
+
+// CASES INDIA
+
+import casesIndiaMobileFirst from "../src/assets/images/cases/india/india-mobile-1.jpg";
+import casesIndiaMobileSecond from "../src/assets/images/cases/india/india-mobile-2.jpg";
+
+import casesIndiaTabletFirst from "../src/assets/images/cases/india/india-tablet-1.jpg";
+import casesIndiaTabletSecond from "../src/assets/images/cases/india/india-tablet-2.jpg";
+
+import casesIndiaDesktopFirst from "../src/assets/images/cases/india/india-desktop-1.jpg";
+import casesIndiaDesktopSecond from "../src/assets/images/cases/india/india-desktop-2.jpg";
+
+// CASES STEEL
+
+import casesSteelMobileFirst from "../src/assets/images/cases/steel/steel-mobile-1.jpg";
+import casesSteelMobileSecond from "../src/assets/images/cases/steel/steel-mobile-2.JPG";
+
+import casesSteelTabletFirst from "../src/assets/images/cases/steel/steel-tablet-1.jpg";
+import casesSteelTabletSecond from "../src/assets/images/cases/steel/steel-tablet-2.jpg";
+
+import casesSteelDesktopFirst from "../src/assets/images/cases/steel/steel-desktop-1.jpg";
+import casesSteelDesktopSecond from "../src/assets/images/cases/steel/steel-desktop-2.jpg";
+
+// CASES DANGEROUS
+
+import casesDangerousMobileFirst from "../src/assets/images/cases/dangerous/dangerous-mobile-1.jpg";
+import casesDangerousMobileSecond from "../src/assets/images/cases/dangerous/dangerous-mobile-2.jpg";
+
+import casesDangerousTabletFirst from "../src/assets/images/cases/dangerous/dangerous-tablet-1.jpg";
+import casesDangerousTabletSecond from "../src/assets/images/cases/dangerous/dangerous-tablet-2.jpg";
+
+import casesDangerousDesktopFirst from "../src/assets/images/cases/dangerous/dangerous-desktop-1.jpg";
+import casesDangerousDesktopSecond from "../src/assets/images/cases/dangerous/dangerous-desktop-2.jpg";
+
 import tankOne from "../src/assets/images/service/tanks/tank-1.png";
 import tankSecond from "../src/assets/images/service/tanks/tank-2.png";
 import containerHero from "../src/assets/images/service/tanks/container-hero.png";
@@ -97,19 +143,19 @@ export const casesPage = [
     tasks: {
       title: "Задача",
       descr:
-        "Доставить сварочное оборудование для автоматической электродуговой сварки металлов из порта Ксинганг в город Волгодонск",
+        "Доставка оборудования для автоматической электродуговой сварки металлов общим весом 172 072 кг из порта Ксинганг в город Волгодонск",
       conditions: [
         {
           id: 0,
-          heading: "33 места",
-          text: "10 контейнеров 40HC + 3 негабаритных",
+          heading: "Контейнеры",
+          text: "10 контейнеров 40 футов",
         },
         {
           id: 1,
           heading: "172 072 кг",
           text: "Общий вес станка в собранном виде",
         },
-        { id: 2, heading: "2 варианта отправки", text: "FR/OT или балком" },
+        { id: 2, heading: "Негабарит", text: "3 крупных места" },
         { id: 3, heading: "Срок", text: "45 дней от погрузки до получения" },
       ],
     },
@@ -118,53 +164,110 @@ export const casesPage = [
       descr: [
         {
           id: 0,
-          text: "Так как это является единым станком, то весь груз должен был приплыть на один терминал для подачи одной декларации.",
+          text: "Нам предстояло рассчитать оптимальное кол-во контейнеров для перевозки мелких деталей станка и предложить вариант транспортировки негабаритных деталей. Особое условие – груз должен прибыть в порт назначения на один терминал (для таможенной очистки) и примерно в одно и то же время (для избежания лишних расходов по хранению).",
         },
         {
           id: 1,
-          text: "Десять 40-футовых контейнеров было решено отправить на линии FESCO на терминал ВМТП (Владивосток).",
+          text: "Мелкие детали было решено отправить в 10*40 футовых контейнерах на линии FESCO в порт ВМТП. Почему именно этот порт? – Здесь есть возможности по разгрузке тяжелых и негабаритных грузов. Это тоже нужно было учитывать при выборе порта назначения.",
         },
         {
           id: 2,
-          text: "А 3 негабаритных места отправляли балком на другой линии и другом судне. Так же цель была чтобы они пришли примерно одновременно, чтобы не возник простой и расходы. В результате слаженной работы грузы были отправлены примерно в разрезе 5 дней друг от друга на разных судах и линиях, пришли на один терминал и примерно в одно и тоже время.",
+          text: "По негабаритным местам – сначала хотели использовать контейнеры типа Flat Rack (FR), но это оказалось очень дорого. Предложили клиенту отправить их балкерным судном (когда груз просто ставится на корабль), что оказалось в разы дешевле и не менее надежно. Осталось только подобрать суда примерно с одной датой выхода и подстроится под готовность груза клиента.",
         },
       ],
     },
     route: {
-      title: "Маршрут грузоперевозки",
+      title: "Маршрут",
       descr: [
         {
           id: 0,
-          text: "Далее десять 40-футовых контейнеров были отгружены в Ростов с дальнейшим вывозом в Волгодонск до склада.",
+          text: "Груз был получен в Китае и доставлен в порт Ксинганг, откуда морским путем был переправлен во Владивосток на двух разных судах с разницей в 5 дней.",
         },
         {
           id: 1,
-          text: "3 места были погружены на автопоезд и отправлены тралом до Волгодонска до склада.",
-        },
-        {
-          id: 2,
-          text: "Весь товар пришел в сохранности, что являлось очень важной частью перевозки, так как стоимость груза очень дорогая.",
+          text: "Сухопутная часть проходила так: с контейнерами проблем не возникло, они все были отправлены по жд до станции Ростов-Товарный с дальнейшим вывозом на авто до склада клиента в г. Волгодонск. А негабаритные детали были отправлены автопоездом, ввиду высокой стоимости жд платформ.",
         },
       ],
-      to: "Сухопутный путь в Китай",
-      from: "Из Забайкальска",
     },
     result: {
       title: "Результат",
       results: [
         {
           id: 0,
-          text: "1. Загрузили и уплыли это все из Китая в течение 5 дней с даты готовности груза",
+          text: "1. Срок доставки составил 45 суток",
         },
-        { id: 1, text: "2. Прибыли на 1 терминал" },
-        { id: 2, text: "3. Прибыли обе партии практически одновременно" },
-        { id: 3, text: "4. Погрузили на тралы без задержек и повреждений" },
-        { id: 4, text: "5. Доставили все в сохранности" },
+        {
+          id: 1,
+          text: "2. Груз пришел в сохранности, без каких-либо повреждений, несмотря на перегрузы и сложности транспортировки негабаритных деталей",
+        },
+        {
+          id: 2,
+          text: "3. Выполнены особые условия по доставке в одно время и на один терминал",
+        },
+        {
+          id: 3,
+          text: "4. Предложена оптимальная стоимость на всех этапах перевозки",
+        },
       ],
-      images: [
-        { id: 0, src: caseImg, alt: "image", imgDescr: "Подпись к фотографии" },
-        { id: 1, src: caseImg, alt: "image", imgDescr: "Подпись к фотографии" },
-        { id: 2, src: caseImg, alt: "image", imgDescr: "Подпись к фотографии" },
+      imagesMobile: [
+        {
+          id: 0,
+          src: casesChinaMobileFirst,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 1,
+          src: casesChinaMobileSecond,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 2,
+          src: casesChinaMobileThird,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+      ],
+      imagesTablet: [
+        {
+          id: 0,
+          src: casesChinaTabletFirst,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 1,
+          src: casesChinaTabletSecond,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 2,
+          src: casesChinaTabletThird,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+      ],
+      imagesDesktop: [
+        {
+          id: 0,
+          src: casesChinaDesktopFirst,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 1,
+          src: casesChinaDesktopSecond,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
+        {
+          id: 2,
+          src: casesChinaDesktopThird,
+          alt: "image",
+          imgDescr: "Негабаритный груз перед отправкой",
+        },
       ],
     },
   },
@@ -174,15 +277,188 @@ export const casesPage = [
     imgBlue: craneBlue,
     imgGray: craneGray,
     heading: "Гусеничные экскаваторы из Индии",
+    caseHeading: "Гусеничные экскаваторы из Индии",
     alt: "crane",
+    tasks: {
+      title: "Задача",
+      descr:
+        "Доставить гусеничные экскаваторы из Индии в разные регионы России",
+      conditions: [
+        {
+          id: 0,
+          heading: "Груз",
+          text: "24 экскаватора",
+        },
+        {
+          id: 1,
+          heading: "Срок",
+          text: "42 дня от погрузки до получения",
+        },
+      ],
+    },
+    process: {
+      title: "Процесс",
+      descr: [
+        {
+          id: 0,
+          text: "В морской перевозке экскаваторы перевозились на flat rack платформах длиной 40 футов, на каждую платформу размещался 1 экскаватор. После таможенной очистки в порту Владивостока экскаваторы были перегружены на жд платформы по 2 штуки на каждую.",
+        },
+      ],
+    },
+    route: {
+      title: "Маршрут",
+      descr: [
+        {
+          id: 0,
+          text: "Из индийского порта Ченнаи во Владивосток, далее отправляли на жд платформах в разные российские регионы.",
+        },
+      ],
+    },
+    result: {
+      title: "Результат",
+      results: [
+        {
+          id: 0,
+          text: "За 42 дня мы привезли нашему клиенту все экскаваторы в 6 разных регионов России.",
+        },
+      ],
+      imagesMobile: [
+        {
+          id: 0,
+          src: casesIndiaMobileFirst,
+          alt: "image",
+          imgDescr: "Экскаваторы на жд платформе",
+        },
+        {
+          id: 1,
+          src: casesIndiaMobileSecond,
+          alt: "image",
+          imgDescr: "Упакованные экскаваторы",
+        },
+      ],
+      imagesTablet: [
+        {
+          id: 0,
+          src: casesIndiaTabletFirst,
+          alt: "image",
+          imgDescr: "Экскаваторы на жд платформе",
+        },
+        {
+          id: 1,
+          src: casesIndiaTabletSecond,
+          alt: "image",
+          imgDescr: "Упакованные экскаваторы",
+        },
+      ],
+      imagesDesktop: [
+        {
+          id: 0,
+          src: casesIndiaDesktopFirst,
+          alt: "image",
+          imgDescr: "Экскаваторы на жд платформе",
+        },
+        {
+          id: 1,
+          src: casesIndiaDesktopSecond,
+          alt: "image",
+          imgDescr: "Упакованные экскаваторы",
+        },
+      ],
+    },
   },
   {
     id: 2,
     path: "3",
     imgBlue: containerBlue,
     imgGray: containerGray,
-    heading: "1000 контейнеров за 6 лет из Китая",
+    heading: "1000 контейнеров стали из Китая",
+    caseHeading: "1000 контейнеров стали из Китая",
     alt: "container",
+    tasks: {
+      title: "Задача",
+      descr: "Регулярная ритмичная поставка рулонной стали из Китая",
+      conditions: [
+        {
+          id: 0,
+          heading: "Срок",
+          text: "6 лет доставляем груз клиенту",
+        },
+        {
+          id: 1,
+          heading: "Объем",
+          text: "Более 1000 контейнеров",
+        },
+      ],
+    },
+    process: {
+      title: "Процесс",
+      descr: [
+        {
+          id: 0,
+          text: "Точками вывоза являются три разных порта в Китае и мы максимально быстро забираем груз с завода и привозим в порты, где с минимальными задержками отправляем морем во Владивосток. Поддерживаем связь с продавцом груза нашего клиента и полностью под ключ управляем процессом. Налаженная работа позволяет клиенту экономить.",
+        },
+      ],
+    },
+    route: {
+      title: "Маршрут",
+      descr: [
+        {
+          id: 0,
+          text: "Обычно груз уходит из 3 разных портов Китая – Шанхай, Ксиамень, Тайсанг в порт Владивостока. В России мы перегружаем груз на жд платформы и перевозим 3 города – Екатеринбург, Москву, Новосибирск.",
+        },
+      ],
+    },
+    result: {
+      title: "Результат",
+      results: [
+        {
+          id: 0,
+          text: "Уже 6 лет наш клиент регулярно и надежно получает рулонную сталь из Китая, за все время им было получено 27000 тонн (более 1000 контейнеров).",
+        },
+      ],
+      imagesMobile: [
+        {
+          id: 0,
+          src: casesSteelMobileFirst,
+          alt: "image",
+          imgDescr: "Рулонная сталь в контейнере",
+        },
+        {
+          id: 1,
+          src: casesSteelMobileSecond,
+          alt: "image",
+          imgDescr: "Рулонная сталь в контейнере",
+        },
+      ],
+      imagesTablet: [
+        {
+          id: 0,
+          src: casesSteelTabletFirst,
+          alt: "image",
+          imgDescr: "Рулонная сталь в контейнере",
+        },
+        {
+          id: 1,
+          src: casesSteelTabletSecond,
+          alt: "image",
+          imgDescr: "Рулонная сталь в контейнере",
+        },
+      ],
+      imagesDesktop: [
+        {
+          id: 0,
+          src: casesSteelDesktopFirst,
+          alt: "image",
+          imgDescr: "Рулонная сталь в контейнере",
+        },
+        {
+          id: 1,
+          src: casesSteelDesktopSecond,
+          alt: "image",
+          imgDescr: "Рулонная сталь в контейнере",
+        },
+      ],
+    },
   },
   {
     id: 3,
@@ -190,7 +466,94 @@ export const casesPage = [
     imgBlue: shipBlue,
     imgGray: shipGray,
     heading: "20 000 тонн опасного груза из Китая",
+    caseHeading: "20 000 тонн опасного груза из Китая",
     alt: "ship",
+    tasks: {
+      title: "Задача",
+      descr:
+        "Стабильная доставка фурфурилового спирта (опасный груз) в Свердловскую область из Китая",
+      conditions: [
+        {
+          id: 0,
+          heading: "Срок",
+          text: "Доставляем более 6 лет",
+        },
+        {
+          id: 1,
+          heading: "Масштаб",
+          text: "Более 19 800 тонн",
+        },
+      ],
+    },
+    process: {
+      title: "Процесс",
+      descr: [
+        {
+          id: 0,
+          text: "Важной частью перевозки является верная подготовка документов, требующихся для перевозки “опасного” груза, т.к. фурфуриловый спирт относится к веществам 2 класса опасности. Также мы всегда внимательно проверяем сохранность упаковки груза на всех этапах перевозки. Бочки со спиртом обматываются в пленку, а вся партия обшивается досками в каждом контейнере.",
+        },
+      ],
+    },
+    route: {
+      title: "Маршрут",
+      descr: [
+        {
+          id: 0,
+          text: "Из порта Шанхая морским путем мы доставляем контейнеры с с фурфуриловым спиртом во Владивосток, а далее перегружаем на жд, и везем в Свердловскую область.",
+        },
+      ],
+    },
+    result: {
+      title: "Результат",
+      results: [
+        {
+          id: 0,
+          text: "6 лет стабильной и безопасной доставки опасного, но нужного сырья для производства нашего клиента.",
+        },
+      ],
+      imagesMobile: [
+        {
+          id: 0,
+          src: casesDangerousMobileFirst,
+          alt: "image",
+          imgDescr: "Бочки в контейнере",
+        },
+        {
+          id: 1,
+          src: casesDangerousMobileSecond,
+          alt: "image",
+          imgDescr: "Полная упаковка груза",
+        },
+      ],
+      imagesTablet: [
+        {
+          id: 0,
+          src: casesDangerousTabletFirst,
+          alt: "image",
+          imgDescr: "Бочки в контейнере",
+        },
+        {
+          id: 1,
+          src: casesDangerousTabletSecond,
+          alt: "image",
+          imgDescr: "Полная упаковка груза",
+        },
+      ],
+      imagesDesktop: [
+        {
+          id: 0,
+          src: casesDangerousDesktopFirst,
+          alt: "image",
+          imgDescr: "Бочки в контейнере",
+        },
+        {
+          id: 1,
+          src: casesDangerousDesktopSecond,
+          alt: "image",
+          imgDescr: "Полная упаковка груза",
+        },
+      ],
+    },
   },
 ];
 

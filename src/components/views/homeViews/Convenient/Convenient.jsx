@@ -1,10 +1,29 @@
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import container from "../../../../assets/images/desktop/track-container.png";
+import containerMobile from "../../../../assets/images/mobile/truck.png";
+
 import cn from "classnames";
 import styles from "./convenient.module.css";
 
 const Convenient = () => {
+  const [width, setWidth] = useState(0);
+
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
+
   const blockAnimation = {
     hidden: {
       x: -900,
@@ -45,17 +64,28 @@ const Convenient = () => {
             </p>
           </div>
         </div>
-        <motion.div
-          className={styles.convenient__wrapper}
-          variants={blockAnimation}
-          transition={{ duration: 2.7 }}
-        >
-          <img
-            src={container}
-            alt="container"
-            className={styles.convenient__image}
-          />
-        </motion.div>
+        {width >= 1440 ? (
+          <motion.div
+            className={styles.convenient__wrapper}
+            variants={blockAnimation}
+            transition={{ duration: 2.7 }}
+          >
+            <img
+              src={container}
+              alt="container"
+              className={styles.convenient__image}
+            />
+          </motion.div>
+        ) : (
+          <div className={styles.convenient__wrapper}>
+            <img
+              src={containerMobile}
+              alt="container"
+              className={styles.convenient__image}
+            />
+          </div>
+        )}
+
         <div className={styles["convenient__info--bottom"]}>
           <p
             className={cn(

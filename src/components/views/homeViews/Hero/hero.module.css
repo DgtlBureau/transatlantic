@@ -5,7 +5,6 @@
   position: relative;
   background-color: #edf6ff;
   padding: 87px 20px 34px 20px;
-  height: 100vh;
 }
 
 .hero__container {
@@ -170,6 +169,7 @@
   .hero {
     align-items: center;
     padding: 121px 58px 0px 58px;
+    height: 100vh;
   }
 
   .hero__container {
