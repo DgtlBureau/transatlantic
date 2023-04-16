@@ -126,15 +126,16 @@
 }
 
 .header--transparent {
-  position: relative;
+  /* position: relative;
   top: 0;
-  right: 0;
+  right: 0; */
   background-color: transparent;
   z-index: 20;
 }
 
 .header__container--transparent {
-  background-color: transparent;
+  background-color: #18bbfe;
+  /* background-color: transparent; */
 }
 
 .header--light,

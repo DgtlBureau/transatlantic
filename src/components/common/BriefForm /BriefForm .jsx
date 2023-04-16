@@ -14,8 +14,6 @@ const BriefForm = () => {
 
   const location = useLocation();
 
-  console.log(location);
-
   // this is the logic of changing styles
 
   const { pathname } = useLocation();
