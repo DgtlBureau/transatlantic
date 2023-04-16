@@ -52,8 +52,16 @@ import casesDangerousTabletSecond from "../src/assets/images/cases/dangerous/dan
 import casesDangerousDesktopFirst from "../src/assets/images/cases/dangerous/dangerous-desktop-1.jpg";
 import casesDangerousDesktopSecond from "../src/assets/images/cases/dangerous/dangerous-desktop-2.jpg";
 
+// CARGO TANKS
+
 import tankOne from "../src/assets/images/service/tanks/tank-1.png";
-import tankSecond from "../src/assets/images/service/tanks/tank-2.png";
+import tank1 from "../src/assets/images/service/tanks/image-1.png";
+import tank2 from "../src/assets/images/service/tanks/image-2.png";
+import tank3 from "../src/assets/images/service/tanks/image-3.png";
+import tank4 from "../src/assets/images/service/tanks/image-4.png";
+import tank5 from "../src/assets/images/service/tanks/image-5.png";
+import tank6 from "../src/assets/images/service/tanks/image-6.png";
+
 import containerHero from "../src/assets/images/service/tanks/container-hero.png";
 import containerSmall from "../src/assets/images/park/container-20.png";
 import containerBig from "../src/assets/images/park/container-40.png";
@@ -668,7 +676,7 @@ export const servicesPage = [
         {
           id: 0,
           heading: "Контейнер-рефрижератор",
-          img: tankSecond,
+          img: tank1,
           alt: "container",
           descr:
             "За счет возможности поддержания в них определенной температуры могут применяться для перевозок температурных грузов.",
@@ -676,7 +684,7 @@ export const servicesPage = [
         {
           id: 1,
           heading: "Высокие контейнеры",
-          img: tankSecond,
+          img: tank2,
           alt: "container",
           descr:
             "Благодаря увеличенному объему подходят для транспортировки крупных товарных партий.",
@@ -684,14 +692,14 @@ export const servicesPage = [
         {
           id: 2,
           heading: "Флекси-танк",
-          img: tankSecond,
+          img: tank3,
           alt: "container",
           descr: "Актуален при перевозке химических растворов и средств.",
         },
         {
           id: 3,
           heading: "Платформа",
-          img: tankSecond,
+          img: tank4,
           alt: "container",
           descr:
             "Из-за отсутствия боковых стенок зачастую эксплуатируется при доставке негабаритных партий.",
@@ -699,7 +707,7 @@ export const servicesPage = [
         {
           id: 4,
           heading: "Негабаритные платформы",
-          img: tankSecond,
+          img: tank5,
           alt: "container",
           descr:
             "Подходят для контейнерных перевозок жд транспортом, когда необходимо доставить товары разного типа на самые дальние расстояния.",
@@ -707,7 +715,7 @@ export const servicesPage = [
         {
           id: 5,
           heading: "C открытым верхом",
-          img: tankSecond,
+          img: tank6,
           alt: "container",
           descr:
             "Используются для транспортировки предметов, чья высота превышает 2,4 метра. В пути они укрываются тентом для защиты от негативных погодных явлений.",
