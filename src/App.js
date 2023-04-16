@@ -4,6 +4,7 @@ import Homepage from "pages/Homepage";
 import ContactsPage from "pages/ContactsPage/ContactsPage";
 import CasesPage from "pages/CasesPage/CasesPage";
 import CasePage from "pages/CasePage/CasePage";
+import AboutPage from "pages/AboutPage/AboutPage";
 import ParkPage from "pages/ParkPage/ParkPage";
 // import ServicesPage from "pages/ServicesPage/ServicesPage";
 import ServicePage from "pages/ServicePage/ServicePage";
@@ -26,6 +27,7 @@ function App() {
           {/* <Route path="/services" element={<ServicesPage />} /> */}
           <Route path="/cargo" element={<ServicePage />} />
           <Route path="/park" element={<ParkPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Route>
       </Routes>
     </div>
