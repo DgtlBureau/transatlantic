@@ -12,6 +12,10 @@ import FormContent from "../FormContent/FormContent";
 const BriefForm = () => {
   const [modalActive, setModalActive] = useState(false);
 
+  const location = useLocation();
+
+  console.log(location);
+
   // this is the logic of changing styles
 
   const { pathname } = useLocation();
@@ -49,7 +53,6 @@ const BriefForm = () => {
     // ${process.env.NEXT_PUBLIC_SENDMAIL_HOST}
     // обращение к env файлу, который лежит на хосте
 
-
     onSubmit: (values) => {
       // const data = JSON.stringify(values, null, 2);
       // try {
@@ -63,7 +66,6 @@ const BriefForm = () => {
       // alert(JSON.stringify(values, null, 2));
       formik.resetForm();
     },
-
   });
 
   return (
@@ -132,6 +134,14 @@ const BriefForm = () => {
               <div className={styles.errors__text}>{formik.errors.email}</div>
             ) : null}
           </div>
+
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            id="_send_form_next_page"
+            name="_next"
+            value={location}
+          />
 
           <div className={styles.form__button}>
             <Button
