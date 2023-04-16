@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1497dd91.css",
-    "main.js": "/static/js/main.ce00ea68.js",
+    "main.js": "/static/js/main.fdf5b471.js",
     "static/media/container-hero.png": "/static/media/container-hero.773c9e65ee86054e0319.png",
     "static/media/InterTight-VariableFont_wght.ttf": "/static/media/InterTight-VariableFont_wght.ce235502edcb4d3e7643.ttf",
     "static/media/ship-big.png": "/static/media/ship-big.0b9f5c6c5efd79f2df57.png",
@@ -54,7 +54,6 @@
     "static/media/dangerous-mobile-1.jpg": "/static/media/dangerous-mobile-1.067e5d7c88cf25a8c987.jpg",
     "static/media/china-mobile-3.jpg": "/static/media/china-mobile-3.8d3fb6f8c1877fe7eb37.jpg",
     "static/media/steel-mobile-1.jpg": "/static/media/steel-mobile-1.bfaaa853bc78daaf5859.jpg",
-    "static/media/tank-2.png": "/static/media/tank-2.18dfa2c3b526a4491666.png",
     "static/media/tank-3.png": "/static/media/tank-3.fc33b7783c34962c5f65.png",
     "static/media/china-mobile-1.jpg": "/static/media/china-mobile-1.89c7721096299c6acfcf.jpg",
     "static/media/china-mobile-2.jpg": "/static/media/china-mobile-2.e469c7b5fd167433132a.jpg",
@@ -62,12 +61,13 @@
     "static/media/dangerous-mobile-2.jpg": "/static/media/dangerous-mobile-2.f7ccbc336a965f48e7c6.jpg",
     "static/media/tank-4.png": "/static/media/tank-4.34997607881c2f740d0d.png",
     "static/media/letter-bottom.png": "/static/media/letter-bottom.b61488f71994cf6a696f.png",
-    "static/media/image-6.png": "/static/media/image-6.d44c930b2f8e51c4f319.png",
-    "static/media/image-2.png": "/static/media/image-2.39af85158f31fe5d8e47.png",
+    "static/media/tank-2.png": "/static/media/tank-2.18dfa2c3b526a4491666.png",
     "static/media/image-3.png": "/static/media/image-3.a7bdcc80250b5b779611.png",
-    "static/media/image-5.png": "/static/media/image-5.add4c3bb685cf73bac0e.png",
     "static/media/image-1.png": "/static/media/image-1.5c42c9d8bc8fa4498819.png",
-    "static/media/image-4.png": "/static/media/image-4.7f2e161c0c53aa4e78f5.png",
+    "static/media/image-6.png": "/static/media/image-6.36a994cede0b37026de6.png",
+    "static/media/image-2.png": "/static/media/image-2.4c36f38bfbe471b72748.png",
+    "static/media/image-5.png": "/static/media/image-5.286e7b2f31556cc5a2df.png",
+    "static/media/image-4.png": "/static/media/image-4.933ee938031917d21086.png",
     "static/media/letter-left.png": "/static/media/letter-left.7ed895959d3bba60cb64.png",
     "static/media/letter-right.png": "/static/media/letter-right.de2f29be005b84245228.png",
     "static/media/logo-mobile-header.svg": "/static/media/logo-mobile-header.08c5ebfc2a7c4d56970e6e54867676c8.svg",
@@ -83,10 +83,10 @@
     "static/media/close-btn.svg": "/static/media/close-btn.2c17a333fb5dee4eca8c2c0ebe1ed248.svg",
     "static/media/open-stick.svg": "/static/media/open-stick.f68461a990f358d19c94d0c34f712d2f.svg",
     "main.1497dd91.css.map": "/static/css/main.1497dd91.css.map",
-    "main.ce00ea68.js.map": "/static/js/main.ce00ea68.js.map"
+    "main.fdf5b471.js.map": "/static/js/main.fdf5b471.js.map"
   },
   "entrypoints": [
     "static/css/main.1497dd91.css",
-    "static/js/main.ce00ea68.js"
+    "static/js/main.fdf5b471.js"
   ]
 }
