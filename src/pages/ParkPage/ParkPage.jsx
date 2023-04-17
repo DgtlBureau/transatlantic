@@ -6,7 +6,6 @@ import Cargo from "components/views/parkViews/Cargo/Cargo";
 import Containers from "components/views/parkViews/Containers/Containers";
 import Hero from "components/views/parkViews/Hero/Hero";
 import Info from "components/views/parkViews/Info/Info";
-import omgImg from "assets/favicon-32x32.png";
 
 const ParkPage = () => {
   useEffect(() => {
@@ -34,7 +33,7 @@ const ParkPage = () => {
             property="og:description"
             content="Предлагаем контенеры в аренду для перевозок 40 и 20 футов в разных точках планеты, которые соответствуют самым высоким стандартам качества и безопасности. Гибкая система аренды.. Наша команда профессионалов всегда готова предоставить консультацию по выбору контейнера и подготовке груза к транспортировке – Трансатлантик"
           />
-          <meta property="og:image" content={omgImg} />
+          <meta property="og:image" content="assets/favicon-32x32.png" />
         </Helmet>
       </Fragment>
       <Hero />

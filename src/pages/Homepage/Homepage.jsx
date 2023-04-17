@@ -11,7 +11,6 @@ import Delivery from "components/views/homeViews/Delivery/Delivery";
 import Hero from "components/views/homeViews/Hero/Hero";
 // import MapClose from "components/views/homeViews/MapClose/MapClose";
 import TrafficTypes from "components/views/homeViews/TrafficTypes";
-import omgImg from "assets/favicon-32x32.png";
 
 const Homepage = () => {
   useEffect(() => {
@@ -40,7 +39,7 @@ const Homepage = () => {
             property="og:description"
             content="Международная логистика под ключ и перевозка грузов в контейнерах на экспорт и импорт. Предоставляем клиентам гибкие и удобные условия. Трансатлантик – ваш лучший партнер в логистике"
           />
-          <meta property="og:image" content={omgImg} />
+          <meta property="og:image" content="assets/favicon-32x32.png" />
         </Helmet>
       </Fragment>
       <Hero />
