@@ -1,35 +1,19 @@
 {
-  "name": "",
-  "short_name": "",
+  "short_name": "Международные перевозки грузов контейнерами от компании Трансатлантик",
+  "name": "Международная логистика под ключ и перевозка грузов в контейнерах на экспорт и импорт. Предоставляем клиентам гибкие и удобные условия. Трансатлантик – ваш лучший партнер в логистике",
   "icons": [
-      {
-          "src": "/android-chrome-96x96.png",
-          "sizes": "96x96",
-          "type": "image/png"
-      },
-      {
-        "src": "/apple-touch-icon.png",
-        "sizes": "32x32 16x16",
-        "type": "image/png"
-      },
-      {
-        "src": "/favicon.ico",
-        "sizes": "32x32 16x16",
-        "type": "image/x-icon"
-      },
-      {
-        "src": "/favicon-16x16.png",
-        "type": "image/png",
-        "sizes": "16x16"
-      },
-      {
-        "src": "/favicon-32x32.png",
-        "type": "image/png",
-        "sizes": "32x32"
-      }
+    {
+      "src": "/android-chrome-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
   ],
-  "start_url": ".",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }
