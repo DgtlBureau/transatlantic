@@ -1,6 +1,8 @@
-import { useEffect } from "react";
+import { Fragment, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import Hero from "components/views/casesView/Hero/Hero";
 import Brief from "components/views/homeViews/Brief/Brief";
+import omgImg from "assets/favicon-32x32.png";
 
 const CasesPage = () => {
   useEffect(() => {
@@ -9,6 +11,27 @@ const CasesPage = () => {
 
   return (
     <>
+      <Fragment>
+        <Helmet>
+          <title>
+            Примеры контейнерных перевозок от компании Трансатлантик
+          </title>
+          <meta
+            name="description"
+            content="Примеры международных перевозок грузов в контейнерах, выполненных нашей командой – Трансатлантик"
+          />
+          <meta property="og:type" content="webapp" />
+          <meta
+            property="og:title"
+            content="Примеры контейнерных перевозок от компании Трансатлантик"
+          />
+          <meta
+            property="og:description"
+            content="Примеры международных перевозок грузов в контейнерах, выполненных нашей командой – Трансатлантик"
+          />
+          <meta property="og:image" content={omgImg} />
+        </Helmet>
+      </Fragment>
       <Hero />
       <Brief />
     </>
