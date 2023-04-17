@@ -101,8 +101,9 @@
   .footer__nav {
     flex-direction: row;
     align-items: baseline;
-    grid-column: 2/5;
+    grid-column: 1/5;
     margin-top: 2px;
+    margin-left: 0;
   }
 
   .footer__button {
@@ -172,6 +173,7 @@
   .footer__nav {
     grid-column: 2/6;
     grid-row: 2;
+    margin-left: 63px;
   }
 
   .footer__button {

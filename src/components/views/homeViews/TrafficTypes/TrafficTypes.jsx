@@ -10,14 +10,13 @@ const TrafficTypes = () => {
             Полный цикл без участия владельца груза
           </h2>
           <p className={styles.traffic__descr}>
-            Сокращаем время в пути, благодаря оптимальной стыковке
-            железнодорожного и морского расписания
+            Сокращаем время в пути за счет оптимальных маршрутов
           </p>
         </div>
         <ul className={styles.traffic__list}>
           <li className={styles.traffic__item}>
             <p className={styles.traffic__subheading}>
-              Первая и последняя миля цикла
+              Первая и последняя миля перевозки
             </p>
             <h2 className={styles.traffic__heading}>Авто перевозки</h2>
             <div
@@ -26,7 +25,7 @@ const TrafficTypes = () => {
           </li>
           <li className={styles.traffic__item}>
             <p className={styles.traffic__subheading}>
-              Более 75% внутреннего грузооборота
+              Лучший способ для доставки грузов по суше
             </p>
             <h2 className={styles.traffic__heading}>ЖД перевозки</h2>
             <div
@@ -35,7 +34,7 @@ const TrafficTypes = () => {
           </li>
           <li className={styles.traffic__item}>
             <p className={styles.traffic__subheading}>
-              19 внешнеторговых и каботажных морских линий
+              Универсальное решение для перемещения грузов
             </p>
             <h2 className={styles.traffic__heading}>Морские перевозки</h2>
             <div

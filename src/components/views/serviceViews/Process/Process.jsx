@@ -31,7 +31,6 @@ const Process = () => {
                       );
                     })}
                   </ul>
-                  <p className={styles.process__subdescr}>{subdescr}</p>
                 </div>
               );
             })}

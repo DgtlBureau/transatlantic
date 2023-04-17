@@ -46,7 +46,7 @@
 }
 
 .delivery__item:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 53px;
 }
 
 .delivery__item:last-child h3 {
@@ -88,13 +88,13 @@
 
   .delivery__wrapper {
     margin-right: 0;
-    margin-left: 0;
+    margin-left: 20px;
   }
 
   .delivery__list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 0 auto;
     margin-left: calc(20px * -1);
     margin-right: calc(20px * -1);

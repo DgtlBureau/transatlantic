@@ -4,11 +4,11 @@ import Advantage from "components/views/homeViews/Advantage";
 // import Background2 from "components/views/homeViews/Background2/Background2";
 import Brief from "components/views/homeViews/Brief/Brief";
 import Cases from "components/views/homeViews/Cases";
-import Control from "components/views/homeViews/Control";
+// import Control from "components/views/homeViews/Control";
 import Convenient from "components/views/homeViews/Convenient";
 import Delivery from "components/views/homeViews/Delivery/Delivery";
 import Hero from "components/views/homeViews/Hero/Hero";
-import MapClose from "components/views/homeViews/MapClose/MapClose";
+// import MapClose from "components/views/homeViews/MapClose/MapClose";
 import TrafficTypes from "components/views/homeViews/TrafficTypes";
 
 const Homepage = () => {
@@ -24,9 +24,9 @@ const Homepage = () => {
       {/* <Background2 /> */}
       <Convenient />
       <TrafficTypes />
-      <MapClose />
+      {/* <MapClose /> */}
       <Delivery />
-      <Control />
+      {/* <Control /> */}
       <Cases />
       <Brief />
     </>
