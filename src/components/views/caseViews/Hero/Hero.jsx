@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.hero__container}>
-        <h2 className={styles.hero__title}>{caseEl?.caseHeading}</h2>
+        <h1 className={styles.hero__title}>{caseEl?.caseHeading}</h1>
         <img
           src={caseEl.imgBlue}
           alt={caseEl.alt}
