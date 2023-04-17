@@ -19,7 +19,7 @@ const NavBar = ({ type, setOpenMenu }) => {
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
             onClick={() => setOpenMenu(false)}
-            to={type === "footer" ? "/about" : "/cargo"}
+            to={"/about"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
@@ -28,13 +28,13 @@ const NavBar = ({ type, setOpenMenu }) => {
                 pathname === "/about",
             })}
           >
-            {type === "footer" ? "О компании" : "Контейнерные перевозки"}
+            О компании
           </NavLink>
         </li>
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
             onClick={() => setOpenMenu(false)}
-            to={type === "footer" ? "/cargo" : "/cases"}
+            to={"/cargo"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
@@ -43,14 +43,29 @@ const NavBar = ({ type, setOpenMenu }) => {
                 pathname === "/about",
             })}
           >
-            {type === "footer" ? "Контейнерные перевозки" : "Кейсы"}
+            Контейнерные перевозки
+          </NavLink>
+        </li>
+        <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
+          <NavLink
+            onClick={() => setOpenMenu(false)}
+            to={"/cases"}
+            className={cn(styles.nav__link, styles[`nav__link--${type}`], {
+              [styles["nav__link--blue"]]: variant,
+              [styles["nav__link--light"]]:
+                pathname === `/cases/${caseID}` ||
+                pathname === "/cargo" ||
+                pathname === "/about",
+            })}
+          >
+            Кейсы
           </NavLink>
         </li>
 
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
             onClick={() => setOpenMenu(false)}
-            to={type === "footer" ? "/cases" : "/park"}
+            to={"/park"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
@@ -59,13 +74,13 @@ const NavBar = ({ type, setOpenMenu }) => {
                 pathname === "/about",
             })}
           >
-            {type === "footer" ? "Кейсы" : "Контейнерный парк"}
+            Контейнерный парк
           </NavLink>
         </li>
         <li className={cn(styles.nav__item, styles[`nav__item--${type}`])}>
           <NavLink
             onClick={() => setOpenMenu(false)}
-            to={type === "footer" ? "/park" : "/contacts"}
+            to={"/contacts"}
             className={cn(styles.nav__link, styles[`nav__link--${type}`], {
               [styles["nav__link--blue"]]: variant,
               [styles["nav__link--light"]]:
@@ -74,7 +89,7 @@ const NavBar = ({ type, setOpenMenu }) => {
                 pathname === "/about",
             })}
           >
-            {type === "footer" ? "Контейнерный парк" : "Контакты"}
+            {type === "footer" ? null : "Контакты"}
           </NavLink>
         </li>
       </ul>

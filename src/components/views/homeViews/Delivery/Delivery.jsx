@@ -5,50 +5,46 @@ const Delivery = () => {
     <section className={styles.delivery}>
       <div className={styles.delivery__container}>
         <h2 className={styles.delivery__title}>Направления доставки</h2>
-        <p className={styles.delivery__descr}>
+        {/* <p className={styles.delivery__descr}>
           Наши ключевые направления: Китай, Вьетнам, Корея, Ближний восток
-        </p>
+        </p> */}
         <div className={styles.delivery__wrapper}>
           <ul className={styles.delivery__list}>
             <li className={styles.delivery__item}>
               <h3 className={styles.delivery__heading}>
-                Морской путь в Азиатско-Тихоокеанский регион
+                Азиатско-тихоокеанский регион
               </h3>
               <p className={styles.delivery__subheading}>
-                Из Владивостока и Советской Гавани
+                Из портов Дальнего Востока
               </p>
             </li>
             <li className={styles.delivery__item}>
-              <h3 className={styles.delivery__heading}>
-                Морской путь на север России
-              </h3>
+              <h3 className={styles.delivery__heading}>Европа и Америка</h3>
               <p className={styles.delivery__subheading}>
-                Из Архангельска и Мурманска
+                Из портов Санкт-Петербурга и стран Балтии
               </p>
             </li>
             <li className={styles.delivery__item}>
-              <h3 className={styles.delivery__heading}>
-                Морской путь в Европу и Америку
-              </h3>
-              <p className={styles.delivery__subheading}>Из Санкт-Петербурга</p>
+              <h3 className={styles.delivery__heading}>Африка, Иран, ОАЭ</h3>
+              <p className={styles.delivery__subheading}>
+                Из южных портов России
+              </p>
             </li>
             <li className={styles.delivery__item}>
-              <h3 className={styles.delivery__heading}>
-                Морской путь в Турцию
-              </h3>
-              <p className={styles.delivery__subheading}>Из Новороссийска</p>
+              <h3 className={styles.delivery__heading}>По России</h3>
+              <p className={styles.delivery__subheading}>В любую точку</p>
             </li>
             <li className={styles.delivery__item}>
-              <h3 className={styles.delivery__heading}>
-                Морской путь в Африку и Иран
-              </h3>
-              <p className={styles.delivery__subheading}>Из Астрахани</p>
+              <h3 className={styles.delivery__heading}>Турция</h3>
+              <p className={styles.delivery__subheading}>
+                Из порта Новороссийск
+              </p>
             </li>
             <li className={styles.delivery__item}>
-              <h3 className={styles.delivery__heading}>
-                Сухопутный путь в Китай
-              </h3>
-              <p className={styles.delivery__subheading}>Из Забайкальска</p>
+              <h3 className={styles.delivery__heading}>По суше в Китай</h3>
+              <p className={styles.delivery__subheading}>
+                Через Россию, Казахстан и Монголию
+              </p>
             </li>
           </ul>
         </div>

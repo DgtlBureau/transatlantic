@@ -158,7 +158,7 @@
 
 @media screen and (min-width: 1180px) {
   .cases {
-    padding: 110px 18px 58px;
+    padding: 110px 58px 43px;
     display: flex;
     flex-direction: column;
   }

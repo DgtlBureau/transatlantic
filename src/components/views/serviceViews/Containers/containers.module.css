@@ -182,3 +182,13 @@
     align-self: flex-start;
   }
 }
+
+@media screen and (min-width: 1380px) {
+  .containers__container {
+    max-width: 1380px;
+  }
+
+  .containers__right {
+    max-width: 750px;
+  }
+}

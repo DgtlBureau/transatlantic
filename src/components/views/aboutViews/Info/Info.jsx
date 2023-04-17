@@ -9,12 +9,6 @@ const Info = () => {
           <h3 className={styles.process__title}>Реквизиты</h3>
         </div>
         <div className={styles.process__right}>
-          <div className={styles.process__subdescr}>
-            <p className={styles.process__text}>
-              Имеем иностранные филиалы, способны на работу с любой страной
-              мира.
-            </p>
-          </div>
           <div className={cn(styles.process__subdescr, styles.process__list)}>
             <p className={styles.process__text}>Наши данные:</p>
             <p className={styles.process__text}>ООО «ТрансАтлантик»</p>

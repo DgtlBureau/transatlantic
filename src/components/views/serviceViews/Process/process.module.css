@@ -101,3 +101,23 @@
     max-width: 650px;
   }
 }
+
+@media screen and (min-width: 1380px) {
+  .process__container {
+    max-width: 1380px;
+    justify-content: inherit;
+  }
+
+  .process__title {
+    max-width: 430px;
+    margin-right: 75px;
+  }
+
+  .process__right {
+    max-width: 750px;
+  }
+
+  .process__descr {
+    width: 550px;
+  }
+}

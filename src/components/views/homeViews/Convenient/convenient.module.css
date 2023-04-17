@@ -5,14 +5,13 @@
   background: linear-gradient(180deg, #222222 0%, #1a1a1a 100%);
 
   background-color: #222222;
-  padding: 64px 20px;
 }
 
 .convenient__container {
+  padding: 64px 20px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 280px;
 }
 
 .convenient__info--top {
@@ -106,12 +105,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .convenient {
-    padding: 56px 20px 64px 20px;
-  }
-
   .convenient__container {
-    width: 100%;
+    padding: 56px 20px 64px 20px;
   }
 
   .convenient__info--top {
@@ -149,18 +144,15 @@
 }
 
 @media screen and (min-width: 1180px) {
-  .convenient {
-    padding: 112px 100px 80px;
-  }
-
   .convenient__container {
+    padding: 112px 54px 80px;
     align-items: center;
   }
 
   .convenient__wrapper {
-    height: 304px;
+    height: 346px;
     margin-bottom: 73px;
-    margin-left: 130px;
+    margin-left: 0px;
   }
 
   .convenient__title {
@@ -202,11 +194,5 @@
   .convenient__image {
     width: 1382px;
     height: 366px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .convenient {
-    height: 100vh;
   }
 }

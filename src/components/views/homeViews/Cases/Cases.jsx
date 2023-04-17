@@ -16,7 +16,7 @@ const Cases = () => {
               .map(({ id, path, heading, imgBlue, imgGray, alt }) => {
                 return (
                   <li className={styles.cases__item} key={id}>
-                    <Link className={styles.cases__link} to={`/cases/${path}`}>
+                    <Link className={styles.cases__link} to={`/${path}`}>
                       <div className={styles.cases__info}>
                         <h4 className={styles.cases__heading}>
                           {heading}
