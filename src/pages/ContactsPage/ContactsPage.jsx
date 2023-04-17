@@ -2,7 +2,6 @@ import { Fragment, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Hero from "components/views/contactsView/Hero/Hero";
 import Brief from "components/views/homeViews/Brief/Brief";
-import omgImg from "assets/favicon-32x32.png";
 
 const ContactsPage = () => {
   useEffect(() => {
@@ -24,7 +23,7 @@ const ContactsPage = () => {
             property="og:description"
             content="Контактные данные компании Трансатлантик"
           />
-          <meta property="og:image" content={omgImg} />
+          <meta property="og:image" content="assets/favicon-32x32.png" />
         </Helmet>
       </Fragment>
       <Hero />

@@ -2,7 +2,6 @@ import { Fragment, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import Hero from "components/views/casesView/Hero/Hero";
 import Brief from "components/views/homeViews/Brief/Brief";
-import omgImg from "assets/favicon-32x32.png";
 
 const CasesPage = () => {
   useEffect(() => {
@@ -29,7 +28,7 @@ const CasesPage = () => {
             property="og:description"
             content="Примеры международных перевозок грузов в контейнерах, выполненных нашей командой – Трансатлантик"
           />
-          <meta property="og:image" content={omgImg} />
+          <meta property="og:image" content="assets/favicon-32x32.png" />
         </Helmet>
       </Fragment>
       <Hero />
