@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
+import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { HandySvg } from "handy-svg";
 import Menu from "components/common/Menu/Menu";
 import IconButton from "components/ui/IconButton";
@@ -10,6 +11,7 @@ import styles from "./header.module.css";
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [hideHeader, setHideHeader] = useState(false);
 
   // const { id } = useParams();
   const { caseID } = useParams();
@@ -22,10 +24,30 @@ const Header = () => {
     `${pathname}` === "/services" ||
     `${pathname}` === `/park`;
 
+  // This is the logic of the header behavior when scrolling
+
+  const headerRef = useRef();
+  useEffect(() => {
+    const containHide = headerRef.current.classList.value;
+
+    console.log(containHide);
+  }, [headerRef]);
+
+  useScrollPosition(({ prevPos, currPos }) => {
+    if (currPos.y < prevPos.y) {
+      setHideHeader(true);
+      console.log("down");
+    } else if (currPos.y > prevPos.y) {
+      console.log("up");
+      setHideHeader(false);
+    }
+  });
+
   return (
     <header
       className={cn(
         styles.header,
+        { [styles["hideHeader"]]: hideHeader },
         {
           [styles["header--transparent"]]:
             pathname === `/cases/${caseID}` ||
@@ -36,6 +58,7 @@ const Header = () => {
           [styles["header--light"]]: variant,
         }
       )}
+      ref={headerRef}
     >
       <div
         className={cn(
