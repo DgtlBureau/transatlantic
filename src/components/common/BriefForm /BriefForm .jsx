@@ -72,8 +72,8 @@ const BriefForm = () => {
         <form
           className={styles.form}
           autoComplete="off"
-          // action="https://formsubmit.co/21c9abb204327e5a95f8c622c29508b2"
-          // method="POST"
+          action="https://formsubmit.co/21c9abb204327e5a95f8c622c29508b2"
+          method="POST"
         >
           <div className={styles.input__wrapper}>
             <input
