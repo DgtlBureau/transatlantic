@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
 import { useFormik } from "formik";
 import { useLocation } from "react-router";
 import { validate } from "./utils/validate";
@@ -48,15 +48,15 @@ const BriefForm = () => {
 
     onSubmit: (values) => {
       const data = JSON.stringify(values, null, 2);
-      // try {
-      //   axios.post(``, {
-      //     data,
-      //   });
-      // } catch (error) {
-      //   console.log(error);
-      // }
-      console.log(data);
-      alert(JSON.stringify(values, null, 2));
+      const bodyFormData = new FormData();
+      bodyFormData.append("_captcha", "false");
+      bodyFormData.append("data", data);
+
+      try {
+        axios.post(`https://formsubmit.co/21c9abb204327e5a95f8c622c29508b2`, {
+          bodyFormData,
+        });
+      } catch (error) {}
       formik.resetForm();
     },
   });
@@ -68,8 +68,6 @@ const BriefForm = () => {
           className={styles.form}
           autoComplete="off"
           onSubmit={formik.handleSubmit}
-          action="https://formsubmit.co/21c9abb204327e5a95f8c622c29508b2"
-          method="POST"
         >
           <div className={styles.input__wrapper}>
             <input
@@ -128,14 +126,6 @@ const BriefForm = () => {
               <div className={styles.errors__text}>{formik.errors.email}</div>
             ) : null}
           </div>
-
-          <input type="hidden" name="_captcha" value="false" />
-          <input
-            type="hidden"
-            id="_send_form_next_page"
-            name="_next"
-            value={"https://transatlantic-dev.digitalburo.tech/"}
-          />
 
           <div className={styles.form__button}>
             <Button
