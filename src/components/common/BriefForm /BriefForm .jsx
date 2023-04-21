@@ -53,9 +53,10 @@ const BriefForm = () => {
       bodyFormData.append("data", data);
 
       try {
-        axios.post(`https://formsubmit.co/21c9abb204327e5a95f8c622c29508b2`, {
-          bodyFormData,
-        });
+        axios.post(
+          `https://formsubmit.co/21c9abb204327e5a95f8c622c29508b2`,
+          bodyFormData
+        );
       } catch (error) {}
       formik.resetForm();
     },
