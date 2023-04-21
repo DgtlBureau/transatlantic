@@ -58,7 +58,6 @@ const BriefForm = () => {
           bodyFormData
         );
       } catch (error) {}
-      alert(JSON.stringify(values, null, 2));
       formik.resetForm();
     },
   });

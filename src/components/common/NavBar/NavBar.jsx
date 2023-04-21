@@ -13,8 +13,6 @@ const NavBar = ({ type, setOpenMenu }) => {
     `${pathname}` === "/containers" ||
     `${pathname}` === "/park";
 
-  console.log(pathname);
-
   return (
     <nav className={cn(styles.nav, styles[`nav--${type}`])}>
       <ul className={cn(styles.nav__list, styles[`nav__list--${type}`])}>
