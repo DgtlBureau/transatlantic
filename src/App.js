@@ -21,6 +21,9 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
 
+  console.log(window.location.href);
+  console.warn(window.location.href);
+
   return (
     <div className="App">
       <Suspense>
