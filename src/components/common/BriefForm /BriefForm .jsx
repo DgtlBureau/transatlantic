@@ -54,7 +54,7 @@ const BriefForm = () => {
 
       try {
         axios.post(
-          `https://formsubmit.co/21c9abb204327e5a95f8c622c29508b2`,
+          `https://formsubmit.co/45948965e0ec4559144659b85bc9ae1f`,
           bodyFormData
         );
       } catch (error) {}
